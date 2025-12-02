@@ -3,10 +3,10 @@
 export default function HeroSection() {
   return (
     <>
-      <main className="overflow-x-hidden">
+      <main className="overflow-hidden relative h-[90vh] max-md:h-[80vh]">
         <section>
-          <div className="py-24 md:pb-32 lg:pb-36 lg:pt-72">
-            <div className="aspect-2/3 absolute inset-1 -z-10 overflow-hidden rounded-3xl border border-black/10 lg:aspect-video lg:rounded-[3rem] max-w-screen-xl mx-auto  ">
+          <div className="py-24 md:pb-32 lg:pb-36 lg:pt-72 h-full">
+            <div className="aspect-2/3 absolute inset-1 -z-10 overflow-hidden rounded-3xl border border-black/10 lg:aspect-video lg:rounded-[3rem] max-w-screen-xl mx-auto h-full w-full  ">
               <video
                 autoPlay={true}
                 muted={true}
