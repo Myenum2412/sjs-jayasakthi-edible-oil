@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { HeroHeader } from "@/components/header";
 import { Footerdemo } from "@/components/ui/footer-section";
+import { Toaster } from "sonner";
 
 const geistSans = Poppins({
   variable: "--font-poppins",
@@ -28,6 +29,7 @@ export default function RootLayout({
         <HeroHeader />
         {children}
         <Footerdemo/>
+        <Toaster position="top-right" richColors/>
       </body>
     </html>
   );

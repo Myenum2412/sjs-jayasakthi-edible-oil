@@ -12,7 +12,7 @@ const menuItems = [
   { name: "Products", href: "#link" },
   { name: "Bulk Order", href: "#link" },
   { name: "About Us", href: "#link" },
-  { name: "Contact", href: "#link" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export const HeroHeader = () => {
@@ -51,6 +51,7 @@ export const HeroHeader = () => {
                 href="/"
                 aria-label="home"
                 className="flex items-center space-x-2"
+                onClick={() => setMenuState(false)}
               >
                 <Image src="/logo.png" alt="logo" width={100} height={100} className="w-10 md:w-14"/>
               </Link>
@@ -67,7 +68,7 @@ export const HeroHeader = () => {
               <div className="hidden lg:block">
                 <ul className="flex gap-6 text-sm">
                   {menuItems.map((item, index) => (
-                    <li key={index}>
+                    <li key={index} onClick={() => setMenuState(false)}>
                       <Link
                         href={item.href}
                         className="text-neutral-900  hover:text-primary block duration-150"
@@ -84,7 +85,7 @@ export const HeroHeader = () => {
               <div className="lg:hidden">
                 <ul className="space-y-6 text-base">
                   {menuItems.map((item, index) => (
-                    <li key={index}>
+                    <li key={index} onClick={() => setMenuState(false)}>
                       <Link
                         href={item.href}
                         className="text-muted-foreground hover:text-accent-foreground block duration-150"
@@ -97,7 +98,7 @@ export const HeroHeader = () => {
               </div>
               <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
                 <Button asChild size="sm" className="rounded-full">
-                  <Link href="#">
+                  <Link href="#" onClick={() => setMenuState(false)}>
                     <span>Connet Now </span>
                   </Link>
                 </Button>
