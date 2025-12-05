@@ -1,14 +1,15 @@
-import ContactSection from '@/components/Contact/ContactSection'
+import AboutUsSection from '@/components/About-Us/AboutUsSection'
 import MaxWidthWrapper from '@/components/MaxWidthWrapper'
 import React from 'react'
 
-export default function page() {
+function page() {
   return (
     <>
     <MaxWidthWrapper>
-        <ContactSection/>
+        <AboutUsSection/>
     </MaxWidthWrapper>
     </>
   )
 }
 
+export default page
