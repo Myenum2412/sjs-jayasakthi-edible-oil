@@ -22,37 +22,37 @@ export default AboutUsSection;
 
 const projects = [
   {
-    title: "Matthias Leidinger",
+    title: "Welcome to Sri Jayasakthi Edible Oils Pvt. Ltd.",
     description:
-      "Originally hailing from Austria, Berlin-based photographer Matthias Leindinger is a young creative brimming with talent and ideas.",
+      'Established with trust and tradition since 1985, Sri Jayasakthi Edible Oils Pvt. Ltd. stands as one of the most leading manufacturers and suppliers of premium-quality edible and non-edible oils. Over four decades, the group has evolved into a trusted producer of edible food products with multiple brands in Southern India',
     link: "https://images.unsplash.com/photo-1605106702842-01a887a31122?q=80&w=500&auto=format&fit=crop",
     color: "#5196fd",
   },
   {
-    title: "Clément Chapillon",
+    title: "Our Mission",
     description:
-      "This is a story on the border between reality and imaginary, about the contradictory feelings that the insularity of a rocky, arid, and wild territory provokes”—so French photographer Clément.",
+      "To deliver pure, authentic, and superior-quality oils that nourish lives and strengthen trust — through innovation, integrity, and sustainable manufacturing practices. We aim to empower communities, support farmers, and maintain an unwavering commitment to purity, quality, and customer satisfaction in every litre we produce",
     link: "https://images.unsplash.com/photo-1605106250963-ffda6d2a4b32?w=500&auto=format&fit=crop&q=60",
     color: "#8f89ff",
   },
   {
-    title: "Zissou",
+    title: "Our Vision",
     description:
-      "Though he views photography as a medium for storytelling, Zissou’s images don’t insist on a narrative. Both crisp and ethereal.",
+      "To be recognized as India’s most trusted and sustainable edible oil manufacturer, setting new benchmarks in quality, purity, and excellence. We envision expanding our footprint across global markets while upholding the heritage of Indian oil craftsmanship and ensuring a healthier, more natural future for every household.",
     link: "https://images.unsplash.com/photo-1605106901227-991bd663255c?w=500&auto=format&fit=crop",
     color: "#13006c",
   },
   {
-    title: "Mathias Svold and Ulrik Hasemann",
+    title: "Our Strengths",
     description:
-      "The coastlines of Denmark are documented in tonal colors in a pensive new series by Danish photographers Ulrik Hasemann and Mathias Svold; an ongoing project investigating how humans interact with and disrupt the Danish coast.",
+      "40+ years of excellence in the edible oil industry. Massive production capacity and nationwide distribution network. Advanced refining and filtering technologies for unmatched purity. Dedicated R&D and quality assurance teams. Sustainable sourcing and ethical business practices",
     link: "https://images.unsplash.com/photo-1605106715994-18d3fecffb98?w=500&auto=format&fit=crop&q=60",
     color: "#ed649e",
   },
   {
-    title: "Mark Rammers",
+    title: "Our Commitment to Quality",
     description:
-      "Dutch photographer Mark Rammers has shared with IGNANT the first chapter of his latest photographic project, ‘all over again’—captured while in residency at Hektor, an old farm in Los Valles, Lanzarote.",
+      "With a robust production capacity of 3,000 tonnes of refined palm olien and edible oils per month, we have become a trusted name serving wholesalers, retailers, and industries across the nation.",
     link: "https://images.unsplash.com/photo-1506792006437-256b665541e2?w=500&auto=format&fit=crop",
     color: "#fd521a",
   },
