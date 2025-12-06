@@ -119,8 +119,6 @@ export default function AboutSectionLast() {
       />
       {/* Content */}
       <div className="relative z-10 max-w-2xl mx-auto">
-       
-
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-gray-900 mb-6">
           <VerticalCutReveal
             splitBy="words"
@@ -135,7 +133,7 @@ export default function AboutSectionLast() {
             containerClassName="text-[#00000] leading-[120%] text-center  justify-center items-center"
           >
             {
-              "A Legacy of Excellence, How Our Dedication Fuels Everything We Do"
+              "Blending traditional oil extraction expertise with modern refining technology"
             }
           </VerticalCutReveal>
         </h2>
@@ -147,9 +145,9 @@ export default function AboutSectionLast() {
           timelineRef={heroRef}
           className="text-gray-600 text-center sm:text-lg text-sm mb-8 leading-relaxed"
         >
-          From day one, our mission has been to create solutions that inspire,
-          empower, and make a difference. With a commitment to quality and
-          creativity.
+          we take pride in delivering oils that preserve natural taste, aroma,
+          and nutritional value — making us a preferred choice for purity,
+          performance, and trust.
         </TimelineContent>
 
         <TimelineContent

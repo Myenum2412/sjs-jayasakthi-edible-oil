@@ -55,34 +55,14 @@ export const Card = ({
         className={`flex flex-col  relative -top-[25%] h-[450px] w-[70%] rounded-md lg:p-10 p-5 origin-top  max-md:w-[90%]`}
       >
         <h2 className="text-2xl text-center font-semibold">{title}</h2>
-        <div className={`flex max-md:flex-col max-md:items-center max-md:justify-center max-md:gap-5 h-full mt-5 gap-10`}>
-          <div className={`w-[40%] relative top-[10%]`}>
-            <p className="text-sm">{description}</p>
-            <span className="flex items-center gap-2 pt-2">
-              <a
-                href={"#"}
-                target="_blank"
-                className="underline cursor-pointer"
-              >
-                See more
-              </a>
-              <svg
-                width="22"
-                height="12"
-                viewBox="0 0 22 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M21.5303 6.53033C21.8232 6.23744 21.8232 5.76256 21.5303 5.46967L16.7574 0.696699C16.4645 0.403806 15.9896 0.403806 15.6967 0.696699C15.4038 0.989592 15.4038 1.46447 15.6967 1.75736L19.9393 6L15.6967 10.2426C15.4038 10.5355 15.4038 11.0104 15.6967 11.3033C15.9896 11.5962 16.4645 11.5962 16.7574 11.3033L21.5303 6.53033ZM0 6.75L21 6.75V5.25L0 5.25L0 6.75Z"
-                  fill="black"
-                />
-              </svg>
-            </span>
+        <div className={`flex max-md:flex-col max-md:items-center max-md:justify-between max-md:gap-5 h-full mt-5 gap-10 max-md:h-1/2`}>
+          <div className={`w-[40%] max-md:w-full relative top-[10%]`}>
+            <p className="text-[12px] md:text-base">{description}</p>
+            
           </div>
 
           <div
-            className={`relative w-[60%] h-full rounded-lg overflow-hidden `}
+            className={`relative w-[60%] max-md:w-full  h-full rounded-lg overflow-hidden max-md:top-[10%] max-md:min-h-[180px]`}
           >
             <motion.div
               className={`w-full h-full`}
@@ -91,7 +71,7 @@ export const Card = ({
               <img
                 src={url}
                 alt="image"
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute inset-0 w-full h-full  object-cover "
               />
             </motion.div>
           </div>
