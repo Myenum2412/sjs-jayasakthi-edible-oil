@@ -1,6 +1,7 @@
 import React from "react";
 import AboutPage from "../about-page";
 import { TestimonialSection } from "../testimonials";
+import WorldMap from "../ui/world-map";
 
 const BulkOrderSection = () => {
   return (
@@ -17,7 +18,48 @@ const BulkOrderSection = () => {
         subtitle="Transformative Client experience from all around the globe"
         testimonials={testimonialsData}
       />
-      <div className="my-5 border-t border-neutral-600/50 max-w-xl mx-auto"/>
+      <div className="my-5 border-t border-neutral-600/50 max-w-xl mx-auto" />
+      <p className="text-center text-lg md:text-3xl tracking-tighter max-w-xl font-regular mx-auto my-10">
+        We deliver your order worldwide.
+      </p>
+      <WorldMap
+        lineColor="#4e7e12"
+        
+        dots={[
+          {
+            start: {
+              lat: 64.2008,
+              lng: -149.4937,
+              label:'Chennai'
+            }, // Alaska (Fairbanks)
+            end: {
+              lat: 34.0522,
+              lng: -118.2437,
+              label:'Dubai'
+            }, // Los Angeles
+          },
+          {
+            start: { lat: 64.2008, lng: -149.4937 }, // Alaska (Fairbanks)
+            end: { lat: -15.7975, lng: -47.8919, label:'Kuwait' }, // Brazil (Brasília)
+          },
+          {
+            start: { lat: -15.7975, lng: -47.8919 }, // Brazil (Brasília)
+            end: { lat: 38.7223, lng: -9.1393, label:'Kochi' }, // Lisbon
+          },
+          {
+            start: { lat: 51.5074, lng: -0.1278 }, // London
+            end: { lat: 28.6139, lng: 77.209, label:'New Delhi' }, // New Delhi
+          },
+          {
+            start: { lat: 28.6139, lng: 77.209 }, // New Delhi
+            end: { lat: 43.1332, lng: 131.9113, label:'Singapore' }, // Vladivostok
+          },
+          {
+            start: { lat: 28.6139, lng: 77.209 }, // New Delhi
+            end: { lat: -1.2921, lng: 36.8219, label:'Sri Lanka' }, // Nairobi
+          },
+        ]}
+      />
     </section>
   );
 };
