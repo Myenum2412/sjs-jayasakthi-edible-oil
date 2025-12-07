@@ -11,6 +11,11 @@ export const productsData = [
       rating: 4.8,
       reviewCount: 124,
       size: "1 Litre",
+      benefits: [
+        "High-quality water bottle with advanced insulation technology.",
+        "High-quality water bottle with advanced insulation technology.",
+        "High-quality water bottle with advanced insulation technology.",
+      ],
     },
     {
       id: 2,
@@ -23,6 +28,11 @@ export const productsData = [
       rating: 4.6,
       reviewCount: 89,
       size: "1 Litre",
+      benefits: [
+        "High-quality water bottle with advanced insulation technology.",
+        "High-quality water bottle with advanced insulation technology.",
+        "High-quality water bottle with advanced insulation technology.",
+      ],
     },
     {
       id: 3,
@@ -35,6 +45,11 @@ export const productsData = [
       rating: 4.7,
       reviewCount: 156,
       size: "2 Litre",
+      benefits: [
+        "High-quality water bottle with advanced insulation technology.",
+        "High-quality water bottle with advanced insulation technology.",
+        "High-quality water bottle with advanced insulation technology.",
+      ],
     },
     {
       id: 4,
@@ -47,6 +62,11 @@ export const productsData = [
       rating: 4.9,
       reviewCount: 203,
       size: "2 Litre",
+      benefits: [
+        "High-quality water bottle with advanced insulation technology.",
+        "High-quality water bottle with advanced insulation technology.",
+        "High-quality water bottle with advanced insulation technology.",
+      ],
     },
     {
       id: 5,
@@ -59,6 +79,11 @@ export const productsData = [
       rating: 4.5,
       reviewCount: 178,
       size: "5 Litre",
+      benefits: [
+        "High-quality water bottle with advanced insulation technology.",
+        "High-quality water bottle with advanced insulation technology.",
+        "High-quality water bottle with advanced insulation technology.",
+      ],
     },
     {
       id: 6,
@@ -71,6 +96,11 @@ export const productsData = [
       rating: 4.6,
       reviewCount: 142,
       size: "5 Litre",
+      benefits: [
+        "High-quality water bottle with advanced insulation technology.",
+        "High-quality water bottle with advanced insulation technology.",
+        "High-quality water bottle with advanced insulation technology.",
+      ],
     },
     {
       id: 7,
@@ -83,6 +113,11 @@ export const productsData = [
       rating: 4.8,
       reviewCount: 267,
       size: "10 Litre",
+      benefits: [
+        "High-quality water bottle with advanced insulation technology.",
+        "High-quality water bottle with advanced insulation technology.",
+        "High-quality water bottle with advanced insulation technology.",
+      ],
     },
     {
       id: 8,
@@ -95,5 +130,10 @@ export const productsData = [
       rating: 4.7,
       reviewCount: 195,
       size: "10 Litre",
+      benefits: [
+        "High-quality water bottle with advanced insulation technology.",
+        "High-quality water bottle with advanced insulation technology.",
+        "High-quality water bottle with advanced insulation technology.",
+      ],
     },
   ];
