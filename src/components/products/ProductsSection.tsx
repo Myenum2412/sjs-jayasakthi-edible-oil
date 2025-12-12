@@ -1,6 +1,7 @@
 import React from "react";
 import { FramerCarousel } from "../framer-carousel";
 import ProductsList from "./ProductsList";
+import { productsData } from "@/data/products";
 
 const ProductsSection = () => {
   return (
@@ -13,7 +14,7 @@ const ProductsSection = () => {
       </p>
       <FramerCarousel/>
       <div className="my-5 border-t border-neutral-600/50 max-w-xl mx-auto" />
-      <ProductsList/>
+      <ProductsList products={productsData}/>
     </section>
   );
 };

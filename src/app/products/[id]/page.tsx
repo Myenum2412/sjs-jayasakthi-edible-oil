@@ -4,7 +4,7 @@ import {
   ProductDetailPageProps,
 } from "@/components/product-detail-page";
 import React from "react";
-import { productsData } from "../../../../public/asset";
+import { productsData } from "@/data/products";
 import { notFound } from "next/navigation";
 import { ProductDropCard } from "@/components/product-card-3";
 
