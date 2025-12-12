@@ -106,13 +106,13 @@ export const ProductDropCard = ({
                   <img
                     src={item.image}
                     alt={item.name}
-                    className="h-full w-full object-contain object-center"
+                    className="h-full w-full bg-white object-contain object-center"
                   />
                 </div>
                 <div>
                   <h3 className="font-semibold">{item.name}</h3>
                   <p className="text-sm text-muted-foreground">
-                    {item.description}
+                    {item.description?.slice(0, 100)}...
                   </p>
                 </div>
               </div>

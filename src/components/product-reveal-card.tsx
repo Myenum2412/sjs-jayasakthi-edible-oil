@@ -5,7 +5,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { ShoppingCart, Star, Heart } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 interface ProductRevealCardProps {
   id?: number;
@@ -39,10 +39,26 @@ export function ProductRevealCard({
   const [isFavorite, setIsFavorite] = useState(false);
   const shouldReduceMotion = useReducedMotion();
   const shouldAnimate = enableAnimations && !shouldReduceMotion;
+  const router = useRouter();
 
-  const handleFavorite = () => {
+  const handleFavorite = (e: React.MouseEvent) => {
+    e.stopPropagation();
     setIsFavorite(!isFavorite);
     onFavorite?.();
+  };
+
+  const handleCardClick = () => {
+    if (id) {
+      router.push(`/products/${id}`);
+    }
+  };
+
+  const handleButtonClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (id) {
+      router.push(`/products/${id}`);
+    }
+    onAdd?.();
   };
 
   const containerVariants = {
@@ -145,6 +161,7 @@ export function ProductRevealCard({
       initial="rest"
       whileHover="hover"
       variants={containerVariants as Variants}
+      onClick={handleCardClick}
       className={cn(
         "relative rounded-2xl border border-border/50 bg-card text-card-foreground overflow-hidden",
         "shadow-lg shadow-black/5 cursor-pointer group",
@@ -156,7 +173,7 @@ export function ProductRevealCard({
         <motion.img
           src={image}
           alt={name}
-          className="h-56 w-full object-cover"
+          className="h-56 w-full object-contain"
           variants={imageVariants}
           transition={{ type: "spring", stiffness: 300, damping: 30 }}
         />
@@ -217,7 +234,7 @@ export function ProductRevealCard({
           <motion.div variants={contentVariants as Variants}>
             <h4 className="font-semibold mb-2 text-lg">{name}</h4>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              {description}
+              {description?.split(".")[0]}
             </p>
           </motion.div>
 
@@ -226,9 +243,8 @@ export function ProductRevealCard({
             variants={contentVariants as Variants}
             className="space-y-3"
           >
-          <Link href={`/products/${id}`}>
-          <motion.button
-              onClick={onAdd}
+            <motion.button
+              onClick={handleButtonClick}
               variants={buttonVariants_motion as Variants}
               initial="rest"
               whileHover="hover"
@@ -244,7 +260,6 @@ export function ProductRevealCard({
               <ShoppingCart className="w-4 h-4 mr-2" />
               View Details
             </motion.button>
-          </Link>
           </motion.div>
         </div>
       </motion.div>

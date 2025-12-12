@@ -2,19 +2,34 @@
 import React, { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ProductRevealCard } from "../product-reveal-card";
-import { productsData } from "../../../public/asset";
+import { Skeleton } from "../skeleton";
 
 // Sample product data with category/size information
 
+interface ProductsListProps {
+  products: {
+    id: number;
+    name: string;
+    price: string;
+    originalPrice: string;
+    image: string;
+    description: string;
+    rating: number;
+    reviewCount: number;
+    size: string;
+    type: string;
+    benefits: string[];
+  }[];
+}
 
-const ProductsList = () => {
+const ProductsList = ({products}: ProductsListProps) => {
   const [category, setCategory] = useState("All");
 
   // Filter products based on selected category
   const filteredData =
     category === "All"
-      ? productsData
-      : productsData.filter((product) => product.size === category);
+      ? products
+      : products.filter((product) => product.type === category);
 
   return (
     <div className="relative mx-auto max-w-6xl">
@@ -29,19 +44,25 @@ const ProductsList = () => {
       </h2>
       <div className="flex items-center justify-center w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 my-10 mx-auto ">
-          {filteredData.map((product) => (
-            <ProductRevealCard
-              key={product.id}
-              id={product.id}
-              name={product.name}
-              price={product.price}
-              originalPrice={product.originalPrice}
-              image={product.image}
-              description={product.description}
-              rating={product.rating}
-              reviewCount={product.reviewCount}
-            />
-          ))}
+          {filteredData?.length > 0 ? (
+            filteredData.map((product) => (
+              <ProductRevealCard
+                key={product.id}
+                id={product.id}
+                name={product.name}
+                price={product.price}
+                originalPrice={product.originalPrice}
+                image={product.image}
+                description={product.description}
+                rating={product.rating}
+                reviewCount={product.reviewCount}
+              />
+            ))
+          ) : (
+            Array.from({ length: 4 }).map((_, index) => (
+              <ProductCardSkeleton key={index} />
+            ))
+          )}
         </div>
       </div>
     </div>
@@ -72,10 +93,8 @@ export const SlideTabs = ({ category, setCategory }: SlideTabsProps) => {
   useEffect(() => {
     const tabIndex = [
       "All",
-      "1 Litre",
-      "2 Litre",
-      "5 Litre",
-      "10 Litre",
+      "Refined Oil",
+      "Non-Refined Oil",
     ].indexOf(category);
     const selectedTab = tabsRef.current[tabIndex];
     if (selectedTab) {
@@ -95,10 +114,8 @@ export const SlideTabs = ({ category, setCategory }: SlideTabsProps) => {
         // to the position of the currently selected tab.
         const tabIndex = [
           "All",
-          "1 Litre",
-          "2 Litre",
-          "5 Litre",
-          "10 Litre",
+          "Refined Oil",
+          "Non-Refined Oil",
         ].indexOf(category);
         const selectedTab = tabsRef.current[tabIndex];
         if (selectedTab) {
@@ -112,7 +129,7 @@ export const SlideTabs = ({ category, setCategory }: SlideTabsProps) => {
       }}
       className="relative mx-auto flex w-fit rounded-full border-2 border-primary bg-background p-1"
     >
-      {["All", "1 Litre", "2 Litre", "5 Litre", "10 Litre"].map((tab, i) => (
+      {["All", "Refined Oil", "Non-Refined Oil"].map((tab, i) => (
         <Tab
           key={tab}
           ref={(el) => {
@@ -167,6 +184,33 @@ const Tab = React.forwardRef<HTMLLIElement, TabProps>(
 );
 
 Tab.displayName = "Tab";
+
+// Product Card Skeleton Component
+const ProductCardSkeleton = () => {
+  return (
+    <div className="relative rounded-2xl border border-border/50 bg-card overflow-hidden shadow-lg shadow-black/5 w-full">
+      {/* Image Skeleton */}
+      <Skeleton className="h-56 w-full rounded-t-2xl" />
+      
+      {/* Content Skeleton */}
+      <div className="p-6 space-y-3">
+        {/* Rating Skeleton */}
+        <div className="flex items-center gap-2">
+          <Skeleton className="h-4 w-24 rounded" />
+        </div>
+        
+        {/* Title Skeleton */}
+        <Skeleton className="h-6 w-full rounded" />
+        <Skeleton className="h-6 w-3/4 rounded" />
+        
+        {/* Price Skeleton */}
+        <div className="flex items-center gap-2 mt-2">
+          <Skeleton className="h-8 w-24 rounded" />
+        </div>
+      </div>
+    </div>
+  );
+};
 
 interface CursorProps {
   position: {
