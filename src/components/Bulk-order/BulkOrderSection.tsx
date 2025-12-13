@@ -10,7 +10,7 @@ const BulkOrderSection = () => {
         Bulk Order
       </h2>
       <p className="text-lg md:text-xl tracking-tighter max-w-xl font-regular text-left my-5">
-        We are here to help you. Please contact us using the form below.
+      Partner with Purity – Bulk & Wholesale Solutions for your business.
       </p>
       <AboutPage />
       <TestimonialSection

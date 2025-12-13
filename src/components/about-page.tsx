@@ -44,11 +44,15 @@ export default function AboutPage({
 
           <div className="grid gap-6 md:grid-cols-2 md:gap-12 my-5">
             <h1 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-regular text-left">
-              The Lyra <span className="text-primary">ecosystem</span>{" "}
+              The <span className="text-primary">Purity</span> <span className="text-primary">ecosystem</span>{" "}
             </h1>
             <div className="space-y-6 text-muted-foreground">
               <p className="text-lg md:text-xl tracking-tighter max-w-xl font-regular text-left">
-                We are here to help you. Please contact us using the form below.
+              Direct from the factory to your business. Premium oils at competitive wholesale rates.
+              <br />
+              At Sri Jayasakthi Edible Oils Pvt Ltd, we understand that businesses need reliability just as much as quality. Whether you are stocking supermarket shelves, running a large kitchen, or managing temple requirements, we offer flexible bulk ordering solutions tailored to your needs.
+
+Supply your customers with oils that are ISO 9001:2015 Certified and packed with the trust of a legacy dating back to 1995.
               </p>
               <Button
                 asChild
@@ -56,8 +60,8 @@ export default function AboutPage({
                 size="sm"
                 className="gap-1 pr-1.5"
               >
-                <Link href="#">
-                  <span>Learn More</span>
+                <Link href="/products">
+                  <span>View Products</span>
                   <ChevronRight className="size-4" />
                 </Link>
               </Button>
