@@ -17,7 +17,7 @@ interface ProductsListProps {
     rating: number;
     reviewCount: number;
     size: string;
-    type: string;
+    type?: string;
     benefits: string[];
   }[];
 }
@@ -56,6 +56,8 @@ const ProductsList = ({products}: ProductsListProps) => {
                 description={product.description}
                 rating={product.rating}
                 reviewCount={product.reviewCount}
+                size={product.size}
+                type={product.type}
               />
             ))
           ) : (

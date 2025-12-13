@@ -33,7 +33,7 @@ export interface Gallery4Props {
     rating: number;
     reviewCount: number;
     size: string;
-    type: string;
+    type?: string;
     benefits: string[];
   }[];
 }

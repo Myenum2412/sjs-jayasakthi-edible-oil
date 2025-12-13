@@ -20,6 +20,8 @@ interface ProductRevealCardProps {
   onFavorite?: () => void;
   enableAnimations?: boolean;
   className?: string;
+  size?: string;
+  type?: string;
 }
 
 export function ProductRevealCard({
@@ -33,6 +35,8 @@ export function ProductRevealCard({
   reviewCount,
   onAdd,
   onFavorite,
+  size,
+  type,
   enableAnimations = true,
   className,
 }: ProductRevealCardProps) {
@@ -210,7 +214,7 @@ export function ProductRevealCard({
             whileHover={{ opacity: 1 }}
             transition={{ duration: 0.3 }}
           >
-            {name}
+            {name} - {size} 
           </motion.h3>
 
           <div className="flex items-center gap-2">
