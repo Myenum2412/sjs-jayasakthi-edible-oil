@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 import { motion } from "motion/react";
 import DottedMap from "dotted-map";
 
@@ -20,8 +20,35 @@ export default function WorldMap({
 }: MapProps) {
   const svgRef = useRef<SVGSVGElement>(null);
   const map = new DottedMap({ height: 100, grid: "diagonal" });
+  const [computedLineColor, setComputedLineColor] = useState(lineColor);
 
   const { theme } = useTheme();
+
+  // Convert CSS variable to computed color if needed
+  useEffect(() => {
+    if (lineColor.includes('var(--primary)') || lineColor.includes('hsl(var(--primary))')) {
+      if (typeof window !== 'undefined') {
+        // Create a temporary element to get computed color
+        const tempEl = document.createElement('div');
+        tempEl.style.color = 'hsl(var(--primary))';
+        tempEl.style.position = 'absolute';
+        tempEl.style.visibility = 'hidden';
+        document.body.appendChild(tempEl);
+        const computedColor = getComputedStyle(tempEl).color;
+        document.body.removeChild(tempEl);
+        
+        // If we got a valid color, use it; otherwise use a green fallback
+        if (computedColor && computedColor !== 'rgba(0, 0, 0, 0)' && computedColor !== 'transparent') {
+          setComputedLineColor(computedColor);
+        } else {
+          // Fallback to a green color matching the theme (oklch(0.5383 0.1413 131.8329) ≈ #4e7e12)
+          setComputedLineColor('#4e7e12');
+        }
+      }
+    } else {
+      setComputedLineColor(lineColor);
+    }
+  }, [lineColor, theme]);
 
   const svgMap = map.getSVG({
     radius: 0.22,
@@ -90,8 +117,8 @@ export default function WorldMap({
         <defs>
           <linearGradient id="path-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" stopColor="white" stopOpacity="0" />
-            <stop offset="5%" stopColor={lineColor} stopOpacity="1" />
-            <stop offset="95%" stopColor={lineColor} stopOpacity="1" />
+            <stop offset="5%" stopColor={computedLineColor} stopOpacity="1" />
+            <stop offset="95%" stopColor={computedLineColor} stopOpacity="1" />
             <stop offset="100%" stopColor="white" stopOpacity="0" />
           </linearGradient>
         </defs>
@@ -103,13 +130,13 @@ export default function WorldMap({
                 cx={projectPoint(dot.start.lat, dot.start.lng).x}
                 cy={projectPoint(dot.start.lat, dot.start.lng).y}
                 r="2"
-                fill={lineColor}
+                fill={computedLineColor}
               />
               <circle
                 cx={projectPoint(dot.start.lat, dot.start.lng).x}
                 cy={projectPoint(dot.start.lat, dot.start.lng).y}
                 r="2"
-                fill={lineColor}
+                fill={computedLineColor}
                 opacity="0.5"
               >
                 <animate
@@ -135,13 +162,13 @@ export default function WorldMap({
                 cx={projectPoint(dot.end.lat, dot.end.lng).x}
                 cy={projectPoint(dot.end.lat, dot.end.lng).y}
                 r="2"
-                fill={lineColor}
+                fill={computedLineColor}
               />
               <circle
                 cx={projectPoint(dot.end.lat, dot.end.lng).x}
                 cy={projectPoint(dot.end.lat, dot.end.lng).y}
                 r="2"
-                fill={lineColor}
+                fill={computedLineColor}
                 opacity="0.5"
               >
                 <animate

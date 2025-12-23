@@ -1,16 +1,17 @@
 "use client";
-import * as React from "react";
+import { memo, useCallback, useMemo, useState } from "react";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"; // Assuming these are your shadcn Card components
-import { Button } from "@/components/ui/button"; // Assuming shadcn Button component
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { cn } from "@/lib/utils"; // Your utility for merging class names
+import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { Spotlight } from "@/components/ui/spotlight";
 
 // Define the type for a single drop item
 export interface DropItem {
@@ -33,28 +34,31 @@ export interface ProductDropCardProps {
   items: DropItem[];
 }
 
-export const ProductDropCard = ({
+export const ProductDropCard = memo(function ProductDropCard({
   title,
   subtitle,
   items,
-}: ProductDropCardProps) => {
-  const [currentIndex, setCurrentIndex] = React.useState(0);
+}: ProductDropCardProps) {
+  const [currentIndex, setCurrentIndex] = useState(0);
   const itemsToShow = 3; // Number of items visible at once
 
-  const canGoPrev = currentIndex > 0;
-  const canGoNext = currentIndex < items.length - itemsToShow;
+  const canGoPrev = useMemo(() => currentIndex > 0, [currentIndex]);
+  const canGoNext = useMemo(
+    () => currentIndex < items.length - itemsToShow,
+    [currentIndex, items.length, itemsToShow]
+  );
 
-  const handlePrev = () => {
+  const handlePrev = useCallback(() => {
     if (canGoPrev) {
       setCurrentIndex((prevIndex) => prevIndex - 1);
     }
-  };
+  }, [canGoPrev]);
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     if (canGoNext) {
       setCurrentIndex((prevIndex) => prevIndex + 1);
     }
-  };
+  }, [canGoNext]);
 
   return (
     <Card className="w-full border-none bg-background shadow-none mx-auto overflow-hidden">
@@ -97,9 +101,17 @@ export const ProductDropCard = ({
           {items.map((item, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-full rounded-lg border bg-card p-4 text-card-foreground"
+              className="flex-shrink-0 w-full rounded-lg border bg-card p-4 text-card-foreground relative group overflow-hidden"
               style={{ flexBasis: `calc((100% / ${itemsToShow}) - (${(itemsToShow - 1) * 16}px / ${itemsToShow}))` }}
             >
+            {/* Spotlight Effect */}
+            <Spotlight
+              className={cn(
+                "opacity-0 group-hover:opacity-100 transition-opacity duration-500",
+                "-top-40 -left-40"
+              )}
+              fill="white"
+            />
             <Link href={`/products/${item.id}`} key={index}>
               <div className="space-y-3">
                 <div className="aspect-video w-full overflow-hidden rounded-md bg-muted">
@@ -123,4 +135,4 @@ export const ProductDropCard = ({
       </CardContent>
     </Card>
   );
-};
+});

@@ -2,10 +2,17 @@ import React from "react";
 import { FramerCarousel } from "../framer-carousel";
 import ProductsList from "./ProductsList";
 import { productsData } from "@/data/products";
+import PageBreadcrumb from "../ui/PageBreadcrumb";
 
 const ProductsSection = () => {
   return (
     <section className="py-28 md:pb-32 lg:mx-6 mx-2">
+      <PageBreadcrumb 
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Products" }
+        ]}
+      />
       <h2 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-regular text-left">
         Products
       </h2>

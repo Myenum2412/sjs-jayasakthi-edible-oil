@@ -1,11 +1,12 @@
 "use client";
 
+import { memo, useCallback, useMemo, useState } from "react";
 import { motion, useReducedMotion, Variants } from "framer-motion";
 import { buttonVariants } from "@/components/ui/button";
-import { ShoppingCart, Star, Heart } from "lucide-react";
-import { useState } from "react";
+import { ShoppingCart } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useRouter } from "next/navigation";
+import { Spotlight } from "@/components/ui/spotlight";
 
 interface ProductRevealCardProps {
   id?: number;
@@ -24,7 +25,7 @@ interface ProductRevealCardProps {
   type?: string;
 }
 
-export function ProductRevealCard({
+export const ProductRevealCard = memo(function ProductRevealCard({
   id,
   description,
   name,
@@ -45,27 +46,27 @@ export function ProductRevealCard({
   const shouldAnimate = enableAnimations && !shouldReduceMotion;
   const router = useRouter();
 
-  const handleFavorite = (e: React.MouseEvent) => {
+  const handleFavorite = useCallback((e: React.MouseEvent) => {
     e.stopPropagation();
-    setIsFavorite(!isFavorite);
+    setIsFavorite((prev) => !prev);
     onFavorite?.();
-  };
+  }, [onFavorite]);
 
-  const handleCardClick = () => {
+  const handleCardClick = useCallback(() => {
     if (id) {
       router.push(`/products/${id}`);
     }
-  };
+  }, [id, router]);
 
-  const handleButtonClick = (e: React.MouseEvent) => {
+  const handleButtonClick = useCallback((e: React.MouseEvent) => {
     e.stopPropagation();
     if (id) {
       router.push(`/products/${id}`);
     }
     onAdd?.();
-  };
+  }, [id, router, onAdd]);
 
-  const containerVariants = {
+  const containerVariants = useMemo(() => ({
     rest: {
       scale: 1,
       y: 0,
@@ -84,14 +85,14 @@ export function ProductRevealCard({
           },
         }
       : {},
-  };
+  }), [shouldAnimate]);
 
-  const imageVariants = {
+  const imageVariants = useMemo(() => ({
     rest: { scale: 1 },
     hover: { scale: 1.1 },
-  };
+  }), []);
 
-  const overlayVariants = {
+  const overlayVariants = useMemo(() => ({
     rest: {
       y: "100%",
       opacity: 0,
@@ -110,9 +111,9 @@ export function ProductRevealCard({
         delayChildren: 0.1,
       },
     },
-  };
+  }), []);
 
-  const contentVariants = {
+  const contentVariants = useMemo(() => ({
     rest: {
       opacity: 0,
       y: 20,
@@ -129,9 +130,9 @@ export function ProductRevealCard({
         mass: 0.5,
       },
     },
-  };
+  }), []);
 
-  const buttonVariants_motion = {
+  const buttonVariants_motion = useMemo(() => ({
     rest: { scale: 1, y: 0 },
     hover: shouldAnimate
       ? {
@@ -145,19 +146,8 @@ export function ProductRevealCard({
         }
       : {},
     tap: shouldAnimate ? { scale: 0.95 } : {},
-  };
+  }), [shouldAnimate]);
 
-  const favoriteVariants = {
-    rest: { scale: 1, rotate: 0 },
-    favorite: {
-      scale: [1, 1.3, 1],
-      rotate: [0, 10, -10, 0],
-      transition: {
-        duration: 0.5,
-        ease: "easeInOut" as const,
-      },
-    },
-  };
 
   return (
     <motion.div
@@ -172,6 +162,15 @@ export function ProductRevealCard({
         className
       )}
     >
+      {/* Spotlight Effect */}
+      <Spotlight
+        className={cn(
+          "opacity-0 group-hover:opacity-100 transition-opacity duration-500",
+          "-top-40 -left-40"
+        )}
+        fill="white"
+      />
+      
       {/* Image Container */}
       <div className="relative overflow-hidden">
         <motion.img
@@ -186,26 +185,6 @@ export function ProductRevealCard({
 
       {/* Content */}
       <div className="p-6 space-y-3">
-        {/* Rating */}
-        <div className="flex items-center gap-2">
-          <div className="flex">
-            {[...Array(5)].map((_, i) => (
-              <Star
-                key={i}
-                className={cn(
-                  "w-4 h-4",
-                  i < Math.floor(rating || 0)
-                    ? "text-yellow-400 fill-current"
-                    : "text-muted-foreground"
-                )}
-              />
-            ))}
-          </div>
-          <span className="text-sm text-muted-foreground">
-            {rating || 0} ({reviewCount || 0} reviews)
-          </span>
-        </div>
-
         {/* Product Info */}
         <div className="space-y-1">
           <motion.h3
@@ -269,4 +248,4 @@ export function ProductRevealCard({
       </motion.div>
     </motion.div>
   );
-}
+});

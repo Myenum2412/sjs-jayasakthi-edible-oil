@@ -1,7 +1,7 @@
 "use client";
 
+import { memo, useCallback, useEffect, useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { useEffect, useState } from "react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -11,6 +11,8 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import { productsData } from "@/data/products";
+import { Spotlight } from "@/components/ui/spotlight";
+import { cn } from "@/lib/utils";
 
 export interface Gallery4Item {
   id: string;
@@ -38,15 +40,27 @@ export interface Gallery4Props {
   }[];
 }
 
-const ProductsCarousel = ({
+const ProductsCarousel = memo(function ProductsCarousel({
   products = productsData,
   title = "Our Best Selling Products",
   description = "Discover our best selling products and see why they are the best.",
-}: Gallery4Props) => {
+}: Gallery4Props) {
   const [carouselApi, setCarouselApi] = useState<CarouselApi>();
   const [canScrollPrev, setCanScrollPrev] = useState(false);
   const [canScrollNext, setCanScrollNext] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
+
+  const handleScrollPrev = useCallback(() => {
+    carouselApi?.scrollPrev();
+  }, [carouselApi]);
+
+  const handleScrollNext = useCallback(() => {
+    carouselApi?.scrollNext();
+  }, [carouselApi]);
+
+  const handleScrollTo = useCallback((index: number) => {
+    carouselApi?.scrollTo(index);
+  }, [carouselApi]);
 
   useEffect(() => {
     if (!carouselApi) {
@@ -78,9 +92,7 @@ const ProductsCarousel = ({
             <Button
               size="icon"
               variant="ghost"
-              onClick={() => {
-                carouselApi?.scrollPrev();
-              }}
+              onClick={handleScrollPrev}
               disabled={!canScrollPrev}
               className="disabled:pointer-events-auto bg-none"
             >
@@ -89,9 +101,7 @@ const ProductsCarousel = ({
             <Button
               size="icon"
               variant="ghost"
-              onClick={() => {
-                carouselApi?.scrollNext();
-              }}
+              onClick={handleScrollNext}
               disabled={!canScrollNext}
               className="disabled:pointer-events-auto bg-none"
             >
@@ -120,6 +130,14 @@ const ProductsCarousel = ({
               >
                 <a href={`/products/${product.id.toString()}`} className="group rounded-xl">
                   <div className="group relative h-full min-h-[27rem] max-w-full overflow-hidden rounded-xl md:aspect-[5/4] lg:aspect-[16/9]">
+                    {/* Spotlight Effect */}
+                    <Spotlight
+                      className={cn(
+                        "opacity-0 group-hover:opacity-100 transition-opacity duration-500",
+                        "-top-40 -left-40"
+                      )}
+                      fill="white"
+                    />
                     <img
                       src={product.image}
                       alt={product.name}
@@ -151,7 +169,7 @@ const ProductsCarousel = ({
               className={`h-2 w-2 rounded-full transition-colors ${
                 currentSlide === index ? "bg-primary" : "bg-primary/20"
               }`}
-              onClick={() => carouselApi?.scrollTo(product.id)}
+              onClick={() => handleScrollTo(index)}
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
@@ -159,6 +177,6 @@ const ProductsCarousel = ({
       </div>
     </section>
   );
-};
+});
 
 export { ProductsCarousel };

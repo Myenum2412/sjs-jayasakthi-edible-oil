@@ -6,7 +6,7 @@ export default function page() {
   return (
     <>
     <MaxWidthWrapper>
-        <BulkOrderSection/>
+      <BulkOrderSection/>
     </MaxWidthWrapper>
     </>
   )

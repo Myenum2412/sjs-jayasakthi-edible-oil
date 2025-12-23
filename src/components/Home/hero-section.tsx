@@ -1,6 +1,30 @@
+"use client";
 
+import React from "react";
 
 export default function HeroSection() {
+  const videoRef = React.useRef<HTMLVideoElement>(null);
+
+  React.useEffect(() => {
+    // Ensure video plays on mobile devices
+    const video = videoRef.current;
+    if (video) {
+      const playPromise = video.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          // Auto-play was prevented, try again on user interaction
+          const handleInteraction = () => {
+            video.play().catch(() => {});
+            document.removeEventListener("touchstart", handleInteraction);
+            document.removeEventListener("click", handleInteraction);
+          };
+          document.addEventListener("touchstart", handleInteraction, { once: true });
+          document.addEventListener("click", handleInteraction, { once: true });
+        });
+      }
+    }
+  }, []);
+
   return (
     <>
       <main className="overflow-hidden relative h-[90vh] max-md:h-[80vh]">
@@ -8,11 +32,21 @@ export default function HeroSection() {
           <div className="py-24 md:pb-32 lg:pb-36 lg:pt-72 h-full">
             <div className="aspect-2/3 absolute inset-1 -z-10 overflow-hidden rounded-3xl border border-black/10 lg:aspect-video lg:rounded-[3rem] max-w-screen-xl mx-auto h-full w-full  ">
               <video
-                autoPlay={true}
-                muted={true}
-                loop={true}
-                className="size-full object-cover opacity-100 "
+                ref={videoRef}
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="auto"
+                className="size-full object-cover opacity-100"
                 src="/intro.mp4"
+                onLoadedData={(e) => {
+                  // Force play on mobile devices when video is loaded
+                  const video = e.currentTarget;
+                  video.play().catch(() => {
+                    // Silently handle play promise rejection
+                  });
+                }}
               ></video>
             </div>
           </div>

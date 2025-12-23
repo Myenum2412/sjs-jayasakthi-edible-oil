@@ -1,5 +1,7 @@
 "use client";
-import React, { useRef, useState, useEffect } from "react";
+"use client";
+import type { ReactNode } from "react";
+import { forwardRef, memo, useEffect, useMemo, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { ProductRevealCard } from "../product-reveal-card";
 import { Skeleton } from "../skeleton";
@@ -22,14 +24,17 @@ interface ProductsListProps {
   }[];
 }
 
-const ProductsList = ({products}: ProductsListProps) => {
+const ProductsList = memo(function ProductsList({products}: ProductsListProps) {
   const [category, setCategory] = useState("All");
 
   // Filter products based on selected category
-  const filteredData =
-    category === "All"
-      ? products
-      : products.filter((product) => product.type === category);
+  const filteredData = useMemo(
+    () =>
+      category === "All"
+        ? products
+        : products.filter((product) => product.type === category),
+    [category, products]
+  );
 
   return (
     <div className="relative mx-auto max-w-6xl">
@@ -69,7 +74,9 @@ const ProductsList = ({products}: ProductsListProps) => {
       </div>
     </div>
   );
-};
+});
+
+ProductsList.displayName = "ProductsList";
 
 export default ProductsList;
 
@@ -151,7 +158,7 @@ export const SlideTabs = ({ category, setCategory }: SlideTabsProps) => {
 
 // The Tab component is wrapped in forwardRef to accept a ref from its parent.
 interface TabProps {
-  children: React.ReactNode;
+  children: ReactNode;
   setPosition: (position: {
     left: number;
     width: number;
@@ -160,7 +167,7 @@ interface TabProps {
   onClick: () => void;
 }
 
-const Tab = React.forwardRef<HTMLLIElement, TabProps>(
+const Tab = forwardRef<HTMLLIElement, TabProps>(
   ({ children, setPosition, onClick }, ref) => {
     return (
       <li

@@ -54,7 +54,7 @@ export default function AboutSectionLast() {
   };
   return (
     <section
-      className="relative py-32 px-4 bg-gray-50 overflow-hidden"
+      className="relative py-32 px-4 bg-gradient-to-b from-background via-primary/5 to-background overflow-hidden"
       ref={heroRef}
     >
       <svg className="absolute -top-[999px] -left-[999px] w-0 h-0">
@@ -119,7 +119,7 @@ export default function AboutSectionLast() {
       />
       {/* Content */}
       <div className="relative z-10 max-w-2xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-gray-900 mb-6">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-foreground mb-6">
           <VerticalCutReveal
             splitBy="words"
             staggerDuration={0.2}
@@ -143,7 +143,7 @@ export default function AboutSectionLast() {
           animationNum={0}
           customVariants={revealVariants}
           timelineRef={heroRef}
-          className="text-gray-600 text-center sm:text-lg text-sm mb-8 leading-relaxed"
+          className="text-muted-foreground text-center sm:text-lg text-sm mb-8 leading-relaxed"
         >
           we take pride in delivering oils that preserve natural taste, aroma,
           and nutritional value — making us a preferred choice for purity,

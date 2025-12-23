@@ -56,9 +56,9 @@ Supply your customers with oils that are ISO 9001:2015 Certified and packed with
               </p>
               <Button
                 asChild
-                variant="secondary"
+                variant="default"
                 size="sm"
-                className="gap-1 pr-1.5"
+                className="gap-1 pr-1.5 bg-primary text-primary-foreground hover:bg-primary/90"
               >
                 <Link href="/products">
                   <span>View Products</span>
@@ -126,7 +126,7 @@ Supply your customers with oils that are ISO 9001:2015 Certified and packed with
                   </p>
                   <Button
                     variant="outline"
-                    className="mt-4 border-white text-black dark:text-white hover:bg-white hover:text-black"
+                    className="mt-4 border-white text-white hover:bg-primary hover:text-primary-foreground hover:border-primary"
                   >
                     Learn More
                   </Button>

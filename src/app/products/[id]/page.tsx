@@ -7,6 +7,38 @@ import React from "react";
 import { productsData } from "@/data/products";
 import { notFound } from "next/navigation";
 import { ProductDropCard } from "@/components/product-card-3";
+import {
+  generateProductMetadata,
+  generateAllProductStructuredData,
+} from "@/lib/meta";
+
+// Generate metadata for each product using advanced SEO
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }> | { id: string };
+}) {
+  const resolvedParams = params instanceof Promise ? await params : params;
+  const productData = productsData.find(
+    (product) => product.id.toString() === resolvedParams.id
+  );
+
+  if (!productData) {
+    return {
+      title: "Product Not Found",
+      description: "The requested product could not be found.",
+    };
+  }
+
+  return generateProductMetadata(productData);
+}
+
+// Generate static params for all products (for better SEO)
+export async function generateStaticParams() {
+  return productsData.map((product) => ({
+    id: product.id.toString(),
+  }));
+}
 
 export default async function page({
   params,
@@ -23,6 +55,9 @@ export default async function page({
     notFound();
   }
 
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sri-jayasakthi-oils.com";
+  const productUrl = `${siteUrl}/products/${productData.id}`;
+
   // Extract currency symbol from price string
   const currency = productData.price.replace(/[0-9.,]/g, "").trim() || "₹";
 
@@ -32,17 +67,20 @@ export default async function page({
   // Calculate shipping cost (5% of price, minimum ₹2.00)
   const shippingCost = Math.max(priceValue * 0.05, 2.0);
 
-  // Create images array (using the single image multiple times for gallery effect)
-  // In a real app, you'd have multiple images per product
-  const images = [
-    productData.image,
-    productData.image, // Duplicate for gallery effect
-    productData.image, // Can be replaced with actual additional images
-  ];
+  // Create images array (using primary, secondary, and gallery images)
+  const images = productData.imageGallery && productData.imageGallery.length > 0
+    ? productData.imageGallery
+    : [
+        productData.image,
+        ...(productData.imageSecondary ? [productData.imageSecondary] : []),
+        // Fallback to primary image if no secondary image
+        ...(productData.imageSecondary ? [] : [productData.image]),
+      ];
 
   // Create tags from product data (using icon names as strings for serialization)
   const tags = [
     { label: productData.size, iconName: "Ruler" },
+    ...(productData.category ? [{ label: productData.category, iconName: "Tag" as const }] : []),
     { label: "Premium", iconName: "Tag" },
     { label: "Best Seller", iconName: "Info" },
   ];
@@ -72,27 +110,72 @@ export default async function page({
 
   // Default seller information (can be replaced with actual seller data if available)
   const seller: ProductDetailPageProps["seller"] = {
-    name: "SJS Water Solutions",
+    name: "Sri Jayasakthi Edible Oils Pvt. Ltd",
     avatarUrl: "/logo.png",
-    rating: productData.rating || 4.5,
   };
 
-  return (
-    <MaxWidthWrapper>
-      <section className="py-28 md:pb-32 lg:mx-6 mx-2">
-        <div className="border rounded-4xl shadow-primary/20 mx-auto p-4 sm:p-6 md:p-8">
-          <div>
-            <ProductDetailPage
-              product={product}
-              seller={seller}
-              breadcrumbs={breadcrumbs}
-            />
-          </div>
-        </div>
-        <div className="border max-w-xl mx-auto my-10 "/>
-        <ProductDropCard items={productsData} title="Related Products" subtitle="Related Products"/>
+  // Generate all structured data using advanced SEO
+  const structuredData = generateAllProductStructuredData(productData);
 
-      </section>
-    </MaxWidthWrapper>
+  return (
+    <>
+      {/* Advanced Structured Data for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData.product),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData.breadcrumb),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData.organization),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData.faq),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData.howTo),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData.website),
+        }}
+      />
+
+      <MaxWidthWrapper>
+        <section className="py-28 md:pb-32 lg:mx-6 mx-2">
+          <div className="border rounded-4xl shadow-primary/20 mx-auto p-4 sm:p-6 md:p-8">
+            <div>
+              <ProductDetailPage
+                product={product}
+                seller={seller}
+                breadcrumbs={breadcrumbs}
+              />
+            </div>
+          </div>
+          <div className="border max-w-xl mx-auto my-10 " />
+          <ProductDropCard
+            items={productsData}
+            title="Related Products"
+            subtitle="Related Products"
+          />
+        </section>
+      </MaxWidthWrapper>
+    </>
   );
 }

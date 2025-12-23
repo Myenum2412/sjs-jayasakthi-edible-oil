@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import { HeroHeader } from "@/components/header";
-import { Footerdemo } from "@/components/ui/footer-section";
 import { Toaster } from "sonner";
+import { ConditionalLayout } from "@/components/ConditionalLayout";
+import FloatingContactButton from "@/components/FloatingContactButton";
+import { QueryProvider } from "@/lib/query-client";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const geistSans = Poppins({
   variable: "--font-poppins",
@@ -22,14 +24,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} antialiased`}
+        suppressHydrationWarning
       >
-        <HeroHeader />
-        {children}
-        <Footerdemo/>
-        <Toaster position="top-right" richColors/>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem={false}
+          disableTransitionOnChange={false}
+        >
+          <QueryProvider>
+            <ConditionalLayout>
+              {children}
+              <FloatingContactButton />
+            </ConditionalLayout>
+            <Toaster position="top-right" richColors />
+          </QueryProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

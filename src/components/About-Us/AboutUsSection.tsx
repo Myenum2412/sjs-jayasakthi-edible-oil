@@ -1,19 +1,26 @@
-import React from "react";
 import StackingCards from "../stacking-card";
 import AboutSectionLast from "./AboutSectionLast";
+import PageBreadcrumb from "../ui/PageBreadcrumb";
+import { TimelineDemo } from "./TimelineDemo";
 
 const AboutUsSection = () => {
   return (
-    <section className="py-28 md:pb-32 lg:mx-6 mx-2">
-         <h2 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-regular text-left">
+    <section className="py-28 md:pb-32 lg:mx-6 mx-2 bg-gradient-to-b from-background via-primary/5 to-background">
+      <PageBreadcrumb 
+        items={[
+          { label: "Home", href: "/" },
+          { label: "About Us" }
+        ]}
+      />
+         <h2 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-regular text-left text-foreground">
         About Us
       </h2>
-      <p className="text-lg md:text-xl tracking-tighter max-w-xl font-regular text-left my-5">
+      <p className="text-lg md:text-xl tracking-tighter max-w-xl font-regular text-left my-5 text-foreground/80">
         We are a team of dedicated professionals who are passionate about
         providing the best possible service to our clients.
       </p>
       <StackingCards projects={projects} />
-      <AboutSectionLast/>
+      <TimelineDemo />
     </section>
   );
 };

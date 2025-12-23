@@ -2,7 +2,6 @@
 import * as React from "react";
 import {
   ChevronRight,
-  Star,
   Tag,
   Ruler,
   Users,
@@ -20,6 +19,7 @@ import { cn } from "@/lib/utils"; // Your utility for merging tailwind classes
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Spotlight } from "@/components/ui/spotlight";
 
 // Define TypeScript interfaces for component props for type safety and reusability
 interface BreadcrumbItem {
@@ -35,7 +35,6 @@ interface ProductTag {
 interface Seller {
   name: string;
   avatarUrl: string;
-  rating: number;
 }
 
 interface Product {
@@ -59,32 +58,6 @@ export interface ProductDetailPageProps {
   breadcrumbs: BreadcrumbItem[];
 }
 
-// A small component for rendering rating stars
-const StarRating = ({
-  rating,
-  className,
-}: {
-  rating: number;
-  className?: string;
-}) => (
-  <div className={cn("flex items-center gap-0.5", className)}>
-    {[...Array(5)].map((_, i) => (
-      <Star
-        key={i}
-        className={cn(
-          "h-4 w-4",
-          i < Math.floor(rating)
-            ? "text-yellow-400 fill-yellow-400"
-            : "text-muted-foreground/50"
-        )}
-      />
-    ))}
-    <span className="ml-2 text-sm font-medium text-muted-foreground">
-      {rating.toFixed(1)}
-    </span>
-  </div>
-);
-
 // Icon mapping for tag icons
 const iconMap: Record<string, React.ElementType> = {
   Ruler,
@@ -102,7 +75,14 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
 
   return (
     
-    <div className="w-full  mx-auto p-4 md:p-8 bg-background text-foreground">
+    <div className="w-full relative mx-auto p-4 md:p-8 bg-background text-foreground overflow-hidden">
+      {/* Spotlight Effect */}
+      <Spotlight
+        className={cn(
+          "opacity-30 -top-40 -left-40"
+        )}
+        fill="white"
+      />
       
       {/* Breadcrumbs Navigation */}
       <nav
@@ -214,7 +194,6 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
                 </Avatar>
                 <div>
                   <p className="font-semibold">{seller.name}</p>
-                  <StarRating rating={seller.rating} />
                 </div>
               </div>
               <Link href="/products" className="text-primary">
