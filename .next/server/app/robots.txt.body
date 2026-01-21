@@ -1,0 +1,29 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /login
+Disallow: /private/
+Disallow: /dashboard/
+Disallow: /*.json$
+Disallow: /*?*utm_*
+Disallow: /*?*ref=*
+Crawl-delay: 0.5
+
+User-Agent: Googlebot
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /login
+
+User-Agent: Bingbot
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /login
+
+Host: https://sri-jayasakthi-oils.com
+Sitemap: https://sri-jayasakthi-oils.com/sitemap.xml

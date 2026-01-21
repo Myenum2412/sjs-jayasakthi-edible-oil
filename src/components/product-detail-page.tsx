@@ -163,12 +163,6 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
           <h1 className="text-3xl md:text-4xl font-bold tracking-tight">
             {product.name}
           </h1>
-          <div className="mt-2">
-            <span className="text-4xl font-bold">
-              {product.currency}
-              {product.price}
-            </span>
-          </div>
 
           <div className="flex gap-2 my-6">
             <Button size="lg" className="flex-1 gap-2 rounded-full">

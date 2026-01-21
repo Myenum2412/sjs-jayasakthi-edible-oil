@@ -98,6 +98,7 @@ const VideoPlayer = React.forwardRef<HTMLDivElement, VideoPlayerProps>(
             className="fixed inset-0 z-50 flex animate-in fade-in-0 items-center justify-center bg-black/80 backdrop-blur-sm"
             aria-modal="true"
             role="dialog"
+            aria-label={`Video player: ${title}`}
           >
             {/* Close Button */}
             <button

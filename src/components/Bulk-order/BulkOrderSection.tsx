@@ -14,10 +14,10 @@ const BulkOrderSection = () => {
         ]}
       />
       <h2 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-regular text-left text-foreground">
-        Bulk Order
+        Bulk Order Solutions
       </h2>
       <p className="text-lg md:text-xl tracking-tighter max-w-xl font-regular text-left my-5 text-foreground/80">
-      Partner with Purity – Bulk & Wholesale Solutions for your business.
+      Partner with Sri Jayasakthi Edible Oils – Premium bulk & wholesale solutions for your business needs. Get competitive pricing, reliable supply, and dedicated support for high-volume orders.
       </p>
       <AboutPage />
       <div className="my-5 border-t border-primary/20 max-w-xl mx-auto" />

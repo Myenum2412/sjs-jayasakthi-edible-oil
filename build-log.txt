@@ -1,0 +1,75 @@
+﻿
+> sjs-project@0.1.0 build
+> next build
+
+   Γû▓ Next.js 16.0.10 (Turbopack)
+   - Experiments (use with caution):
+     ┬╖ optimizePackageImports
+
+   Creating an optimized production build ...
+ Γ£ô Compiled successfully in 6.8s
+   Running TypeScript ...
+   Collecting page data using 11 workers ...
+   Generating static pages using 11 workers (0/28) ...
+node.exe :  ΓÜá 
+metadataBase property in 
+metadata export is not set 
+for resolving social open 
+graph or twitter images, 
+using 
+"http://localhost:3000". 
+See https://nextjs.org/docs/
+app/api-reference/functions/
+generate-metadata#metadataba
+se
+At C:\Users\amarn\AppData\Ro
+aming\npm\npm.ps1:24 char:5
++     & "node$exe"  "$basedi
+r/node_modules/npm/bin/npm-c
+li.js" $args
++     ~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~
+    + CategoryInfo          
+    : NotSpecified: ( ΓÜá   
+  metadataBa...ta#metadat   
+ abase:String) [], Remot    
+eException
+    + FullyQualifiedErrorId 
+    : NativeCommandError
+ 
+ ΓÜá metadataBase property 
+in metadata export is not 
+set for resolving social 
+open graph or twitter 
+images, using 
+"http://localhost:3000". 
+See https://nextjs.org/docs/
+app/api-reference/functions/
+generate-metadata#metadataba
+se
+Error occurred prerendering 
+page "/products/11". Read 
+more: https://nextjs.org/doc
+s/messages/prerender-error
+Error: Event handlers 
+cannot be passed to Client 
+Component props.
+  {strategy: ..., src: ..., 
+onLoad: function onLoad}
+                            
+        ^^^^^^^^^^^^^^^
+If you need interactivity, 
+consider converting part of 
+this to a Client Component.
+    at stringify 
+(<anonymous>) {
+  digest: '2827795518'
+}
+Export encountered an error 
+on /products/[id]/page: 
+/products/11, exiting the 
+build.
+ Γ¿» Next.js build worker 
+exited with code: 1 and 
+signal: null

@@ -1,0 +1,15 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/about-us/page": "/about-us",
+  "/api/send-email/route": "/api/send-email",
+  "/bulk-order/page": "/bulk-order",
+  "/contact/page": "/contact",
+  "/favicon.ico/route": "/favicon.ico",
+  "/login/page": "/login",
+  "/page": "/",
+  "/products/[id]/page": "/products/[id]",
+  "/products/page": "/products",
+  "/robots.txt/route": "/robots.txt",
+  "/sitemap.xml/route": "/sitemap.xml"
+}

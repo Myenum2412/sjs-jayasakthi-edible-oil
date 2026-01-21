@@ -195,15 +195,6 @@ export const ProductRevealCard = memo(function ProductRevealCard({
           >
             {name} - {size} 
           </motion.h3>
-
-          <div className="flex items-center gap-2">
-            <span className="text-lg font-bold text-primary">{price}</span>
-            {originalPrice && (
-              <span className="text-base text-muted-foreground line-through">
-                {originalPrice}
-              </span>
-            )}
-          </div>
         </div>
       </div>
 

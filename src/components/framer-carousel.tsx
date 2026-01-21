@@ -1,11 +1,12 @@
 "use client";
+import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useMotionValue, animate } from "motion/react";
 
 export const items = [
   {
     id: 1,
-    url: "https://images.unsplash.com/photo-1471899236350-e3016bf1e69e?q=80&w=880&auto=format&fit=crop",
+    src: "/Home/feature1.png",
     title: "Misty Mountain Majesty",
   },
   {
@@ -141,6 +142,8 @@ export function FramerCarousel() {
               <button
                 key={i}
                 onClick={() => setIndex(i)}
+                title={`Go to slide ${i + 1}`}
+                aria-label={`Go to slide ${i + 1}`}
                 className={`h-2 rounded-full transition-all ${
                   i === index ? "w-8 bg-white" : "w-2 bg-white/50"
                 }`}

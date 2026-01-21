@@ -11,27 +11,7 @@ export default function FeaturesSection() {
                 </div>
                 <div className="px-3 pt-3 md:-mx-8">
                     <div className="aspect-88/36 mask-b-from-75% mask-b-to-95% relative">
-                        <Image
-                            src="/mail-upper.png"
-                            className="absolute inset-0 z-10"
-                            alt="payments illustration dark"
-                            width={2797}
-                            height={1137}
-                        />
-                        <Image
-                            src="/mail-back.png"
-                            className="hidden dark:block"
-                            alt="payments illustration dark"
-                            width={2797}
-                            height={1137}
-                        />
-                        <Image
-                            src="/mail-back-light.png"
-                            className="dark:hidden"
-                            alt="payments illustration light"
-                            width={2797}
-                            height={1137}
-                        />
+                        <div style={{ position: 'relative', paddingTop: '56.25%' }}><iframe src="https://iframe.mediadelivery.net/embed/580971/2400a4c3-7bf0-4a85-8f87-1d2c00f631c6?autoplay=true&loop=false&muted=false&preload=true&responsive=true" loading="lazy" style={{ border: 0, position: 'absolute', top: 0, height: '100%', width: '100%' }} allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;" allowFullScreen={true}></iframe></div>
                     </div>
                 </div>
                 <div className="relative mx-auto grid grid-cols-2 gap-x-3 gap-y-6 sm:gap-8 lg:grid-cols-4">

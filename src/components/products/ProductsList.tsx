@@ -25,14 +25,22 @@ interface ProductsListProps {
 }
 
 const ProductsList = memo(function ProductsList({products}: ProductsListProps) {
-  const [category, setCategory] = useState("All");
+  const [category, setCategory] = useState("Oils");
 
   // Filter products based on selected category
   const filteredData = useMemo(
-    () =>
-      category === "All"
-        ? products
-        : products.filter((product) => product.type === category),
+    () => {
+      if (category === "All") {
+        return products;
+      } else if (category === "Oils") {
+        // Show both Refined Oil and Non-Refined Oil products
+        return products.filter((product) => 
+          product.type === "Refined Oil" || product.type === "Non-Refined Oil"
+        );
+      } else {
+        return products.filter((product) => product.type === category);
+      }
+    },
     [category, products]
   );
 
@@ -102,8 +110,8 @@ export const SlideTabs = ({ category, setCategory }: SlideTabsProps) => {
   useEffect(() => {
     const tabIndex = [
       "All",
-      "Refined Oil",
-      "Non-Refined Oil",
+      "Oils",
+      "Baker's Choice",
     ].indexOf(category);
     const selectedTab = tabsRef.current[tabIndex];
     if (selectedTab) {
@@ -123,8 +131,8 @@ export const SlideTabs = ({ category, setCategory }: SlideTabsProps) => {
         // to the position of the currently selected tab.
         const tabIndex = [
           "All",
-          "Refined Oil",
-          "Non-Refined Oil",
+          "Oils",
+          "Baker's Choice",
         ].indexOf(category);
         const selectedTab = tabsRef.current[tabIndex];
         if (selectedTab) {
@@ -138,7 +146,7 @@ export const SlideTabs = ({ category, setCategory }: SlideTabsProps) => {
       }}
       className="relative mx-auto flex w-fit rounded-full border-2 border-primary bg-background p-1"
     >
-      {["All", "Refined Oil", "Non-Refined Oil"].map((tab, i) => (
+      {["All", "Oils", "Baker's Choice"].map((tab, i) => (
         <Tab
           key={tab}
           ref={(el) => {

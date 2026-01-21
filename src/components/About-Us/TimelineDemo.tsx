@@ -5,148 +5,97 @@ import { Timeline } from "@/components/ui/timeline";
 export function TimelineDemo() {
   const data = [
     {
-      title: "2024",
-      content: (
-        <div>
-          <p className="mb-8 text-xs font-normal text-foreground md:text-sm">
-            Established Sri Jayasakthi Edible Oils Pvt. Ltd. and began our journey in the edible oil industry
-          </p>
-          <div className="grid grid-cols-2 gap-4">
-            <img
-              src="https://assets.aceternity.com/templates/startup-1.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-            <img
-              src="https://assets.aceternity.com/templates/startup-2.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-            <img
-              src="https://assets.aceternity.com/templates/startup-3.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-            <img
-              src="https://assets.aceternity.com/templates/startup-4.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-          </div>
-        </div>
-      ),
-    },
-    {
-      title: "Early 2023",
-      content: (
-        <div>
-          <p className="mb-8 text-xs font-normal text-foreground md:text-sm">
-            Expanded our production capacity and introduced multiple premium oil brands across Southern India.
-          </p>
-          <p className="mb-8 text-xs font-normal text-foreground md:text-sm">
-            Achieved ISO 9001:2015 certification and strengthened our commitment to quality and purity in every product.
-          </p>
-          <div className="grid grid-cols-2 gap-4">
-            <img
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="hero template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-            <img
-              src="https://assets.aceternity.com/features-section.png"
-              alt="feature template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-            <img
-              src="https://assets.aceternity.com/pro/bento-grids.png"
-              alt="bento template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-            <img
-              src="https://assets.aceternity.com/cards.png"
-              alt="cards template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-          </div>
-        </div>
-      ),
-    },
-    {
-      title: "Changelog",
+      title: "2024 – Third Generation Leadership",
       content: (
         <div>
           <p className="mb-4 text-xs font-normal text-foreground md:text-sm">
-            Recent milestones and achievements
+            In 2024, the third generation took charge, modernizing operations, improving quality standards, and achieving a production scale of 50,000+ average output, while maintaining our legacy of trust.
           </p>
-          <div className="mb-8">
+        </div>
+      ),
+    },
+    {
+      title: "2018 – Large-Scale Vanaspati Production",
+      content: (
+        <div>
+          <p className="mb-4 text-xs font-normal text-foreground md:text-sm">
+            By 2018, our Vanaspati operations scaled up to 25,000 boxes, reinforcing our strength in bulk and commercial supply.
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "2015 – Entry into Vanaspati",
+      content: (
+        <div>
+          <p className="mb-4 text-xs font-normal text-foreground md:text-sm">
+            In 2015, we entered the Vanaspati segment, catering to bakery, hotel, and bulk consumption markets, opening new growth avenues.
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "2002 – Product Diversification",
+      content: (
+        <div>
+          <p className="mb-4 text-xs font-normal text-foreground md:text-sm">
+            In 2002, we diversified our portfolio by launching refined oils, including:
+          </p>
+          <div className="mb-4 space-y-2">
             <div className="flex items-center gap-2 text-xs text-muted-foreground md:text-sm">
-              ✅ 40+ years of excellence in edible oil manufacturing
+              • Cottonseed refined oil
             </div>
             <div className="flex items-center gap-2 text-xs text-muted-foreground md:text-sm">
-              ✅ Production capacity of 3,000 tonnes per month
+              • Rice bran oil
             </div>
             <div className="flex items-center gap-2 text-xs text-muted-foreground md:text-sm">
-              ✅ Nationwide distribution network
-            </div>
-            <div className="flex items-center gap-2 text-xs text-muted-foreground md:text-sm">
-              ✅ Multiple trusted brands serving customers
-            </div>
-            <div className="flex items-center gap-2 text-xs text-muted-foreground md:text-sm">
-              ✅ ISO 9001:2015 certified quality standards
+              • Palm oil
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4">
-            <img
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="hero template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-            <img
-              src="https://assets.aceternity.com/features-section.png"
-              alt="feature template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-            <img
-              src="https://assets.aceternity.com/pro/bento-grids.png"
-              alt="bento template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-            <img
-              src="https://assets.aceternity.com/cards.png"
-              alt="cards template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-          </div>
+          <p className="mb-4 text-xs font-normal text-foreground md:text-sm">
+            Production capacity increased significantly to approximately 50,000 tins, positioning us as a trusted edible oil manufacturer.
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "1992 – Expansion Beyond Borders",
+      content: (
+        <div>
+          <p className="mb-4 text-xs font-normal text-foreground md:text-sm">
+            By 1992, under the leadership of Sri Boopathi, the business expanded into interstate markets, scaling production to nearly 8,000 tins, strengthening our distribution network and brand presence.
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "1990 – Entering Manufacturing",
+      content: (
+        <div>
+          <p className="mb-4 text-xs font-normal text-foreground md:text-sm">
+            In 1990, Sri Srinivasan and Sri Ramalu expanded the vision by establishing an oil mill, producing coconut oil and castor oil with a capacity of around 3,000 tins. This marked our transition from retail to manufacturing.
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "1980 – The Humble Beginning",
+      content: (
+        <div>
+          <p className="mb-4 text-xs font-normal text-foreground md:text-sm">
+            Our journey began in 1980 with Sri Raghavan and Sri Tirupathiyar, who laid the foundation by running a small grocery and oil shop, producing approximately 200 tins. This phase established our values of quality, trust, and customer commitment.
+          </p>
         </div>
       ),
     },
   ];
   return (
     <div className="relative w-full overflow-clip">
+      <div className="mb-8 text-center">
+        <p className="text-base md:text-lg font-normal text-foreground">
+          Established in 1985, we've been serving customers with premium quality edible oils for over four decades. Here's our journey.
+        </p>
+      </div>
       <Timeline data={data} />
     </div>
   );

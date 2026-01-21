@@ -4,6 +4,82 @@ import { productsData } from "@/data/products";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sri-jayasakthi-oils.com";
 const siteName = "Sri Jayasakthi Edible Oils Pvt. Ltd";
 const defaultDescription = "Sri Jayasakthi Edible Oils Pvt. Ltd is a leading manufacturer and supplier of edible oils and related products in India.";
+const defaultKeywords = "edible oils, cooking oils, coconut oil, sunflower oil, groundnut oil, vegetable oil, vanaspati, rice bran oil, Sri Jayasakthi, India";
+const twitterHandle = "@jayasakthioils"; // Update with actual handle
+const locale = "en_IN";
+
+/**
+ * Generates comprehensive SEO metadata with Open Graph and Twitter Cards
+ */
+export function generateMetadata(options: {
+  title?: string;
+  description?: string;
+  keywords?: string;
+  image?: string;
+  url?: string;
+  type?: "website" | "article";
+  noindex?: boolean;
+}): Metadata {
+  const {
+    title = siteName,
+    description = defaultDescription,
+    keywords = defaultKeywords,
+    image,
+    url = siteUrl,
+    type = "website",
+    noindex = false,
+  } = options;
+
+  const ogImage = image || `${siteUrl}/logo.png`;
+  const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
+
+  return {
+    title: fullTitle,
+    description: description.substring(0, 160),
+    keywords: keywords,
+    authors: [{ name: siteName }],
+    creator: siteName,
+    publisher: siteName,
+    robots: {
+      index: !noindex,
+      follow: !noindex,
+      googleBot: {
+        index: !noindex,
+        follow: !noindex,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
+    openGraph: {
+      type,
+      locale,
+      url,
+      siteName,
+      title: fullTitle,
+      description: description.substring(0, 160),
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      site: twitterHandle,
+      creator: twitterHandle,
+      title: fullTitle,
+      description: description.substring(0, 160),
+      images: [ogImage],
+    },
+    alternates: {
+      canonical: url,
+    },
+  };
+}
 
 export function generateProductsPageMetadata(): Metadata {
   return {
@@ -34,8 +110,8 @@ export function generateProductMetadata(product: {
   seoKeywords?: string;
 }): Metadata {
   const productUrl = `${siteUrl}/products/${product.id}`;
-  const productImage = product.image.startsWith("http") 
-    ? product.image 
+  const productImage = product.image.startsWith("http")
+    ? product.image
     : `${siteUrl}${product.image}`;
 
   return {
@@ -77,8 +153,8 @@ export function generateProductsListStructuredData(products: typeof productsData
         "@type": "Product",
         name: product.name,
         description: product.description,
-        image: product.image.startsWith("http") 
-          ? product.image 
+        image: product.image.startsWith("http")
+          ? product.image
           : `${siteUrl}${product.image}`,
         offers: {
           "@type": "Offer",
@@ -131,8 +207,8 @@ export function generateWebSiteStructuredData() {
 
 export function generateAllProductStructuredData(product: (typeof productsData)[0]) {
   const productUrl = `${siteUrl}/products/${product.id}`;
-  const productImage = product.image.startsWith("http") 
-    ? product.image 
+  const productImage = product.image.startsWith("http")
+    ? product.image
     : `${siteUrl}${product.image}`;
 
   return {
@@ -155,10 +231,10 @@ export function generateAllProductStructuredData(product: (typeof productsData)[
       },
       aggregateRating: product.rating
         ? {
-            "@type": "AggregateRating",
-            ratingValue: product.rating.toString(),
-            reviewCount: product.reviewCount.toString(),
-          }
+          "@type": "AggregateRating",
+          ratingValue: product.rating.toString(),
+          reviewCount: product.reviewCount.toString(),
+        }
         : undefined,
     },
     breadcrumb: {

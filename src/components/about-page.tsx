@@ -34,7 +34,7 @@ export default function AboutPage({
           >
             <Image
               className="rounded-xl object-cover w-full h-[240px] md:h-[460px]"
-              src="https://pub-940ccf6255b54fa799a9b01050e6c227.r2.dev/ruixen_hero_gradient.jpg"
+              src="/banner/banner.jpg"
               alt="Hero section image"
               width={1200}
               height={600}
@@ -44,15 +44,15 @@ export default function AboutPage({
 
           <div className="grid gap-6 md:grid-cols-2 md:gap-12 my-5">
             <h1 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-regular text-left">
-              The <span className="text-primary">Purity</span> <span className="text-primary">ecosystem</span>{" "}
+              Bulk Ordering <span className="text-primary">Made Simple</span>
             </h1>
             <div className="space-y-6 text-muted-foreground">
               <p className="text-lg md:text-xl tracking-tighter max-w-xl font-regular text-left">
-              Direct from the factory to your business. Premium oils at competitive wholesale rates.
-              <br />
-              At Sri Jayasakthi Edible Oils Pvt Ltd, we understand that businesses need reliability just as much as quality. Whether you are stocking supermarket shelves, running a large kitchen, or managing temple requirements, we offer flexible bulk ordering solutions tailored to your needs.
-
-Supply your customers with oils that are ISO 9001:2015 Certified and packed with the trust of a legacy dating back to 1995.
+              Direct from the factory to your business. Premium edible oils at competitive wholesale rates.
+              <br /><br />
+              At Sri Jayasakthi Edible Oils Pvt Ltd, we understand that businesses need reliability just as much as quality. Whether you are stocking supermarket shelves, running a large kitchen, managing hotel operations, or handling temple requirements, we offer flexible bulk ordering solutions tailored to your needs.
+              <br /><br />
+              Supply your customers with oils that are ISO 9001:2015 Certified and packed with the trust of a legacy dating back to 1980. Our production capacity of 50,000+ tins ensures consistent supply for your business needs.
               </p>
               <Button
                 asChild
@@ -85,14 +85,15 @@ Supply your customers with oils that are ISO 9001:2015 Certified and packed with
 
           {/* ---------------- LAST THREE CARDS (NEW LAYOUT) ---------------- */}
           <div className="flex flex-col md:flex-row gap-6 mt-16">
-            {/* LEFT BIG IMAGE */}
+            {/* LEFT BIG VIDEO */}
             <div className="md:flex-1">
-              <Image
-                src="https://pub-940ccf6255b54fa799a9b01050e6c227.r2.dev/ruixen_chat_gradient.png"
-                alt="Left big image"
+              <video
+                src="/videos/oil.mp4"
                 className="rounded-xl object-cover w-full h-[300px] sm:h-[360px] md:h-[100%]"
-                width={800}
-                height={550}
+                autoPlay
+                loop
+                muted
+                playsInline
               />
             </div>
 
@@ -119,16 +120,15 @@ Supply your customers with oils that are ISO 9001:2015 Certified and packed with
                   <div className="absolute bottom-0 h-32 w-full bg-gradient-to-t from-black via-black/70 to-transparent" />
                 </motion.div>
                 <div className="p-6">
-                  <h3 className="text-xl md:text-2xl tracking-tighter max-w-xl font-regular text-left">Accelerate Growth</h3>
+                  <h3 className="text-xl md:text-2xl tracking-tighter max-w-xl font-regular text-left">Competitive Pricing</h3>
                   <p className="mt-2 text-lg md:text-xl tracking-tighter max-w-xl font-regular text-left">
-                    Our solutions drive innovation, efficiency, and measurable
-                    impact for businesses.
+                    Get the best wholesale rates with volume-based discounts. Our flexible pricing ensures cost-effectiveness for your bulk requirements.
                   </p>
                   <Button
                     variant="outline"
                     className="mt-4 border-white text-white hover:bg-primary hover:text-primary-foreground hover:border-primary"
                   >
-                    Learn More
+                    Request Quote
                   </Button>
                 </div>
               </motion.div>
@@ -147,10 +147,9 @@ Supply your customers with oils that are ISO 9001:2015 Certified and packed with
                   height={400}
                 />
                 <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent text-white">
-                  <h3 className="text-xl md:text-2xl tracking-tighter max-w-xl font-regular text-left">Future-Ready Design</h3>
+                  <h3 className="text-xl md:text-2xl tracking-tighter max-w-xl font-regular text-left">Reliable Supply Chain</h3>
                   <p className="mt-2 text-lg md:text-xl tracking-tighter max-w-xl font-regular text-left">
-                    Intuitive, scalable designs for modern businesses combining
-                    aesthetics and functionality.
+                    Consistent quality, on-time delivery, and dedicated support. Our robust supply chain ensures your business never runs out of stock.
                   </p>
                 </div>
               </motion.div>

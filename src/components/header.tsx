@@ -494,18 +494,6 @@ export const HeroHeader = () => {
                                     <p className="text-xs text-muted-foreground mb-2 line-clamp-2">
                                       {productGroup.primaryProduct.description}
                                     </p>
-                                    <div className="flex items-center justify-between">
-                                      <div className="flex items-center gap-2">
-                                        <span className="font-bold text-primary text-sm">
-                                          From {productGroup.variants[0].price}
-                                        </span>
-                                        {productGroup.primaryProduct.originalPrice && (
-                                          <span className="text-xs text-muted-foreground line-through">
-                                            {productGroup.primaryProduct.originalPrice}
-                                          </span>
-                                        )}
-                                      </div>
-                                    </div>
                                   </div>
                                       </div>
                                 

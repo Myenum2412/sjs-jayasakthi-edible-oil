@@ -8,10 +8,34 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/admin/", "/_next/"],
+        disallow: [
+          "/api/",
+          "/admin/",
+          "/_next/",
+          "/login",
+          "/private/",
+          "/dashboard/",
+          "/*.json$",
+          "/*?*utm_*",
+          "/*?*ref=*",
+        ],
+        crawlDelay: 0.5, // Be respectful to server
+      },
+      {
+        userAgent: "Googlebot",
+        allow: "/",
+        disallow: ["/api/", "/admin/", "/_next/", "/login"],
+        crawlDelay: 0,
+      },
+      {
+        userAgent: "Bingbot",
+        allow: "/",
+        disallow: ["/api/", "/admin/", "/_next/", "/login"],
+        crawlDelay: 0,
       },
     ],
     sitemap: `${siteUrl}/sitemap.xml`,
+    host: siteUrl,
   };
 }
 

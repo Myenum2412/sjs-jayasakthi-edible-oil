@@ -1,0 +1,120 @@
+﻿
+> sjs-project@0.1.0 build
+> next build
+
+   Γû▓ Next.js 16.0.10 (Turbopack)
+   - Experiments (use with caution):
+     ┬╖ optimizePackageImports
+
+   Creating an optimized production build ...
+ Γ£ô Compiled successfully in 8.1s
+   Running TypeScript ...
+node.exe : Failed to 
+compile.
+At C:\Users\amarn\App
+Data\Roaming\npm\npm.
+ps1:24 char:5
++     & "node$exe"  "
+$basedir/node_modules
+/npm/bin/npm-cli.js" 
+$args
++     ~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (Failed    
+ to compile.:Stri    
+ng) [], RemoteEx    
+ception
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+
+./src/components/Home
+/features-section.tsx
+:14:30
+Type error: Type 
+'string' has no 
+properties in common 
+with type 
+'Properties<string | 
+number, string & 
+{}>'.
+
+[0m [90m 12 |[39m 
+                [33m
+<[39m[33mdiv[39m c
+lassName[33m=[39m[
+32m"px-3 pt-3 md:-mx-
+8"[39m[33m>[39m
+ [90m 13 |[39m     
+                [33m
+<[39m[33mdiv[39m c
+lassName[33m=[39m[
+32m"aspect-88/36 
+mask-b-from-75% 
+mask-b-to-95% relativ
+e"[39m[33m>[39m
+[31m[1m>[22m[39m
+[90m 14 |[39m       
+                  [3
+3m<[39m[33mdiv[39m
+ style[33m=[39m[32
+m"position:relative;p
+adding-top:56.25%;"[
+39m[33m>[39m[33m<
+[39m[33miframe[39m 
+src[33m=[39m[32m"h
+ttps://iframe.mediade
+livery.net/embed/5809
+71/2400a4c3-7bf0-4a85
+-8f87-1d2c00f631c6?au
+toplay=true&loop=fals
+e&muted=false&preload
+=true&responsive=true
+"[39m loading[33m=
+[39m[32m"lazy"[39m 
+style[33m=[39m[32m
+"border:0;position:ab
+solute;top:0;height:1
+00%;width:100%;"[39m
+ allow[33m=[39m[32
+m"accelerometer;gyros
+cope;autoplay;encrypt
+ed-media;picture-in-p
+icture;"[39m allowfu
+llscreen[33m=[39m[
+32m"true"[39m[33m>
+[39m[33m<[39m[33m/
+[39m[33miframe[39m
+[33m>[39m[33m<[39
+m[33m/[39m[33mdiv
+[39m[33m>[39m
+ [90m    |[39m     
+                     
+    
+[31m[1m^[22m[39m
+ [90m 15 |[39m     
+                [33m
+<[39m[33m/[39m[33
+mdiv[39m[33m>[39m
+ [90m 16 |[39m     
+            [33m<[3
+9m[33m/[39m[33mdiv
+[39m[33m>[39m
+ [90m 17 |[39m     
+            [33m<[3
+9m[33mdiv[39m class
+Name[33m=[39m[32m"
+relative mx-auto 
+grid grid-cols-2 
+gap-x-3 gap-y-6 
+sm:gap-8 lg:grid-cols
+-4"[39m[33m>[39m[
+0m
+Next.js build worker 
+exited with code: 1 
+and signal: null
