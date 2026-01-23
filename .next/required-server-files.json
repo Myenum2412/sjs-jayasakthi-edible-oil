@@ -106,7 +106,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "C:\\Users\\amarn\\Downloads\\Telegram Desktop\\sjs-jayasakthi-edible-oil (Updated)",
+    "outputFileTracingRoot": "D:\\works\\sjs-jayasakthi-edible-oil",
     "cacheComponents": false,
     "cacheLife": {
       "default": {
@@ -300,11 +300,11 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.ts",
     "turbopack": {
-      "root": "C:\\Users\\amarn\\Downloads\\Telegram Desktop\\sjs-jayasakthi-edible-oil (Updated)"
+      "root": "D:\\works\\sjs-jayasakthi-edible-oil"
     },
     "distDirRoot": ".next"
   },
-  "appDir": "C:\\Users\\amarn\\Downloads\\Telegram Desktop\\sjs-jayasakthi-edible-oil (Updated)",
+  "appDir": "D:\\works\\sjs-jayasakthi-edible-oil",
   "relativeAppDir": "",
   "files": [
     ".next\\routes-manifest.json",

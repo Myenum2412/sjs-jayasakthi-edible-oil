@@ -544,7 +544,7 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
-const ProductsCarousel = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["memo"])(_c = _s(function ProductsCarousel({ products = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$products$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["productsData"], title = "Our Best Selling Products", description = "Discover our best selling products and see why they are the best." }) {
+const ProductsCarousel = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["memo"])(_c = _s(function ProductsCarousel({ products = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$products$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["productsData"], title = "Our Best Selling Products", description = "From the kitchen to the prayer room, experience the purity of Sri Jayasakthi Edible Oils. Trusted since 1995." }) {
     _s();
     const [carouselApi, setCarouselApi] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])();
     const [canScrollPrev, setCanScrollPrev] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
@@ -614,7 +614,7 @@ const ProductsCarousel = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-lg max-w-xl lg:max-w-lg leading-relaxed tracking-tight text-muted-foreground  text-left mt-2",
+                                    className: "text-lg leading-relaxed tracking-tight text-muted-foreground  text-left mt-2",
                                     children: description
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/gallery4.tsx",
@@ -716,7 +716,7 @@ const ProductsCarousel = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                                     src: product.image,
                                                     alt: product.name,
-                                                    className: "absolute h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
+                                                    className: "absolute h-full w-full object-contain p-8 object-center transition-transform duration-300 group-hover:scale-105"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/gallery4.tsx",
                                                     lineNumber: 141,

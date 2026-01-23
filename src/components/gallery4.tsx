@@ -43,7 +43,7 @@ export interface Gallery4Props {
 const ProductsCarousel = memo(function ProductsCarousel({
   products = productsData,
   title = "Our Best Selling Products",
-  description = "Discover our best selling products and see why they are the best.",
+  description = "From the kitchen to the prayer room, experience the purity of Sri Jayasakthi Edible Oils. Trusted since 1995.",
 }: Gallery4Props) {
   const [carouselApi, setCarouselApi] = useState<CarouselApi>();
   const [canScrollPrev, setCanScrollPrev] = useState(false);
@@ -86,7 +86,7 @@ const ProductsCarousel = memo(function ProductsCarousel({
             <h2 className="text-3xl font-medium md:text-4xl lg:text-5xl">
               {title}
             </h2>
-            <p className="text-lg max-w-xl lg:max-w-lg leading-relaxed tracking-tight text-muted-foreground  text-left mt-2">{description}</p>
+            <p className="text-lg leading-relaxed tracking-tight text-muted-foreground  text-left mt-2">{description}</p>
           </div>
           <div className="hidden shrink-0 gap-2 md:flex">
             <Button
@@ -120,7 +120,7 @@ const ProductsCarousel = memo(function ProductsCarousel({
               },
             },
           }}
-          
+
         >
           <CarouselContent className="ml-0 2xl:ml-[max(8rem,calc(50vw-700px))] 2xl:mr-[max(0rem,calc(50vw-700px))]">
             {products.map((product) => (
@@ -141,7 +141,7 @@ const ProductsCarousel = memo(function ProductsCarousel({
                     <img
                       src={product.image}
                       alt={product.name}
-                      className="absolute h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
+                      className="absolute h-full w-full object-contain p-8 object-center transition-transform duration-300 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 h-full bg-gradient-to-b from-primary/0 to-black/80 mix-blend-multiply " />
                     <div className="absolute inset-x-0 bottom-0 flex flex-col items-start p-6 text-primary-foreground md:p-8">
@@ -166,9 +166,8 @@ const ProductsCarousel = memo(function ProductsCarousel({
           {products.map((product, index) => (
             <button
               key={product.id}
-              className={`h-2 w-2 rounded-full transition-colors ${
-                currentSlide === index ? "bg-primary" : "bg-primary/20"
-              }`}
+              className={`h-2 w-2 rounded-full transition-colors ${currentSlide === index ? "bg-primary" : "bg-primary/20"
+                }`}
               onClick={() => handleScrollTo(index)}
               aria-label={`Go to slide ${index + 1}`}
             />

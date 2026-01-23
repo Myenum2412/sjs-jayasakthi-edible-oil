@@ -5,9 +5,9 @@ export default function FeaturesSection() {
     return (
         <section className="py-16 md:py-32">
             <div className="mx-auto max-w-5xl space-y-12 px-6">
-                <div className="relative z-10 grid items-center gap-4 md:grid-cols-2 md:gap-12">
-                    <h2 className="text-4xl font-semibold">The Lyra ecosystem brings together our models</h2>
-                    <p className="max-w-sm sm:ml-auto">Empower your team with workflows that adapt to your needs, whether you prefer git synchronization or a AI Agents interface.</p>
+                <div className="relative z-10 flex flex-col gap-4">
+                    <h1 className="text-4xl font-semibold md:text-5xl">Experience the Essence of Purity</h1>
+                    <p className="text-lg text-muted-foreground">Discover a range of premium edible oils crafted to perfection. From traditional extraction methods to modern quality standards, we ensure every drop adds value to your health.</p>
                 </div>
                 <div className="px-3 pt-3 md:-mx-8">
                     <div className="aspect-88/36 mask-b-from-75% mask-b-to-95% relative">
@@ -17,32 +17,31 @@ export default function FeaturesSection() {
                 <div className="relative mx-auto grid grid-cols-2 gap-x-3 gap-y-6 sm:gap-8 lg:grid-cols-4">
                     <div className="space-y-3">
                         <div className="flex items-center gap-2">
-                            <Zap className="size-4" />
-                            <h3 className="text-sm font-medium">Faaast</h3>
+                            <Sparkles className="size-4" />
+                            <h3 className="text-sm font-medium">Pure & Natural</h3>
                         </div>
-                        <p className="text-muted-foreground text-sm">It supports an entire helping developers and innovate.</p>
+                        <p className="text-muted-foreground text-sm">Extracted from premium quality ingredients with no added preservatives.</p>
                     </div>
                     <div className="space-y-2">
                         <div className="flex items-center gap-2">
-                            <Cpu className="size-4" />
-                            <h3 className="text-sm font-medium">Powerful</h3>
+                            <Zap className="size-4" />
+                            <h3 className="text-sm font-medium">Health & Vitality</h3>
                         </div>
-                        <p className="text-muted-foreground text-sm">It supports an entire helping developers and businesses.</p>
+                        <p className="text-muted-foreground text-sm">Rich in essential nutrients and vitamins to support a healthy lifestyle.</p>
                     </div>
                     <div className="space-y-2">
                         <div className="flex items-center gap-2">
                             <Lock className="size-4" />
-                            <h3 className="text-sm font-medium">Security</h3>
+                            <h3 className="text-sm font-medium">Quality Assured</h3>
                         </div>
-                        <p className="text-muted-foreground text-sm">It supports an helping developers businesses innovate.</p>
+                        <p className="text-muted-foreground text-sm">ISO 9001:2015 Certified manufacturing ensuring highest safety standards.</p>
                     </div>
                     <div className="space-y-2">
                         <div className="flex items-center gap-2">
-                            <Sparkles className="size-4" />
-
-                            <h3 className="text-sm font-medium">AI Powered</h3>
+                            <Cpu className="size-4" />
+                            <h3 className="text-sm font-medium">Traditional Taste</h3>
                         </div>
-                        <p className="text-muted-foreground text-sm">It supports an helping developers businesses innovate.</p>
+                        <p className="text-muted-foreground text-sm">Preserving the authentic taste of tradition in every meal.</p>
                     </div>
                 </div>
             </div>

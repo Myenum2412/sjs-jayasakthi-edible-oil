@@ -19,14 +19,14 @@ function StatsSection() {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             className: "text-4xl font-medium lg:text-5xl",
-                            children: "Tailark in numbers"
+                            children: "Our Impact in Numbers"
                         }, void 0, false, {
                             fileName: "[project]/src/components/stats.tsx",
                             lineNumber: 6,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            children: "Gemini is evolving to be more than just the models. It supports an entire to the APIs and platforms helping developers and businesses innovate."
+                            children: "Delivering purity and quality since 1980. We are committed to providing the best edible oils to households and businesses across the region."
                         }, void 0, false, {
                             fileName: "[project]/src/components/stats.tsx",
                             lineNumber: 7,
@@ -46,14 +46,14 @@ function StatsSection() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "text-5xl font-bold",
-                                    children: "+1200"
+                                    children: "40+"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/stats.tsx",
                                     lineNumber: 12,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    children: "Stars on GitHub"
+                                    children: "Years of Legacy"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/stats.tsx",
                                     lineNumber: 13,
@@ -70,14 +70,14 @@ function StatsSection() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "text-5xl font-bold",
-                                    children: "22 Million"
+                                    children: "50,000+"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/stats.tsx",
                                     lineNumber: 16,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    children: "Active Users"
+                                    children: "Monthly Production Capacity"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/stats.tsx",
                                     lineNumber: 17,
@@ -94,14 +94,14 @@ function StatsSection() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "text-5xl font-bold",
-                                    children: "+500"
+                                    children: "300+"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/stats.tsx",
                                     lineNumber: 20,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    children: "Powered Apps"
+                                    children: "Business Partners"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/stats.tsx",
                                     lineNumber: 21,

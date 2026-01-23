@@ -62,10 +62,10 @@ export default function HomePage() {
         <HeroSection />
         <ProductsSection />
         <FeaturesSection />
-        <StatsSection />
         <Suspense fallback={<Skeleton className="h-64 w-full rounded-lg" />}>
           <CTA2 />
         </Suspense>
+        <br />
       </MaxWidthWrapper>
     </>
   );

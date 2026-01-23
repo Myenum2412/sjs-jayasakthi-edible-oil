@@ -39,10 +39,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       ref={containerRef}
     >
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-4xl mb-4 text-foreground max-w-4xl">
+        <h2 className="text-3xl md:text-5xl mb-4 text-foreground max-w-4xl font-semibold">
           Our Journey
         </h2>
-        <p className="text-muted-foreground text-sm md:text-base max-w-sm">
+        <p className="text-muted-foreground text-base md:text-xl max-w-3xl">
           Established in 1985, we&apos;ve been serving customers with premium quality edible oils for over four decades. Here&apos;s our journey.
         </p>
       </div>
