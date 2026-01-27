@@ -47,29 +47,22 @@ function FeaturesSection() {
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "px-3 pt-3 md:-mx-8",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "aspect-88/36 mask-b-from-75% mask-b-to-95% relative",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        style: {
+                            position: 'relative',
+                            paddingTop: '56.25%'
+                        },
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("iframe", {
+                            src: "https://iframe.mediadelivery.net/embed/587211/e652e102-62e8-416f-a10c-f41eb9fbe7e2?autoplay=true&loop=false&muted=false&preload=true&responsive=true",
+                            loading: "lazy",
                             style: {
-                                position: 'relative',
-                                paddingTop: '56.25%'
+                                border: 0,
+                                position: 'absolute',
+                                top: 0,
+                                height: '100%',
+                                width: '100%'
                             },
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("iframe", {
-                                src: "https://iframe.mediadelivery.net/embed/580971/2400a4c3-7bf0-4a85-8f87-1d2c00f631c6?autoplay=true&loop=false&muted=false&preload=true&responsive=true",
-                                loading: "lazy",
-                                style: {
-                                    border: 0,
-                                    position: 'absolute',
-                                    top: 0,
-                                    height: '100%',
-                                    width: '100%'
-                                },
-                                allow: "accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;",
-                                allowFullScreen: true
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/Home/features-section.tsx",
-                                lineNumber: 14,
-                                columnNumber: 85
-                            }, this)
+                            allow: "accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;",
+                            allowFullScreen: true
                         }, void 0, false, {
                             fileName: "[project]/src/components/Home/features-section.tsx",
                             lineNumber: 14,
@@ -98,7 +91,7 @@ function FeaturesSection() {
                                             className: "size-4"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Home/features-section.tsx",
-                                            lineNumber: 20,
+                                            lineNumber: 26,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -106,13 +99,13 @@ function FeaturesSection() {
                                             children: "Pure & Natural"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Home/features-section.tsx",
-                                            lineNumber: 21,
+                                            lineNumber: 27,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Home/features-section.tsx",
-                                    lineNumber: 19,
+                                    lineNumber: 25,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -120,13 +113,13 @@ function FeaturesSection() {
                                     children: "Extracted from premium quality ingredients with no added preservatives."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Home/features-section.tsx",
-                                    lineNumber: 23,
+                                    lineNumber: 29,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Home/features-section.tsx",
-                            lineNumber: 18,
+                            lineNumber: 24,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -139,7 +132,7 @@ function FeaturesSection() {
                                             className: "size-4"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Home/features-section.tsx",
-                                            lineNumber: 27,
+                                            lineNumber: 33,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -147,13 +140,13 @@ function FeaturesSection() {
                                             children: "Health & Vitality"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Home/features-section.tsx",
-                                            lineNumber: 28,
+                                            lineNumber: 34,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Home/features-section.tsx",
-                                    lineNumber: 26,
+                                    lineNumber: 32,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -161,13 +154,13 @@ function FeaturesSection() {
                                     children: "Rich in essential nutrients and vitamins to support a healthy lifestyle."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Home/features-section.tsx",
-                                    lineNumber: 30,
+                                    lineNumber: 36,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Home/features-section.tsx",
-                            lineNumber: 25,
+                            lineNumber: 31,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -180,7 +173,7 @@ function FeaturesSection() {
                                             className: "size-4"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Home/features-section.tsx",
-                                            lineNumber: 34,
+                                            lineNumber: 40,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -188,13 +181,13 @@ function FeaturesSection() {
                                             children: "Quality Assured"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Home/features-section.tsx",
-                                            lineNumber: 35,
+                                            lineNumber: 41,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Home/features-section.tsx",
-                                    lineNumber: 33,
+                                    lineNumber: 39,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -202,13 +195,13 @@ function FeaturesSection() {
                                     children: "ISO 9001:2015 Certified manufacturing ensuring highest safety standards."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Home/features-section.tsx",
-                                    lineNumber: 37,
+                                    lineNumber: 43,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Home/features-section.tsx",
-                            lineNumber: 32,
+                            lineNumber: 38,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -221,7 +214,7 @@ function FeaturesSection() {
                                             className: "size-4"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Home/features-section.tsx",
-                                            lineNumber: 41,
+                                            lineNumber: 47,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -229,13 +222,13 @@ function FeaturesSection() {
                                             children: "Traditional Taste"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Home/features-section.tsx",
-                                            lineNumber: 42,
+                                            lineNumber: 48,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Home/features-section.tsx",
-                                    lineNumber: 40,
+                                    lineNumber: 46,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -243,19 +236,19 @@ function FeaturesSection() {
                                     children: "Preserving the authentic taste of tradition in every meal."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Home/features-section.tsx",
-                                    lineNumber: 44,
+                                    lineNumber: 50,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Home/features-section.tsx",
-                            lineNumber: 39,
+                            lineNumber: 45,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Home/features-section.tsx",
-                    lineNumber: 17,
+                    lineNumber: 23,
                     columnNumber: 17
                 }, this)
             ]

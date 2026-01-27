@@ -781,7 +781,8 @@ const SlideTabs = ({ category, setCategory })=>{
         const tabIndex = [
             "All",
             "Oils",
-            "Baker's Choice"
+            "Baker's Choice",
+            "Oil Bottles"
         ].indexOf(category);
         const selectedTab = tabsRef.current[tabIndex];
         if (selectedTab) {
@@ -802,7 +803,8 @@ const SlideTabs = ({ category, setCategory })=>{
             const tabIndex = [
                 "All",
                 "Oils",
-                "Baker's Choice"
+                "Baker's Choice",
+                "Oil Bottles"
             ].indexOf(category);
             const selectedTab = tabsRef.current[tabIndex];
             if (selectedTab) {
@@ -819,7 +821,8 @@ const SlideTabs = ({ category, setCategory })=>{
             [
                 "All",
                 "Oils",
-                "Baker's Choice"
+                "Baker's Choice",
+                "Oil Bottles"
             ].map((tab, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Tab, {
                     ref: (el)=>{
                         tabsRef.current[i] = el;
@@ -829,20 +832,20 @@ const SlideTabs = ({ category, setCategory })=>{
                     children: tab
                 }, tab, false, {
                     fileName: "[project]/src/components/products/ProductsList.tsx",
-                    lineNumber: 150,
+                    lineNumber: 152,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Cursor, {
                 position: position
             }, void 0, false, {
                 fileName: "[project]/src/components/products/ProductsList.tsx",
-                lineNumber: 162,
+                lineNumber: 164,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/products/ProductsList.tsx",
-        lineNumber: 128,
+        lineNumber: 129,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -863,7 +866,7 @@ const Tab = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$no
         children: children
     }, void 0, false, {
         fileName: "[project]/src/components/products/ProductsList.tsx",
-        lineNumber: 181,
+        lineNumber: 183,
         columnNumber: 7
     }, ("TURBOPACK compile-time value", void 0));
 });
@@ -877,7 +880,7 @@ const ProductCardSkeleton = ()=>{
                 className: "h-56 w-full rounded-t-2xl"
             }, void 0, false, {
                 fileName: "[project]/src/components/products/ProductsList.tsx",
-                lineNumber: 210,
+                lineNumber: 212,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -889,26 +892,26 @@ const ProductCardSkeleton = ()=>{
                             className: "h-4 w-24 rounded"
                         }, void 0, false, {
                             fileName: "[project]/src/components/products/ProductsList.tsx",
-                            lineNumber: 216,
+                            lineNumber: 218,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/components/products/ProductsList.tsx",
-                        lineNumber: 215,
+                        lineNumber: 217,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$skeleton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Skeleton"], {
                         className: "h-6 w-full rounded"
                     }, void 0, false, {
                         fileName: "[project]/src/components/products/ProductsList.tsx",
-                        lineNumber: 220,
+                        lineNumber: 222,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$skeleton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Skeleton"], {
                         className: "h-6 w-3/4 rounded"
                     }, void 0, false, {
                         fileName: "[project]/src/components/products/ProductsList.tsx",
-                        lineNumber: 221,
+                        lineNumber: 223,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -917,24 +920,24 @@ const ProductCardSkeleton = ()=>{
                             className: "h-8 w-24 rounded"
                         }, void 0, false, {
                             fileName: "[project]/src/components/products/ProductsList.tsx",
-                            lineNumber: 225,
+                            lineNumber: 227,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/components/products/ProductsList.tsx",
-                        lineNumber: 224,
+                        lineNumber: 226,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/products/ProductsList.tsx",
-                lineNumber: 213,
+                lineNumber: 215,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/products/ProductsList.tsx",
-        lineNumber: 208,
+        lineNumber: 210,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -946,7 +949,7 @@ const Cursor = ({ position })=>{
         className: "absolute z-0 h-7 rounded-full bg-primary md:h-12"
     }, void 0, false, {
         fileName: "[project]/src/components/products/ProductsList.tsx",
-        lineNumber: 242,
+        lineNumber: 244,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };

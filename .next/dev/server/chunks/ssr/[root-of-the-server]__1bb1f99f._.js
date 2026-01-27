@@ -598,6 +598,88 @@ const data = [
             "Trusted Brand: Used by professional bakers nationwide."
         ],
         seoKeywords: "bakers day biscuit vanaspati, cookie vanaspati, biscuit fat, bakery vanaspati"
+    },
+    {
+        id: 17,
+        name: "Arun Gold Coconut Oil 1L Bottle",
+        slug: "arun-gold-coconut-oil-1l-bottle",
+        price: "₹4.99",
+        originalPrice: "₹6.99",
+        image: encodeImagePath("/products/aurn-gold-1liter/ChatGPT Image Jan 24, 2026, 11_40_19 AM.png"),
+        imageSecondary: encodeImagePath("/products/aurn-gold-1liter/ChatGPT Image Jan 24, 2026, 11_42_30 AM.png"),
+        imageGallery: [
+            encodeImagePath("/products/aurn-gold-1liter/ChatGPT Image Jan 24, 2026, 11_40_19 AM.png"),
+            encodeImagePath("/products/aurn-gold-1liter/ChatGPT Image Jan 24, 2026, 11_42_30 AM.png")
+        ],
+        description: "Experience the authentic taste of tradition with Arun Gold Coconut Oil, now available in a convenient 1 Liter bottle. Extracted from the finest quality dried coconuts (copra), our oil is 100% Edible Grade and 0% Trans Fat. Perfect for daily cooking, hair care, and skin care needs.",
+        rating: 4.8,
+        reviewCount: 156,
+        size: "1 Liter",
+        type: "Oil Bottles",
+        category: "Coconut Oil",
+        benefits: [
+            "Pure & Natural: 100% Edible Grade Coconut Oil.",
+            "Zero Trans Fats: Healthy choice for your family.",
+            "Versatile Use: Ideal for cooking, hair, and skin.",
+            "Convenient Bottle: Easy to pour and store.",
+            "Legacy of Quality: From the trusted house of Sri Jayasakthi Edible Oils."
+        ],
+        seoKeywords: "arun gold coconut oil 1l, coconut oil bottle, edible coconut oil, pure coconut oil"
+    },
+    {
+        id: 18,
+        name: "Three Roses Pure Castor Oil 1L Bottle",
+        slug: "three-roses-pure-castor-oil-1l-bottle",
+        price: "₹8.99",
+        originalPrice: "₹10.99",
+        image: encodeImagePath("/products/three-roses-1liter/ChatGPT Image Jan 24, 2026, 12_01_15 PM.png"),
+        imageSecondary: encodeImagePath("/products/three-roses-1liter/ChatGPT Image Jan 24, 2026, 12_01_18 PM.png"),
+        imageGallery: [
+            encodeImagePath("/products/three-roses-1liter/ChatGPT Image Jan 24, 2026, 12_01_15 PM.png"),
+            encodeImagePath("/products/three-roses-1liter/ChatGPT Image Jan 24, 2026, 12_01_18 PM.png")
+        ],
+        description: "Rooted in tradition and extracted with care, Three Roses Pure Castor Oil is now available in a convenient 1 Liter bottle. Sourced from high-quality castor seeds, our oil retains its natural viscosity, golden color, and healing properties. Perfect for personal care, religious lamps, and medicinal use.",
+        rating: 4.9,
+        reviewCount: 98,
+        size: "1 Liter",
+        type: "Oil Bottles",
+        category: "Castor Oil",
+        benefits: [
+            "100% Pure: Extracted from premium castor seeds.",
+            "High Viscosity: Retains natural thick consistency.",
+            "Cooling Properties: Ideal for body cooling and hair care.",
+            "Multipurpose: Great for lamps, skin care, and medicine.",
+            "Convenient Pack: Easy to use 1 Liter bottle."
+        ],
+        seoKeywords: "three roses castor oil 1l, pure castor oil bottle, castor oil for hair, traditional castor oil"
+    },
+    {
+        id: 19,
+        name: "Sir Gold Refined Sunflower Oil 1 Liter",
+        slug: "sir-gold-refined-sunflower-oil-1-liter",
+        price: "₹145.00",
+        originalPrice: "₹165.00",
+        image: encodeImagePath("/products/sir-Gold-1liter/ChatGPT_Image_Jan_26__2026__08_26_45_PM-removebg-preview.png"),
+        imageSecondary: encodeImagePath("/products/sir-Gold-1liter/Jan 26, 2026, 08_27_37 PM.png"),
+        imageGallery: [
+            encodeImagePath("/products/sir-Gold-1liter/ChatGPT_Image_Jan_26__2026__08_26_45_PM-removebg-preview.png"),
+            encodeImagePath("/products/sir-Gold-1liter/Jan 26, 2026, 08_27_37 PM.png")
+        ],
+        description: "Elevate your culinary experience with Sir Gold Refined Sunflower Oil, now available in a handy 1 Liter bottle. Crafted for those who seek perfection in every meal, Sir Gold offers a premium balance of health and taste. Its light texture and high smoke point make it the ultimate choice for everything from delicate sautés to deep frying, ensuring your food remains non-greasy and delicious.",
+        rating: 4.8,
+        reviewCount: 45,
+        size: "1 Liter",
+        type: "Oil Bottles",
+        category: "Sunflower Oil",
+        benefits: [
+            "Premium Refined Quality: Crystal clear and pure for superior cooking results.",
+            "Vitamin Enriched: Fortified with Vitamins A & D for daily wellness.",
+            "Light on Stomach: Easy to digest and non-greasy formulation.",
+            "High Smoke Point: Perfect for deep frying without smoking or burning.",
+            "Convenient Pour: 1 Liter bottle designed for easy handling and storage.",
+            "Heart Friendly: Low in saturated fats, supporting a healthy lifestyle."
+        ],
+        seoKeywords: "sir gold sunflower oil 1l, premium sunflower oil, refined oil bottle, healthy cooking oil"
     }
 ];
 // Helper function to generate SEO-friendly slug

@@ -913,6 +913,14 @@
     z-index: 50;
   }
 
+  .z-\[-1\] {
+    z-index: -1;
+  }
+
+  .z-\[-2\] {
+    z-index: -2;
+  }
+
   .z-\[-10\] {
     z-index: -10;
   }
@@ -2297,6 +2305,16 @@
   @supports (color: color-mix(in lab, red, red)) {
     .bg-background\/96 {
       background-color: color-mix(in oklab, var(--background) 96%, transparent);
+    }
+  }
+
+  .bg-black\/40 {
+    background-color: #0006;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-black\/40 {
+      background-color: color-mix(in oklab, var(--color-black) 40%, transparent);
     }
   }
 
@@ -5976,7 +5994,7 @@
 }
 
 :root {
-  --background: #fff;
+  --background: #ddf7d8;
   --foreground: #000;
   --card: #fff;
   --card-foreground: #000;
@@ -6032,7 +6050,7 @@
 
 @supports (color: lab(0% 0 0)) {
   :root {
-    --background: lab(100% 0 0);
+    --background: lab(94.8325% -13.0154 12.2878);
     --foreground: lab(0% 0 0);
     --card: lab(100% 0 0);
     --card-foreground: lab(0% 0 0);

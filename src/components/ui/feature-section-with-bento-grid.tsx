@@ -30,11 +30,11 @@ function Feature() {
               <User className="w-8 h-8 stroke-1" />
               <div className="flex flex-col">
                 <h3 className="text-xl tracking-tight font-semibold">
-                  A Legacy of Quality Since 1995
+                  A Legacy of Quality Since 1998
                 </h3>
                 <p className=" max-w-xl text-base">
                   At Sri Jayasakthi Edible Oils Pvt Ltd, we believe that quality
-                  is not just a standard—it's a tradition. For over three
+                  is not just a standard it's a tradition. For over three
                   decades, we have been dedicated to extracting the finest oils
                   that serve your cooking, wellness, and spiritual needs.
                 </p>
@@ -64,23 +64,33 @@ function Feature() {
               <User className="w-8 h-8 stroke-1" />
               <div className="flex flex-col">
                 <h3 className="text-xl tracking-tight">
-                  Pay supplier invoices
+                  Premium Quality Assurance
                 </h3>
                 <p className="text-muted-foreground max-w-xs text-base">
-                  Our goal is to streamline SMB trade, making it easier and
-                  faster than ever.
+                  Every drop is tested for purity, ensuring you get only the best
+                  for your family.
                 </p>
               </div>
             </div>
-            <div className="bg-muted rounded-md h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto flex justify-between flex-col">
-              <User className="w-8 h-8 stroke-1" />
-              <div className="flex flex-col">
-                <h3 className="text-xl tracking-tight">
-                  Pay supplier invoices
+            <div className="rounded-md h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto flex justify-between flex-col relative overflow-hidden group">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="absolute top-0 left-0 w-full h-full object-cover z-[-2] transition-transform duration-300 group-hover:scale-105"
+              >
+                <source src="/banner/oilss.mp4" type="video/mp4" />
+              </video>
+              <div className="absolute inset-0 bg-black/40 z-[-1]" />
+              <User className="w-8 h-8 stroke-1 text-white" />
+              <div className="flex flex-col text-white">
+                <h3 className="text-xl tracking-tight font-semibold">
+                  Nature's Best, Delivered
                 </h3>
-                <p className="text-muted-foreground max-w-xs text-base">
-                  Our goal is to streamline SMB trade, making it easier and
-                  faster than ever.
+                <p className="text-white/80 max-w-xs text-base">
+                  Sourced from the finest farms to bring the goodness of nature
+                  straight to your kitchen.
                 </p>
               </div>
             </div>

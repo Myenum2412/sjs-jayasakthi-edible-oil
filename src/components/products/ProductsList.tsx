@@ -24,7 +24,7 @@ interface ProductsListProps {
   }[];
 }
 
-const ProductsList = memo(function ProductsList({products}: ProductsListProps) {
+const ProductsList = memo(function ProductsList({ products }: ProductsListProps) {
   const [category, setCategory] = useState("Oils");
 
   // Filter products based on selected category
@@ -34,7 +34,7 @@ const ProductsList = memo(function ProductsList({products}: ProductsListProps) {
         return products;
       } else if (category === "Oils") {
         // Show both Refined Oil and Non-Refined Oil products
-        return products.filter((product) => 
+        return products.filter((product) =>
           product.type === "Refined Oil" || product.type === "Non-Refined Oil"
         );
       } else {
@@ -112,6 +112,7 @@ export const SlideTabs = ({ category, setCategory }: SlideTabsProps) => {
       "All",
       "Oils",
       "Baker's Choice",
+      "Oil Bottles",
     ].indexOf(category);
     const selectedTab = tabsRef.current[tabIndex];
     if (selectedTab) {
@@ -133,6 +134,7 @@ export const SlideTabs = ({ category, setCategory }: SlideTabsProps) => {
           "All",
           "Oils",
           "Baker's Choice",
+          "Oil Bottles",
         ].indexOf(category);
         const selectedTab = tabsRef.current[tabIndex];
         if (selectedTab) {
@@ -146,7 +148,7 @@ export const SlideTabs = ({ category, setCategory }: SlideTabsProps) => {
       }}
       className="relative mx-auto flex w-fit rounded-full border-2 border-primary bg-background p-1"
     >
-      {["All", "Oils", "Baker's Choice"].map((tab, i) => (
+      {["All", "Oils", "Baker's Choice", "Oil Bottles"].map((tab, i) => (
         <Tab
           key={tab}
           ref={(el) => {
@@ -208,18 +210,18 @@ const ProductCardSkeleton = () => {
     <div className="relative rounded-2xl border border-border/50 bg-card overflow-hidden shadow-lg shadow-black/5 w-full">
       {/* Image Skeleton */}
       <Skeleton className="h-56 w-full rounded-t-2xl" />
-      
+
       {/* Content Skeleton */}
       <div className="p-6 space-y-3">
         {/* Rating Skeleton */}
         <div className="flex items-center gap-2">
           <Skeleton className="h-4 w-24 rounded" />
         </div>
-        
+
         {/* Title Skeleton */}
         <Skeleton className="h-6 w-full rounded" />
         <Skeleton className="h-6 w-3/4 rounded" />
-        
+
         {/* Price Skeleton */}
         <div className="flex items-center gap-2 mt-2">
           <Skeleton className="h-8 w-24 rounded" />

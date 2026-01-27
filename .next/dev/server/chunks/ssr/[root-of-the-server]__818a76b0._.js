@@ -542,6 +542,60 @@ const data = [
             "Trusted Brand: Used by professional bakers nationwide."
         ],
         seoKeywords: "bakers day biscuit vanaspati, cookie vanaspati, biscuit fat, bakery vanaspati"
+    },
+    {
+        id: 17,
+        name: "Arun Gold Coconut Oil 1L Bottle",
+        slug: "arun-gold-coconut-oil-1l-bottle",
+        price: "₹4.99",
+        originalPrice: "₹6.99",
+        image: encodeImagePath("/products/aurn-gold-1liter/ChatGPT Image Jan 24, 2026, 11_40_19 AM.png"),
+        imageSecondary: encodeImagePath("/products/aurn-gold-1liter/ChatGPT Image Jan 24, 2026, 11_42_30 AM.png"),
+        imageGallery: [
+            encodeImagePath("/products/aurn-gold-1liter/ChatGPT Image Jan 24, 2026, 11_40_19 AM.png"),
+            encodeImagePath("/products/aurn-gold-1liter/ChatGPT Image Jan 24, 2026, 11_42_30 AM.png")
+        ],
+        description: "Experience the authentic taste of tradition with Arun Gold Coconut Oil, now available in a convenient 1 Liter bottle. Extracted from the finest quality dried coconuts (copra), our oil is 100% Edible Grade and 0% Trans Fat. Perfect for daily cooking, hair care, and skin care needs.",
+        rating: 4.8,
+        reviewCount: 156,
+        size: "1 Liter",
+        type: "Oil Bottles",
+        category: "Coconut Oil",
+        benefits: [
+            "Pure & Natural: 100% Edible Grade Coconut Oil.",
+            "Zero Trans Fats: Healthy choice for your family.",
+            "Versatile Use: Ideal for cooking, hair, and skin.",
+            "Convenient Bottle: Easy to pour and store.",
+            "Legacy of Quality: From the trusted house of Sri Jayasakthi Edible Oils."
+        ],
+        seoKeywords: "arun gold coconut oil 1l, coconut oil bottle, edible coconut oil, pure coconut oil"
+    },
+    {
+        id: 18,
+        name: "Three Roses Pure Castor Oil 1L Bottle",
+        slug: "three-roses-pure-castor-oil-1l-bottle",
+        price: "₹8.99",
+        originalPrice: "₹10.99",
+        image: encodeImagePath("/products/three-roses-1liter/ChatGPT Image Jan 24, 2026, 12_01_15 PM.png"),
+        imageSecondary: encodeImagePath("/products/three-roses-1liter/ChatGPT Image Jan 24, 2026, 12_01_18 PM.png"),
+        imageGallery: [
+            encodeImagePath("/products/three-roses-1liter/ChatGPT Image Jan 24, 2026, 12_01_15 PM.png"),
+            encodeImagePath("/products/three-roses-1liter/ChatGPT Image Jan 24, 2026, 12_01_18 PM.png")
+        ],
+        description: "Rooted in tradition and extracted with care, Three Roses Pure Castor Oil is now available in a convenient 1 Liter bottle. Sourced from high-quality castor seeds, our oil retains its natural viscosity, golden color, and healing properties. Perfect for personal care, religious lamps, and medicinal use.",
+        rating: 4.9,
+        reviewCount: 98,
+        size: "1 Liter",
+        type: "Oil Bottles",
+        category: "Castor Oil",
+        benefits: [
+            "100% Pure: Extracted from premium castor seeds.",
+            "High Viscosity: Retains natural thick consistency.",
+            "Cooling Properties: Ideal for body cooling and hair care.",
+            "Multipurpose: Great for lamps, skin care, and medicine.",
+            "Convenient Pack: Easy to use 1 Liter bottle."
+        ],
+        seoKeywords: "three roses castor oil 1l, pure castor oil bottle, castor oil for hair, traditional castor oil"
     }
 ];
 // Helper function to generate SEO-friendly slug

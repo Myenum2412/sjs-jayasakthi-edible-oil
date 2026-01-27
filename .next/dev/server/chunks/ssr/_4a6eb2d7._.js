@@ -117,7 +117,7 @@ function Feature() {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                 className: "text-xl tracking-tight font-semibold",
-                                                children: "A Legacy of Quality Since 1995"
+                                                children: "A Legacy of Quality Since 1998"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ui/feature-section-with-bento-grid.tsx",
                                                 lineNumber: 32,
@@ -125,7 +125,7 @@ function Feature() {
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 className: " max-w-xl text-base",
-                                                children: "At Sri Jayasakthi Edible Oils Pvt Ltd, we believe that quality is not just a standard—it's a tradition. For over three decades, we have been dedicated to extracting the finest oils that serve your cooking, wellness, and spiritual needs."
+                                                children: "At Sri Jayasakthi Edible Oils Pvt Ltd, we believe that quality is not just a standard it's a tradition. For over three decades, we have been dedicated to extracting the finest oils that serve your cooking, wellness, and spiritual needs."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ui/feature-section-with-bento-grid.tsx",
                                                 lineNumber: 35,
@@ -210,7 +210,7 @@ function Feature() {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                 className: "text-xl tracking-tight",
-                                                children: "Pay supplier invoices"
+                                                children: "Premium Quality Assurance"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ui/feature-section-with-bento-grid.tsx",
                                                 lineNumber: 66,
@@ -218,7 +218,7 @@ function Feature() {
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 className: "text-muted-foreground max-w-xs text-base",
-                                                children: "Our goal is to streamline SMB trade, making it easier and faster than ever."
+                                                children: "Every drop is tested for purity, ensuring you get only the best for your family."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ui/feature-section-with-bento-grid.tsx",
                                                 lineNumber: 69,
@@ -237,38 +237,64 @@ function Feature() {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-muted rounded-md h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto flex justify-between flex-col",
+                                className: "rounded-md h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto flex justify-between flex-col relative overflow-hidden group",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__["User"], {
-                                        className: "w-8 h-8 stroke-1"
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
+                                        autoPlay: true,
+                                        loop: true,
+                                        muted: true,
+                                        playsInline: true,
+                                        className: "absolute top-0 left-0 w-full h-full object-cover z-[-2] transition-transform duration-300 group-hover:scale-105",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("source", {
+                                            src: "/banner/oilss.mp4",
+                                            type: "video/mp4"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/ui/feature-section-with-bento-grid.tsx",
+                                            lineNumber: 83,
+                                            columnNumber: 17
+                                        }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ui/feature-section-with-bento-grid.tsx",
                                         lineNumber: 76,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex flex-col",
+                                        className: "absolute inset-0 bg-black/40 z-[-1]"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/ui/feature-section-with-bento-grid.tsx",
+                                        lineNumber: 85,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__["User"], {
+                                        className: "w-8 h-8 stroke-1 text-white"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/ui/feature-section-with-bento-grid.tsx",
+                                        lineNumber: 86,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex flex-col text-white",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                className: "text-xl tracking-tight",
-                                                children: "Pay supplier invoices"
+                                                className: "text-xl tracking-tight font-semibold",
+                                                children: "Nature's Best, Delivered"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ui/feature-section-with-bento-grid.tsx",
-                                                lineNumber: 78,
+                                                lineNumber: 88,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-muted-foreground max-w-xs text-base",
-                                                children: "Our goal is to streamline SMB trade, making it easier and faster than ever."
+                                                className: "text-white/80 max-w-xs text-base",
+                                                children: "Sourced from the finest farms to bring the goodness of nature straight to your kitchen."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ui/feature-section-with-bento-grid.tsx",
-                                                lineNumber: 81,
+                                                lineNumber: 91,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/ui/feature-section-with-bento-grid.tsx",
-                                        lineNumber: 77,
+                                        lineNumber: 87,
                                         columnNumber: 15
                                     }, this)
                                 ]
@@ -757,6 +783,88 @@ const data = [
             "Trusted Brand: Used by professional bakers nationwide."
         ],
         seoKeywords: "bakers day biscuit vanaspati, cookie vanaspati, biscuit fat, bakery vanaspati"
+    },
+    {
+        id: 17,
+        name: "Arun Gold Coconut Oil 1L Bottle",
+        slug: "arun-gold-coconut-oil-1l-bottle",
+        price: "₹4.99",
+        originalPrice: "₹6.99",
+        image: encodeImagePath("/products/aurn-gold-1liter/ChatGPT Image Jan 24, 2026, 11_40_19 AM.png"),
+        imageSecondary: encodeImagePath("/products/aurn-gold-1liter/ChatGPT Image Jan 24, 2026, 11_42_30 AM.png"),
+        imageGallery: [
+            encodeImagePath("/products/aurn-gold-1liter/ChatGPT Image Jan 24, 2026, 11_40_19 AM.png"),
+            encodeImagePath("/products/aurn-gold-1liter/ChatGPT Image Jan 24, 2026, 11_42_30 AM.png")
+        ],
+        description: "Experience the authentic taste of tradition with Arun Gold Coconut Oil, now available in a convenient 1 Liter bottle. Extracted from the finest quality dried coconuts (copra), our oil is 100% Edible Grade and 0% Trans Fat. Perfect for daily cooking, hair care, and skin care needs.",
+        rating: 4.8,
+        reviewCount: 156,
+        size: "1 Liter",
+        type: "Oil Bottles",
+        category: "Coconut Oil",
+        benefits: [
+            "Pure & Natural: 100% Edible Grade Coconut Oil.",
+            "Zero Trans Fats: Healthy choice for your family.",
+            "Versatile Use: Ideal for cooking, hair, and skin.",
+            "Convenient Bottle: Easy to pour and store.",
+            "Legacy of Quality: From the trusted house of Sri Jayasakthi Edible Oils."
+        ],
+        seoKeywords: "arun gold coconut oil 1l, coconut oil bottle, edible coconut oil, pure coconut oil"
+    },
+    {
+        id: 18,
+        name: "Three Roses Pure Castor Oil 1L Bottle",
+        slug: "three-roses-pure-castor-oil-1l-bottle",
+        price: "₹8.99",
+        originalPrice: "₹10.99",
+        image: encodeImagePath("/products/three-roses-1liter/ChatGPT Image Jan 24, 2026, 12_01_15 PM.png"),
+        imageSecondary: encodeImagePath("/products/three-roses-1liter/ChatGPT Image Jan 24, 2026, 12_01_18 PM.png"),
+        imageGallery: [
+            encodeImagePath("/products/three-roses-1liter/ChatGPT Image Jan 24, 2026, 12_01_15 PM.png"),
+            encodeImagePath("/products/three-roses-1liter/ChatGPT Image Jan 24, 2026, 12_01_18 PM.png")
+        ],
+        description: "Rooted in tradition and extracted with care, Three Roses Pure Castor Oil is now available in a convenient 1 Liter bottle. Sourced from high-quality castor seeds, our oil retains its natural viscosity, golden color, and healing properties. Perfect for personal care, religious lamps, and medicinal use.",
+        rating: 4.9,
+        reviewCount: 98,
+        size: "1 Liter",
+        type: "Oil Bottles",
+        category: "Castor Oil",
+        benefits: [
+            "100% Pure: Extracted from premium castor seeds.",
+            "High Viscosity: Retains natural thick consistency.",
+            "Cooling Properties: Ideal for body cooling and hair care.",
+            "Multipurpose: Great for lamps, skin care, and medicine.",
+            "Convenient Pack: Easy to use 1 Liter bottle."
+        ],
+        seoKeywords: "three roses castor oil 1l, pure castor oil bottle, castor oil for hair, traditional castor oil"
+    },
+    {
+        id: 19,
+        name: "Sir Gold Refined Sunflower Oil 1 Liter",
+        slug: "sir-gold-refined-sunflower-oil-1-liter",
+        price: "₹145.00",
+        originalPrice: "₹165.00",
+        image: encodeImagePath("/products/sir-Gold-1liter/ChatGPT_Image_Jan_26__2026__08_26_45_PM-removebg-preview.png"),
+        imageSecondary: encodeImagePath("/products/sir-Gold-1liter/Jan 26, 2026, 08_27_37 PM.png"),
+        imageGallery: [
+            encodeImagePath("/products/sir-Gold-1liter/ChatGPT_Image_Jan_26__2026__08_26_45_PM-removebg-preview.png"),
+            encodeImagePath("/products/sir-Gold-1liter/Jan 26, 2026, 08_27_37 PM.png")
+        ],
+        description: "Elevate your culinary experience with Sir Gold Refined Sunflower Oil, now available in a handy 1 Liter bottle. Crafted for those who seek perfection in every meal, Sir Gold offers a premium balance of health and taste. Its light texture and high smoke point make it the ultimate choice for everything from delicate sautés to deep frying, ensuring your food remains non-greasy and delicious.",
+        rating: 4.8,
+        reviewCount: 45,
+        size: "1 Liter",
+        type: "Oil Bottles",
+        category: "Sunflower Oil",
+        benefits: [
+            "Premium Refined Quality: Crystal clear and pure for superior cooking results.",
+            "Vitamin Enriched: Fortified with Vitamins A & D for daily wellness.",
+            "Light on Stomach: Easy to digest and non-greasy formulation.",
+            "High Smoke Point: Perfect for deep frying without smoking or burning.",
+            "Convenient Pour: 1 Liter bottle designed for easy handling and storage.",
+            "Heart Friendly: Low in saturated fats, supporting a healthy lifestyle."
+        ],
+        seoKeywords: "sir gold sunflower oil 1l, premium sunflower oil, refined oil bottle, healthy cooking oil"
     }
 ];
 // Helper function to generate SEO-friendly slug

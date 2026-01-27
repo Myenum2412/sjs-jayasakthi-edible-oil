@@ -10,8 +10,14 @@ export default function FeaturesSection() {
                     <p className="text-lg text-muted-foreground">Discover a range of premium edible oils crafted to perfection. From traditional extraction methods to modern quality standards, we ensure every drop adds value to your health.</p>
                 </div>
                 <div className="px-3 pt-3 md:-mx-8">
-                    <div className="aspect-88/36 mask-b-from-75% mask-b-to-95% relative">
-                        <div style={{ position: 'relative', paddingTop: '56.25%' }}><iframe src="https://iframe.mediadelivery.net/embed/580971/2400a4c3-7bf0-4a85-8f87-1d2c00f631c6?autoplay=true&loop=false&muted=false&preload=true&responsive=true" loading="lazy" style={{ border: 0, position: 'absolute', top: 0, height: '100%', width: '100%' }} allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;" allowFullScreen={true}></iframe></div>
+                    <div style={{ position: 'relative', paddingTop: '56.25%' }}>
+                        <iframe
+                            src="https://iframe.mediadelivery.net/embed/587211/e652e102-62e8-416f-a10c-f41eb9fbe7e2?autoplay=true&loop=false&muted=false&preload=true&responsive=true"
+                            loading="lazy"
+                            style={{ border: 0, position: 'absolute', top: 0, height: '100%', width: '100%' }}
+                            allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;"
+                            allowFullScreen={true}
+                        ></iframe>
                     </div>
                 </div>
                 <div className="relative mx-auto grid grid-cols-2 gap-x-3 gap-y-6 sm:gap-8 lg:grid-cols-4">
