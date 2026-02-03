@@ -305,7 +305,7 @@ export default function AboutContactForm() {
                                     placeholder="Enter Name"
                                     value={formData.name}
                                     onChange={(e) => handleInputChange("name", e.target.value)}
-                                    className={errors.name ? "border-red-500" : ""}
+                                    className={`!bg-white !text-black ${errors.name ? "border-red-500" : ""}`}
                                 />
                                 {errors.name && (
                                     <p className="text-sm text-red-500">{errors.name}</p>
@@ -320,7 +320,7 @@ export default function AboutContactForm() {
                                     placeholder="Enter Email"
                                     value={formData.email}
                                     onChange={(e) => handleInputChange("email", e.target.value)}
-                                    className={errors.email ? "border-red-500" : ""}
+                                    className={`!bg-white !text-black ${errors.email ? "border-red-500" : ""}`}
                                 />
                                 {errors.email && (
                                     <p className="text-sm text-red-500">{errors.email}</p>
@@ -338,7 +338,7 @@ export default function AboutContactForm() {
                                         }}
                                     >
                                         <SelectTrigger
-                                            className={errors.state ? "border-red-500" : ""}
+                                            className={`!bg-white !text-black ${errors.state ? "border-red-500" : ""}`}
                                         >
                                             <SelectValue placeholder="Select State" />
                                         </SelectTrigger>
@@ -363,7 +363,7 @@ export default function AboutContactForm() {
                                         disabled={!formData.state}
                                     >
                                         <SelectTrigger
-                                            className={errors.district ? "border-red-500" : ""}
+                                            className={`!bg-white !text-black ${errors.district ? "border-red-500" : ""}`}
                                         >
                                             <SelectValue
                                                 placeholder={
@@ -391,7 +391,7 @@ export default function AboutContactForm() {
                                     value={formData.productInterest}
                                     onValueChange={(value) => handleInputChange("productInterest", value)}
                                 >
-                                    <SelectTrigger className={errors.productInterest ? "border-red-500" : ""}>
+                                    <SelectTrigger className={`!bg-white !text-black ${errors.productInterest ? "border-red-500" : ""}`}>
                                         <SelectValue placeholder="Select Product" />
                                     </SelectTrigger>
                                     <SelectContent>
@@ -414,7 +414,7 @@ export default function AboutContactForm() {
                                     placeholder="Enter Message"
                                     value={formData.message}
                                     onChange={(e) => handleInputChange("message", e.target.value)}
-                                    className={`min-h-[120px] ${errors.message ? "border-red-500" : ""
+                                    className={`min-h-[120px] !bg-white !text-black ${errors.message ? "border-red-500" : ""
                                         }`}
                                 />
                                 {errors.message && (

@@ -16,7 +16,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/_global-error",
       "dataRoute": "/_global-error.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -42,7 +41,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/_not-found",
       "dataRoute": "/_not-found.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -67,7 +65,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/about-us",
       "dataRoute": "/about-us.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -92,7 +89,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/bulk-order",
       "dataRoute": "/bulk-order.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -117,7 +113,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/contact",
       "dataRoute": "/contact.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -147,7 +142,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/favicon.ico",
       "dataRoute": null,
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -172,7 +166,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/login",
       "dataRoute": "/login.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -197,7 +190,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/",
       "dataRoute": "/index.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -222,7 +214,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/products/[id]",
       "dataRoute": "/products/1.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -247,7 +238,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/products/[id]",
       "dataRoute": "/products/10.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -272,7 +262,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/products/[id]",
       "dataRoute": "/products/11.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -297,7 +286,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/products/[id]",
       "dataRoute": "/products/12.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -322,7 +310,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/products/[id]",
       "dataRoute": "/products/13.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -347,7 +334,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/products/[id]",
       "dataRoute": "/products/14.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -372,7 +358,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/products/[id]",
       "dataRoute": "/products/15.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -397,7 +382,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/products/[id]",
       "dataRoute": "/products/16.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -422,7 +406,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/products/[id]",
       "dataRoute": "/products/17.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -447,7 +430,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/products/[id]",
       "dataRoute": "/products/18.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -472,7 +454,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/products/[id]",
       "dataRoute": "/products/19.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -497,7 +478,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/products/[id]",
       "dataRoute": "/products/2.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -522,7 +502,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/products/[id]",
       "dataRoute": "/products/3.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -547,7 +526,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/products/[id]",
       "dataRoute": "/products/4.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -572,7 +550,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/products/[id]",
       "dataRoute": "/products/5.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -597,7 +574,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/products/[id]",
       "dataRoute": "/products/6.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -622,7 +598,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/products/[id]",
       "dataRoute": "/products/7.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -647,7 +622,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/products/[id]",
       "dataRoute": "/products/8.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -672,7 +646,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/products/[id]",
       "dataRoute": "/products/9.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -697,7 +670,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/products",
       "dataRoute": "/products.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -727,7 +699,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/robots.txt",
       "dataRoute": null,
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -757,7 +728,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/sitemap.xml",
       "dataRoute": null,
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",

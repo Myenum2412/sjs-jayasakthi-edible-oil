@@ -438,8 +438,8 @@ const data = [
   },
   {
     id: 16,
-    name: "Baker's Day Vanaspati Biscuit & Cookies",
-    slug: "bakers-day-vanaspati-biscuit-cookies",
+    name: "Baker's Choice Vanaspati Biscuit & Cookies",
+    slug: "bakers-choice-vanaspati-biscuit-cookies",
     price: "",
     originalPrice: "₹109.99",
     image: encodeImagePath("/products/Baker-choice-biscuit-vanaspati/Baker-choice-biscuit-vanaspati-removebg-preview.png"),
@@ -448,7 +448,7 @@ const data = [
       encodeImagePath("/products/Baker-choice-biscuit-vanaspati/Baker-choice-biscuit-vanaspati-removebg-preview.png"),
     ],
     description:
-      "Baker's Day Vanaspati for Biscuit & Cookies is specially formulated to create crisp, golden biscuits and cookies with perfect texture and flavor. This premium vanaspati ensures consistent quality and excellent spreadability, making it the ideal choice for biscuit and cookie manufacturing.",
+      "Baker's Choice Vanaspati for Biscuit & Cookies is specially formulated to create crisp, golden biscuits and cookies with perfect texture and flavor. This premium vanaspati ensures consistent quality and excellent spreadability, making it the ideal choice for biscuit and cookie manufacturing.",
     rating: 4.6,
     reviewCount: 234,
     size: "15 Kg",
@@ -462,7 +462,7 @@ const data = [
       "Long Shelf Life: Maintains freshness and stability.",
       "Trusted Brand: Used by professional bakers nationwide.",
     ],
-    seoKeywords: "bakers day biscuit vanaspati, cookie vanaspati, biscuit fat, bakery vanaspati",
+    seoKeywords: "bakers choice biscuit vanaspati, cookie vanaspati, biscuit fat, bakery vanaspati",
   },
   {
     id: 17,

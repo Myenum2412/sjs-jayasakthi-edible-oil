@@ -80,7 +80,7 @@ function Footerdemo() {
 
   const handleNewsletterSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!email) {
       toast.error("Please enter your email address");
       return;
@@ -96,11 +96,11 @@ function Footerdemo() {
     // Simulate API call - replace with your actual newsletter subscription endpoint
     try {
       await new Promise((resolve) => setTimeout(resolve, 1500));
-      
+
       toast.success("Successfully subscribed to our newsletter!");
       setEmail("");
       setIsSubmitted(true);
-      
+
       setTimeout(() => {
         setIsSubmitted(false);
       }, 3000);
@@ -231,6 +231,8 @@ function Footerdemo() {
                 >
                   <Phone className="h-4 w-4 shrink-0 text-primary" />
                   <span>(+91) 94432 34992</span>
+                  <span>(+91) 94493 33991</span>
+                  <span>(+91) 99446 34299</span>
                 </a>
                 <a
                   href="mailto:info@sriJayasakthiedibleoil.com"

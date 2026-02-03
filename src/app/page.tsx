@@ -4,6 +4,7 @@ import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { HeroSkeleton, FeaturesSkeleton, ProductsGridSkeleton } from '@/components/LoadingSkeleton';
 import { Skeleton } from '@/components/skeleton';
 import { generateMetadata as generateBaseMetadata } from '@/lib/meta';
+import Features from '@/components/features-1'; ""
 
 // Lazy load all heavy components with code splitting
 const HeroSection = dynamic(() => import('@/components/Home/hero-section'), {

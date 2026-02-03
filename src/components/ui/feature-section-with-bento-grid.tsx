@@ -14,7 +14,7 @@ function Feature() {
               </h2>
               <p className="text-lg max-w-xl lg:max-w-lg leading-relaxed tracking-tight text-muted-foreground  text-left">
                 From the kitchen to the prayer room, experience the purity of
-                Sri Jayasakthi Edible Oils. Trusted since 1995.
+                Sri Jayasakthi Edible Oils. Trusted since 1985.
               </p>
             </div>
           </div>
@@ -30,7 +30,7 @@ function Feature() {
               <User className="w-8 h-8 stroke-1" />
               <div className="flex flex-col">
                 <h3 className="text-xl tracking-tight font-semibold">
-                  A Legacy of Quality Since 1998
+                  A Legacy of Quality Since 1985
                 </h3>
                 <p className=" max-w-xl text-base">
                   At Sri Jayasakthi Edible Oils Pvt Ltd, we believe that quality

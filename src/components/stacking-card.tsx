@@ -3,6 +3,7 @@ import { ReactLenis } from "lenis/react";
 import { useTransform, motion, useScroll, MotionValue } from "motion/react";
 import { useRef, forwardRef } from "react";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 interface ProjectData {
   title: string;
@@ -58,7 +59,7 @@ export const Card = ({
         <div className={`flex max-md:flex-col max-md:items-center max-md:justify-between max-md:gap-5 h-full mt-5 gap-10 max-md:h-1/2`}>
           <div className={`w-[40%] max-md:w-full relative top-[10%]`}>
             <p className="text-[12px] md:text-base">{description}</p>
-            
+
           </div>
 
           <div
@@ -68,10 +69,11 @@ export const Card = ({
               className={`w-full h-full`}
               style={{ scale: imageScale }}
             >
-              <img
+              <Image
                 src={url}
-                alt="image"
-                className="absolute inset-0 w-full h-full  object-cover "
+                alt={title}
+                fill
+                className="object-cover"
               />
             </motion.div>
           </div>

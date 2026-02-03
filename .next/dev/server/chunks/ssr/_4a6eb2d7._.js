@@ -71,7 +71,7 @@ function Feature() {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-lg max-w-xl lg:max-w-lg leading-relaxed tracking-tight text-muted-foreground  text-left",
-                                    children: "From the kitchen to the prayer room, experience the purity of Sri Jayasakthi Edible Oils. Trusted since 1995."
+                                    children: "From the kitchen to the prayer room, experience the purity of Sri Jayasakthi Edible Oils. Trusted since 1985."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ui/feature-section-with-bento-grid.tsx",
                                     lineNumber: 15,
@@ -117,7 +117,7 @@ function Feature() {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                 className: "text-xl tracking-tight font-semibold",
-                                                children: "A Legacy of Quality Since 1998"
+                                                children: "A Legacy of Quality Since 1985"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ui/feature-section-with-bento-grid.tsx",
                                                 lineNumber: 32,
