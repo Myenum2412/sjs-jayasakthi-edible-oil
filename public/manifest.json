@@ -1,0 +1,21 @@
+{
+    "name": "Sri Jayasakthi Edible Oils Pvt. Ltd",
+    "short_name": "SJS Oils",
+    "description": "Leading manufacturer and supplier of edible oils and related products in India.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#16a34a",
+    "icons": [
+        {
+            "src": "/logo.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/logo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

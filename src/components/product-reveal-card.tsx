@@ -7,6 +7,7 @@ import { ShoppingCart } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useRouter } from "next/navigation";
 import { Spotlight } from "@/components/ui/spotlight";
+import Image from "next/image";
 
 interface ProductRevealCardProps {
   id?: number;
@@ -23,6 +24,7 @@ interface ProductRevealCardProps {
   className?: string;
   size?: string;
   type?: string;
+  priority?: boolean;
 }
 
 export const ProductRevealCard = memo(function ProductRevealCard({
@@ -38,6 +40,7 @@ export const ProductRevealCard = memo(function ProductRevealCard({
   onFavorite,
   size,
   type,
+  priority = false,
   enableAnimations = true,
   className,
 }: ProductRevealCardProps) {
@@ -74,16 +77,16 @@ export const ProductRevealCard = memo(function ProductRevealCard({
     },
     hover: shouldAnimate
       ? {
-          scale: 1.03,
-          y: -8,
-          filter: "blur(0px)",
-          transition: {
-            type: "spring",
-            stiffness: 300,
-            damping: 30,
-            mass: 0.8,
-          },
-        }
+        scale: 1.03,
+        y: -8,
+        filter: "blur(0px)",
+        transition: {
+          type: "spring",
+          stiffness: 300,
+          damping: 30,
+          mass: 0.8,
+        },
+      }
       : {},
   }), [shouldAnimate]);
 
@@ -136,14 +139,14 @@ export const ProductRevealCard = memo(function ProductRevealCard({
     rest: { scale: 1, y: 0 },
     hover: shouldAnimate
       ? {
-          scale: 1.05,
-          y: -2,
-          transition: {
-            type: "spring",
-            stiffness: 400,
-            damping: 25,
-          },
-        }
+        scale: 1.05,
+        y: -2,
+        transition: {
+          type: "spring",
+          stiffness: 400,
+          damping: 25,
+        },
+      }
       : {},
     tap: shouldAnimate ? { scale: 0.95 } : {},
   }), [shouldAnimate]);
@@ -170,17 +173,24 @@ export const ProductRevealCard = memo(function ProductRevealCard({
         )}
         fill="white"
       />
-      
+
       {/* Image Container */}
-      <div className="relative overflow-hidden">
-        <motion.img
-          src={image}
-          alt={name}
-          className="h-56 w-full object-contain"
+      <div className="relative overflow-hidden h-56 w-full">
+        <motion.div
           variants={imageVariants}
           transition={{ type: "spring", stiffness: 300, damping: 30 }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+          className="h-full w-full relative"
+        >
+          <Image
+            src={image || "/placeholder.png"}
+            alt={name || "Product Image"}
+            fill
+            className="object-contain"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+            priority={priority}
+          />
+        </motion.div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent pointer-events-none" />
       </div>
 
       {/* Content */}
@@ -193,7 +203,7 @@ export const ProductRevealCard = memo(function ProductRevealCard({
             whileHover={{ opacity: 1 }}
             transition={{ duration: 0.3 }}
           >
-            {name} - {size} 
+            {name} - {size}
           </motion.h3>
         </div>
       </div>

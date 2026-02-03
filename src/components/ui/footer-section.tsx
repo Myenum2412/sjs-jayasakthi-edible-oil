@@ -225,15 +225,29 @@ function Footerdemo() {
                     D.no:383/9, post, near MoolaPillaiyar kovil, Pillayar Nagar, Kandhampatty, Tamil Nadu 636005
                   </span>
                 </a>
-                <a
-                  href="tel:+919443234992"
-                  className="group flex items-center gap-3 transition-colors hover:text-primary"
-                >
-                  <Phone className="h-4 w-4 shrink-0 text-primary" />
-                  <span>(+91) 94432 34992</span>
-                  <span>(+91) 94493 33991</span>
-                  <span>(+91) 99446 34299</span>
-                </a>
+                <div className="flex items-start gap-3">
+                  <Phone className="mt-1 h-4 w-4 shrink-0 text-primary" />
+                  <div className="flex flex-col gap-2">
+                    <a
+                      href="tel:+919443234992"
+                      className="transition-colors hover:text-primary whitespace-nowrap"
+                    >
+                      (+91) 94432 34992
+                    </a>
+                    <a
+                      href="tel:+919449333991"
+                      className="transition-colors hover:text-primary whitespace-nowrap"
+                    >
+                      (+91) 94493 33991
+                    </a>
+                    <a
+                      href="tel:+919944634299"
+                      className="transition-colors hover:text-primary whitespace-nowrap"
+                    >
+                      (+91) 99446 34299
+                    </a>
+                  </div>
+                </div>
                 <a
                   href="mailto:info@sriJayasakthiedibleoil.com"
                   className="group flex items-center gap-3 transition-colors hover:text-primary break-all"

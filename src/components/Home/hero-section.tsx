@@ -14,7 +14,7 @@ export default function HeroSection() {
         playPromise.catch(() => {
           // Auto-play was prevented, try again on user interaction
           const handleInteraction = () => {
-            video.play().catch(() => {});
+            video.play().catch(() => { });
             document.removeEventListener("touchstart", handleInteraction);
             document.removeEventListener("click", handleInteraction);
           };
@@ -38,6 +38,7 @@ export default function HeroSection() {
                 loop
                 playsInline
                 preload="auto"
+                poster="/images/aboutus.png"
                 className="size-full object-cover opacity-100"
                 src="/intro.mp4"
                 onLoadedData={(e) => {

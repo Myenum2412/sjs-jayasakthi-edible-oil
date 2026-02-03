@@ -58,19 +58,11 @@ const ProductsList = memo(function ProductsList({ products }: ProductsListProps)
       <div className="flex items-center justify-center w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 my-10 mx-auto ">
           {filteredData?.length > 0 ? (
-            filteredData.map((product) => (
+            filteredData.map((product, index) => (
               <ProductRevealCard
                 key={product.id}
-                id={product.id}
-                name={product.name}
-                price={product.price}
-                originalPrice={product.originalPrice}
-                image={product.image}
-                description={product.description}
-                rating={product.rating}
-                reviewCount={product.reviewCount}
-                size={product.size}
-                type={product.type}
+                {...product}
+                priority={index < 4}
               />
             ))
           ) : (
@@ -112,6 +104,7 @@ export const SlideTabs = ({ category, setCategory }: SlideTabsProps) => {
       "All",
       "Oils",
       "Baker's Choice",
+      "Baker's Day",
       "Oil Bottles",
     ].indexOf(category);
     const selectedTab = tabsRef.current[tabIndex];
@@ -134,6 +127,7 @@ export const SlideTabs = ({ category, setCategory }: SlideTabsProps) => {
           "All",
           "Oils",
           "Baker's Choice",
+          "Baker's Day",
           "Oil Bottles",
         ].indexOf(category);
         const selectedTab = tabsRef.current[tabIndex];
@@ -148,7 +142,7 @@ export const SlideTabs = ({ category, setCategory }: SlideTabsProps) => {
       }}
       className="relative mx-auto flex w-fit rounded-full border-2 border-primary bg-background p-1"
     >
-      {["All", "Oils", "Baker's Choice", "Oil Bottles"].map((tab, i) => (
+      {["All", "Oils", "Baker's Choice", "Baker's Day", "Oil Bottles"].map((tab, i) => (
         <Tab
           key={tab}
           ref={(el) => {
