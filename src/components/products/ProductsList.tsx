@@ -25,7 +25,7 @@ interface ProductsListProps {
 }
 
 const ProductsList = memo(function ProductsList({ products }: ProductsListProps) {
-  const [category, setCategory] = useState("Oils");
+  const [category, setCategory] = useState("All");
 
   // Filter products based on selected category
   const filteredData = useMemo(
@@ -37,6 +37,8 @@ const ProductsList = memo(function ProductsList({ products }: ProductsListProps)
         return products.filter((product) =>
           product.type === "Refined Oil" || product.type === "Non-Refined Oil"
         );
+      } else if (category === "Pouches") {
+        return products.filter((product) => product.type === "Pouches");
       } else {
         return products.filter((product) => product.type === category);
       }
@@ -106,6 +108,7 @@ export const SlideTabs = ({ category, setCategory }: SlideTabsProps) => {
       "Baker's Choice",
       "Baker's Day",
       "Oil Bottles",
+      "Pouches",
     ].indexOf(category);
     const selectedTab = tabsRef.current[tabIndex];
     if (selectedTab) {
@@ -129,6 +132,7 @@ export const SlideTabs = ({ category, setCategory }: SlideTabsProps) => {
           "Baker's Choice",
           "Baker's Day",
           "Oil Bottles",
+          "Pouches",
         ].indexOf(category);
         const selectedTab = tabsRef.current[tabIndex];
         if (selectedTab) {
@@ -142,7 +146,7 @@ export const SlideTabs = ({ category, setCategory }: SlideTabsProps) => {
       }}
       className="relative mx-auto flex w-fit rounded-full border-2 border-primary bg-background p-1"
     >
-      {["All", "Oils", "Baker's Choice", "Baker's Day", "Oil Bottles"].map((tab, i) => (
+      {["All", "Oils", "Baker's Choice", "Baker's Day", "Oil Bottles", "Pouches"].map((tab, i) => (
         <Tab
           key={tab}
           ref={(el) => {

@@ -463,11 +463,11 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/src/data/products.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-// Helper function to encode image paths for URLs (handles spaces and special characters)
 __turbopack_context__.s([
     "productsData",
     ()=>productsData
 ]);
+// Helper function to encode image paths for URLs (handles spaces and special characters)
 function encodeImagePath(path) {
     // Split the path and encode each segment separately, preserving the structure
     const parts = path.split('/').filter((part)=>part.length > 0);
@@ -783,8 +783,8 @@ const data = [
     },
     {
         id: 12,
-        name: "Baker's Choice Puff Vanaspati",
-        slug: "bakers-choice-puff-vanaspati",
+        name: "Baker's Days Vanaspati Biscuit & Cookies",
+        slug: "bakers-days-vanaspati-biscuit-cookies",
         price: "",
         originalPrice: "₹109.99",
         image: encodeImagePath("/products/vanasoati-biscuit&cookies/vanasoati-biscuit_cookies-removebg-preview.png"),
@@ -792,21 +792,21 @@ const data = [
         imageGallery: [
             encodeImagePath("/products/vanasoati-biscuit&cookies/vanasoati-biscuit_cookies-removebg-preview.png")
         ],
-        description: "Baker's Choice Puff Vanaspati is a premium-grade bakery fat specially crafted to deliver consistently flaky, golden, and perfectly layered puffs. Designed for professional bakers and commercial kitchens, this vanaspati enhances dough lamination, improves lift, and ensures an irresistible melt-in-the-mouth texture in every bite.",
+        description: "Baker's Days Vanaspati for Biscuit & Cookies is a premium-grade bakery fat specially crafted to deliver consistently crisp, golden, and perfectly textured biscuits and cookies. Designed for professional bakers and commercial kitchens, this vanaspati ensures excellent spreadability and an irresistible melt-in-the-mouth texture in every bite.",
         rating: 4.8,
         reviewCount: 342,
         size: "15 Kg",
-        type: "Baker's Choice",
+        type: "Baker's Day",
         category: "Bakery Vanaspati",
         benefits: [
-            "Superior Puff & Flakiness: Promotes excellent layer separation for crisp puffs.",
-            "Consistent Baking Performance: Maintains structure at high bakery temperatures.",
+            "Perfect for Biscuits: Ensures crisp, golden biscuits with ideal texture.",
+            "Excellent Spreadability: Easy to work with for consistent results.",
             "Rich Taste Enhancement: Adds balanced, appealing flavour without overpowering.",
-            "Smooth Dough Handling: Easy to spread and laminate, improving workflow efficiency.",
+            "Smooth Dough Handling: Easy to mix and process, improving workflow efficiency.",
             "Cost-Effective: Reliable results with optimized usage for bulk production.",
             "100% Vegetarian & Fortified: Made from permitted vegetable oils."
         ],
-        seoKeywords: "bakers choice puff vanaspati, puff pastry fat, flaky pastry vanaspati, bakery fat"
+        seoKeywords: "bakers days biscuit vanaspati, cookie vanaspati, biscuit fat, bakery vanaspati"
     },
     {
         id: 13,
@@ -823,7 +823,7 @@ const data = [
         rating: 4.6,
         reviewCount: 278,
         size: "15 Kg",
-        type: "Baker's Choice",
+        type: "Baker's Day",
         category: "Bakery Vanaspati",
         benefits: [
             "Versatile Application: Perfect for cakes, cookies, pastries, and bread.",
@@ -850,7 +850,7 @@ const data = [
         rating: 4.7,
         reviewCount: 312,
         size: "15 Kg",
-        type: "Baker's Choice",
+        type: "Baker's Day",
         category: "Bakery Shortening",
         benefits: [
             "Superior Aeration: Creates light, airy textures in baked goods.",
@@ -864,8 +864,8 @@ const data = [
     },
     {
         id: 15,
-        name: "Baker's Day Puff Vanaspati",
-        slug: "bakers-day-puff-vanaspati",
+        name: "Baker's Choice Puff Vanaspati",
+        slug: "bakers-choice-puff-vanaspati",
         price: "",
         originalPrice: "₹109.99",
         image: encodeImagePath("/products/Baker's-day-puff-vanaspati/Baker_s-day-puff-vanaspati-removebg-preview.png"),
@@ -873,7 +873,7 @@ const data = [
         imageGallery: [
             encodeImagePath("/products/Baker's-day-puff-vanaspati/Baker_s-day-puff-vanaspati-removebg-preview.png")
         ],
-        description: "Baker's Day Puff Vanaspati is crafted to deliver perfectly flaky, layered puffs and pastries. This premium vanaspati enhances dough lamination and ensures consistent, professional-quality results. Perfect for puffs, khari biscuits, and layered pastries.",
+        description: "Baker's Choice Puff Vanaspati is crafted to deliver perfectly flaky, layered puffs and pastries. This premium vanaspati enhances dough lamination and ensures consistent, professional-quality results. Perfect for puffs, khari biscuits, and layered pastries.",
         rating: 4.7,
         reviewCount: 267,
         size: "15 Kg",
@@ -887,12 +887,12 @@ const data = [
             "Versatile Application: Perfect for puffs, khari, and layered pastries.",
             "Long Shelf Life: Maintains freshness and stability."
         ],
-        seoKeywords: "bakers day puff vanaspati, puff pastry fat, flaky pastry vanaspati, layered pastry fat"
+        seoKeywords: "bakers choice puff vanaspati, puff pastry fat, flaky pastry vanaspati, layered pastry fat"
     },
     {
         id: 16,
-        name: "Baker's Day Vanaspati Biscuit & Cookies",
-        slug: "bakers-day-vanaspati-biscuit-cookies",
+        name: "Baker's Choice Vanaspati Biscuit & Cookies",
+        slug: "bakers-choice-vanaspati-biscuit-cookies",
         price: "",
         originalPrice: "₹109.99",
         image: encodeImagePath("/products/Baker-choice-biscuit-vanaspati/Baker-choice-biscuit-vanaspati-removebg-preview.png"),
@@ -900,7 +900,7 @@ const data = [
         imageGallery: [
             encodeImagePath("/products/Baker-choice-biscuit-vanaspati/Baker-choice-biscuit-vanaspati-removebg-preview.png")
         ],
-        description: "Baker's Day Vanaspati for Biscuit & Cookies is specially formulated to create crisp, golden biscuits and cookies with perfect texture and flavor. This premium vanaspati ensures consistent quality and excellent spreadability, making it the ideal choice for biscuit and cookie manufacturing.",
+        description: "Baker's Choice Vanaspati for Biscuit & Cookies is specially formulated to create crisp, golden biscuits and cookies with perfect texture and flavor. This premium vanaspati ensures consistent quality and excellent spreadability, making it the ideal choice for biscuit and cookie manufacturing.",
         rating: 4.6,
         reviewCount: 234,
         size: "15 Kg",
@@ -914,7 +914,7 @@ const data = [
             "Long Shelf Life: Maintains freshness and stability.",
             "Trusted Brand: Used by professional bakers nationwide."
         ],
-        seoKeywords: "bakers day biscuit vanaspati, cookie vanaspati, biscuit fat, bakery vanaspati"
+        seoKeywords: "bakers choice biscuit vanaspati, cookie vanaspati, biscuit fat, bakery vanaspati"
     },
     {
         id: 17,
@@ -997,6 +997,136 @@ const data = [
             "Heart Friendly: Low in saturated fats, supporting a healthy lifestyle."
         ],
         seoKeywords: "sir gold sunflower oil 1l, premium sunflower oil, refined oil bottle, healthy cooking oil"
+    },
+    {
+        id: 20,
+        name: "Arun Gold Coconut Oil 1L Pouch",
+        slug: "arun-gold-coconut-oil-1l-pouch",
+        price: "₹140.00",
+        originalPrice: "₹160.00",
+        image: encodeImagePath("/products/aurn-1ml-pouch/gem-1ml-pouch (2).png"),
+        imageSecondary: encodeImagePath("/products/aurn-1ml-pouch/gem-1ml-pouch.png"),
+        imageGallery: [
+            encodeImagePath("/products/aurn-1ml-pouch/gem-1ml-pouch (2).png"),
+            encodeImagePath("/products/aurn-1ml-pouch/gem-1ml-pouch.png")
+        ],
+        description: "Arun Gold Coconut Oil is now available in a 1 Liter pouch, offering the same pure and aromatic quality in a flexible and convenient package. Extracted from premium sun-dried copra, this oil is perfect for all your culinary and wellness needs.",
+        rating: 4.8,
+        reviewCount: 85,
+        size: "1 Liter",
+        type: "Pouches",
+        category: "Coconut Oil",
+        benefits: [
+            "100% Pure & Natural: No additives or preservatives.",
+            "Economical Packaging: Pouches are easy to handle and store.",
+            "Rich Aroma: Retains the natural fragrance of fresh coconuts.",
+            "Multi-purpose: Ideal for cooking, hair care, and skin care."
+        ],
+        seoKeywords: "arun gold coconut oil pouch, 1l coconut oil pouch, pure coconut oil, sjs oils"
+    },
+    {
+        id: 21,
+        name: "Arun Gold Coconut Oil 500ml Pouch",
+        slug: "arun-gold-coconut-oil-500ml-pouch",
+        price: "₹75.00",
+        originalPrice: "₹85.00",
+        image: encodeImagePath("/products/aurn-500ml-pouch/ChatGPT Image Feb 5, 2026, 11_09_47 PM.png"),
+        imageSecondary: encodeImagePath("/products/aurn-500ml-pouch/ChatGPT Image Feb 5, 2026, 11_10_00 PM.png"),
+        imageGallery: [
+            encodeImagePath("/products/aurn-500ml-pouch/ChatGPT Image Feb 5, 2026, 11_09_47 PM.png"),
+            encodeImagePath("/products/aurn-500ml-pouch/ChatGPT Image Feb 5, 2026, 11_10_00 PM.png")
+        ],
+        description: "Get the goodness of Arun Gold Coconut Oil in a compact 500ml pouch. Perfect for small families and regular use, ensuring freshness and purity in every drop.",
+        rating: 4.7,
+        reviewCount: 64,
+        size: "500 ml",
+        type: "Pouches",
+        category: "Coconut Oil",
+        benefits: [
+            "Pure Edible Grade: Safe for cooking and consumption.",
+            "Freshness Locked: Sealed pouch ensures long-lasting aroma.",
+            "Compact Size: Easy to store in kitchen cabinets.",
+            "Natural Goodness: Contains essential fatty acids for health."
+        ],
+        seoKeywords: "arun gold 500ml pouch, coconut oil 500ml, small pouch coconut oil"
+    },
+    {
+        id: 22,
+        name: "Gem Groundnut Oil 1L Pouch",
+        slug: "gem-groundnut-oil-1l-pouch",
+        price: "₹185.00",
+        originalPrice: "₹205.00",
+        image: encodeImagePath("/products/gem-1ml-pouch/gem-1ml-pouch.png"),
+        imageSecondary: encodeImagePath("/products/gem-1ml-pouch/gem-1ml-pouchs.png"),
+        imageGallery: [
+            encodeImagePath("/products/gem-1ml-pouch/gem-1ml-pouch.png"),
+            encodeImagePath("/products/gem-1ml-pouch/gem-1ml-pouchs.png")
+        ],
+        description: "Gem Groundnut Oil 1L Pouch brings the traditional nutty flavor of groundnuts to your kitchen in a modern, easy-to-use pouch. Ideal for deep frying and traditional Indian recipes.",
+        rating: 4.8,
+        reviewCount: 112,
+        size: "1 Liter",
+        type: "Pouches",
+        category: "Groundnut Oil",
+        benefits: [
+            "Authentic Taste: Traditional nutty flavor and aroma.",
+            "High Smoke Point: Perfect for deep frying and high-heat cooking.",
+            "Heart Healthy: Naturally cholesterol-free.",
+            "Convenient Pouch: Easy to pour and dispose."
+        ],
+        seoKeywords: "gem groundnut oil pouch, 1l groundnut oil, peanut oil pouch, traditional cooking oil"
+    },
+    {
+        id: 23,
+        name: "Gem Groundnut Oil 500ml Pouch",
+        slug: "gem-groundnut-oil-500ml-pouch",
+        price: "₹95.00",
+        originalPrice: "₹105.00",
+        image: encodeImagePath("/products/gem-500ml-pouch/gem-500ml-pouch(2).png"),
+        imageSecondary: encodeImagePath("/products/gem-500ml-pouch/gem-500ml-pouch.png"),
+        imageGallery: [
+            encodeImagePath("/products/gem-500ml-pouch/gem-500ml-pouch(2).png"),
+            encodeImagePath("/products/gem-500ml-pouch/gem-500ml-pouch.png")
+        ],
+        description: "Enjoy the premium quality of Gem Groundnut Oil in a convenient 500ml pouch. Perfect for daily seasoning and light cooking while maintaining authenticity.",
+        rating: 4.6,
+        reviewCount: 48,
+        size: "500 ml",
+        type: "Pouches",
+        category: "Groundnut Oil",
+        benefits: [
+            "Pure Groundnut Oil: Made from high-quality peanuts.",
+            "Rich in Nutrients: Contains natural antioxidants and vitamins.",
+            "Leak-proof Packaging: Sturdy pouch design for safety.",
+            "Versatile Use: Great for sautéing and tempering."
+        ],
+        seoKeywords: "gem 500ml peanut oil, groundnut oil pouch 500ml, small pack groundnut oil"
+    },
+    {
+        id: 24,
+        name: "Three Roses Pure Castor Oil 500ml Pouch",
+        slug: "three-roses-pure-castor-oil-500ml-pouch",
+        price: "₹110.00",
+        originalPrice: "₹130.00",
+        image: encodeImagePath("/products/three-rose-500ml-pouch/three-rose-500ml-pouch (2).png"),
+        imageSecondary: encodeImagePath("/products/three-rose-500ml-pouch/three-rose-500ml-pouch.png"),
+        imageGallery: [
+            encodeImagePath("/products/three-rose-500ml-pouch/three-rose-500ml-pouch (2).png"),
+            encodeImagePath("/products/three-rose-500ml-pouch/three-rose-500ml-pouch.png")
+        ],
+        description: "Three Roses Pure Castor Oil is now available in a 500ml pouch. Trusted for generations for its medicinal and wellness properties, our castor oil is pure, thick, and natural.",
+        rating: 4.9,
+        reviewCount: 57,
+        size: "500 ml",
+        type: "Pouches",
+        category: "Castor Oil",
+        benefits: [
+            "100% Pure: No chemical additives.",
+            "Traditional Wellness: Excellent for body cooling and hair health.",
+            "Thick Consistency: Retains all natural properties.",
+            "Safe Packaging: Easy to use and store."
+        ],
+        seoKeywords: "three roses castor oil pouch, 500ml castor oil, medicinal castor oil"
     }
 ];
 // Helper function to generate SEO-friendly slug
@@ -2714,22 +2844,50 @@ function Footerdemo() {
                                                 lineNumber: 217,
                                                 columnNumber: 17
                                             }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                href: "tel:+919443234992",
-                                                className: "group flex items-center gap-3 transition-colors hover:text-primary",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex items-start gap-3",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
-                                                        className: "h-4 w-4 shrink-0 text-primary"
+                                                        className: "mt-1 h-4 w-4 shrink-0 text-primary"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                        lineNumber: 232,
+                                                        lineNumber: 229,
                                                         columnNumber: 19
                                                     }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        children: "(+91) 94432 34992"
-                                                    }, void 0, false, {
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex flex-col gap-2",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                                href: "tel:+919443234992",
+                                                                className: "transition-colors hover:text-primary whitespace-nowrap",
+                                                                children: "(+91) 94432 34992"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ui/footer-section.tsx",
+                                                                lineNumber: 231,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                                href: "tel:+919449333991",
+                                                                className: "transition-colors hover:text-primary whitespace-nowrap",
+                                                                children: "(+91) 94493 33991"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ui/footer-section.tsx",
+                                                                lineNumber: 237,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                                href: "tel:+919944634299",
+                                                                className: "transition-colors hover:text-primary whitespace-nowrap",
+                                                                children: "(+91) 99446 34299"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ui/footer-section.tsx",
+                                                                lineNumber: 243,
+                                                                columnNumber: 21
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
                                                         fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                        lineNumber: 233,
+                                                        lineNumber: 230,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
@@ -2746,20 +2904,20 @@ function Footerdemo() {
                                                         className: "h-4 w-4 shrink-0 text-primary"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                        lineNumber: 239,
+                                                        lineNumber: 255,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         children: "info@sriJayasakthiedibleoil.com"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                        lineNumber: 240,
+                                                        lineNumber: 256,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                lineNumber: 235,
+                                                lineNumber: 251,
                                                 columnNumber: 17
                                             }, this)
                                         ]
@@ -2783,7 +2941,7 @@ function Footerdemo() {
                                         children: "Follow Us"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ui/footer-section.tsx",
-                                        lineNumber: 247,
+                                        lineNumber: 263,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2791,7 +2949,7 @@ function Footerdemo() {
                                         children: "Connect with us on social media for updates and news."
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ui/footer-section.tsx",
-                                        lineNumber: 248,
+                                        lineNumber: 264,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2816,22 +2974,22 @@ function Footerdemo() {
                                                                         className: "h-4 w-4"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                                        lineNumber: 267,
+                                                                        lineNumber: 283,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                                    lineNumber: 261,
+                                                                    lineNumber: 277,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                                lineNumber: 255,
+                                                                lineNumber: 271,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                            lineNumber: 254,
+                                                            lineNumber: 270,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipContent"], {
@@ -2839,23 +2997,23 @@ function Footerdemo() {
                                                                 children: "Follow us on Facebook"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                                lineNumber: 272,
+                                                                lineNumber: 288,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                            lineNumber: 271,
+                                                            lineNumber: 287,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                    lineNumber: 253,
+                                                    lineNumber: 269,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                lineNumber: 252,
+                                                lineNumber: 268,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipProvider"], {
@@ -2877,22 +3035,22 @@ function Footerdemo() {
                                                                         className: "h-4 w-4"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                                        lineNumber: 291,
+                                                                        lineNumber: 307,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                                    lineNumber: 285,
+                                                                    lineNumber: 301,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                                lineNumber: 279,
+                                                                lineNumber: 295,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                            lineNumber: 278,
+                                                            lineNumber: 294,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipContent"], {
@@ -2900,23 +3058,23 @@ function Footerdemo() {
                                                                 children: "Follow us on Twitter"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                                lineNumber: 296,
+                                                                lineNumber: 312,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                            lineNumber: 295,
+                                                            lineNumber: 311,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                    lineNumber: 277,
+                                                    lineNumber: 293,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                lineNumber: 276,
+                                                lineNumber: 292,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipProvider"], {
@@ -2938,22 +3096,22 @@ function Footerdemo() {
                                                                         className: "h-4 w-4"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                                        lineNumber: 315,
+                                                                        lineNumber: 331,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                                    lineNumber: 309,
+                                                                    lineNumber: 325,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                                lineNumber: 303,
+                                                                lineNumber: 319,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                            lineNumber: 302,
+                                                            lineNumber: 318,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipContent"], {
@@ -2961,23 +3119,23 @@ function Footerdemo() {
                                                                 children: "Follow us on Instagram"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                                lineNumber: 320,
+                                                                lineNumber: 336,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                            lineNumber: 319,
+                                                            lineNumber: 335,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                    lineNumber: 301,
+                                                    lineNumber: 317,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                lineNumber: 300,
+                                                lineNumber: 316,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipProvider"], {
@@ -2999,22 +3157,22 @@ function Footerdemo() {
                                                                         className: "h-4 w-4"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                                        lineNumber: 339,
+                                                                        lineNumber: 355,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                                    lineNumber: 333,
+                                                                    lineNumber: 349,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                                lineNumber: 327,
+                                                                lineNumber: 343,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                            lineNumber: 326,
+                                                            lineNumber: 342,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipContent"], {
@@ -3022,23 +3180,23 @@ function Footerdemo() {
                                                                 children: "Connect with us on LinkedIn"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                                lineNumber: 344,
+                                                                lineNumber: 360,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                            lineNumber: 343,
+                                                            lineNumber: 359,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                    lineNumber: 325,
+                                                    lineNumber: 341,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                lineNumber: 324,
+                                                lineNumber: 340,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipProvider"], {
@@ -3060,22 +3218,22 @@ function Footerdemo() {
                                                                         className: "h-4 w-4"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                                        lineNumber: 363,
+                                                                        lineNumber: 379,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                                    lineNumber: 357,
+                                                                    lineNumber: 373,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                                lineNumber: 351,
+                                                                lineNumber: 367,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                            lineNumber: 350,
+                                                            lineNumber: 366,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipContent"], {
@@ -3083,35 +3241,35 @@ function Footerdemo() {
                                                                 children: "Chat with us on WhatsApp"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                                lineNumber: 368,
+                                                                lineNumber: 384,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                            lineNumber: 367,
+                                                            lineNumber: 383,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                    lineNumber: 349,
+                                                    lineNumber: 365,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                lineNumber: 348,
+                                                lineNumber: 364,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/ui/footer-section.tsx",
-                                        lineNumber: 251,
+                                        lineNumber: 267,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/ui/footer-section.tsx",
-                                lineNumber: 246,
+                                lineNumber: 262,
                                 columnNumber: 13
                             }, this)
                         ]
@@ -3133,7 +3291,7 @@ function Footerdemo() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/ui/footer-section.tsx",
-                                lineNumber: 381,
+                                lineNumber: 397,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -3147,7 +3305,7 @@ function Footerdemo() {
                                         children: "created by"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ui/footer-section.tsx",
-                                        lineNumber: 390,
+                                        lineNumber: 406,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3155,13 +3313,13 @@ function Footerdemo() {
                                         children: "MyEnum"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ui/footer-section.tsx",
-                                        lineNumber: 393,
+                                        lineNumber: 409,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/ui/footer-section.tsx",
-                                lineNumber: 384,
+                                lineNumber: 400,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -3175,24 +3333,24 @@ function Footerdemo() {
                                                 className: "absolute -bottom-0.5 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ui/footer-section.tsx",
-                                                lineNumber: 403,
+                                                lineNumber: 419,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, index, true, {
                                         fileName: "[project]/src/components/ui/footer-section.tsx",
-                                        lineNumber: 397,
+                                        lineNumber: 413,
                                         columnNumber: 17
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ui/footer-section.tsx",
-                                lineNumber: 395,
+                                lineNumber: 411,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/ui/footer-section.tsx",
-                        lineNumber: 377,
+                        lineNumber: 393,
                         columnNumber: 11
                     }, this)
                 ]

@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   /* Performance optimizations */
   compress: true,
   poweredByHeader: false,
-  
+
   /* Image optimization */
   images: {
     remotePatterns: [
@@ -29,6 +29,9 @@ const nextConfig: NextConfig = {
       '@radix-ui/react-avatar',
       '@radix-ui/react-dropdown-menu',
       '@radix-ui/react-select',
+      '@radix-ui/react-slot',
+      '@radix-ui/react-tooltip',
+      'lucide-react',
     ],
   },
 

@@ -368,6 +368,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/utils.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$spotlight$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/spotlight.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
@@ -378,7 +379,8 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
-const ProductRevealCard = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["memo"])(_c = _s(function ProductRevealCard({ id, description, name, price, originalPrice, image, rating, reviewCount, onAdd, onFavorite, size, type, enableAnimations = true, className }) {
+;
+const ProductRevealCard = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["memo"])(_c = _s(function ProductRevealCard({ id, description, name, price, originalPrice, image, rating, reviewCount, onAdd, onFavorite, size, type, priority = false, enableAnimations = true, className }) {
     _s();
     const [isFavorite, setIsFavorite] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const shouldReduceMotion = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$reduced$2d$motion$2f$use$2d$reduced$2d$motion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useReducedMotion"])();
@@ -527,38 +529,48 @@ const ProductRevealCard = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5
                 fill: "white"
             }, void 0, false, {
                 fileName: "[project]/src/components/product-reveal-card.tsx",
-                lineNumber: 166,
+                lineNumber: 169,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "relative overflow-hidden",
+                className: "relative overflow-hidden h-56 w-full",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].img, {
-                        src: image,
-                        alt: name,
-                        className: "h-56 w-full object-contain",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                         variants: imageVariants,
                         transition: {
                             type: "spring",
                             stiffness: 300,
                             damping: 30
-                        }
+                        },
+                        className: "h-full w-full relative",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            src: image || "/placeholder.png",
+                            alt: name || "Product Image",
+                            fill: true,
+                            className: "object-contain",
+                            sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw",
+                            priority: priority
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/product-reveal-card.tsx",
+                            lineNumber: 184,
+                            columnNumber: 11
+                        }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/product-reveal-card.tsx",
-                        lineNumber: 176,
+                        lineNumber: 179,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"
+                        className: "absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent pointer-events-none"
                     }, void 0, false, {
                         fileName: "[project]/src/components/product-reveal-card.tsx",
-                        lineNumber: 183,
+                        lineNumber: 193,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/product-reveal-card.tsx",
-                lineNumber: 175,
+                lineNumber: 178,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -583,17 +595,17 @@ const ProductRevealCard = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/product-reveal-card.tsx",
-                        lineNumber: 190,
+                        lineNumber: 200,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/product-reveal-card.tsx",
-                    lineNumber: 189,
+                    lineNumber: 199,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/product-reveal-card.tsx",
-                lineNumber: 187,
+                lineNumber: 197,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -610,7 +622,7 @@ const ProductRevealCard = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5
                                     children: name
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/product-reveal-card.tsx",
-                                    lineNumber: 209,
+                                    lineNumber: 219,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -618,13 +630,13 @@ const ProductRevealCard = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5
                                     children: description?.split(".")[0]
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/product-reveal-card.tsx",
-                                    lineNumber: 210,
+                                    lineNumber: 220,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/product-reveal-card.tsx",
-                            lineNumber: 208,
+                            lineNumber: 218,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -644,36 +656,36 @@ const ProductRevealCard = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5
                                         className: "w-4 h-4 mr-2"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/product-reveal-card.tsx",
-                                        lineNumber: 234,
+                                        lineNumber: 244,
                                         columnNumber: 15
                                     }, this),
                                     "View Details"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/product-reveal-card.tsx",
-                                lineNumber: 220,
+                                lineNumber: 230,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/product-reveal-card.tsx",
-                            lineNumber: 216,
+                            lineNumber: 226,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/product-reveal-card.tsx",
-                    lineNumber: 206,
+                    lineNumber: 216,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/product-reveal-card.tsx",
-                lineNumber: 202,
+                lineNumber: 212,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/product-reveal-card.tsx",
-        lineNumber: 153,
+        lineNumber: 156,
         columnNumber: 5
     }, this);
 }, "1sibchljxBCgwqXV6HF9IaNaC14=", false, function() {
@@ -748,7 +760,7 @@ var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.sign
 ;
 const ProductsList = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["memo"])(_c = _s(function ProductsList({ products }) {
     _s();
-    const [category, setCategory] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("Oils");
+    const [category, setCategory] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("All");
     // Filter products based on selected category
     const filteredData = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
         "ProductsList.ProductsList.useMemo[filteredData]": ()=>{
@@ -758,6 +770,10 @@ const ProductsList = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$pro
                 // Show both Refined Oil and Non-Refined Oil products
                 return products.filter({
                     "ProductsList.ProductsList.useMemo[filteredData]": (product)=>product.type === "Refined Oil" || product.type === "Non-Refined Oil"
+                }["ProductsList.ProductsList.useMemo[filteredData]"]);
+            } else if (category === "Pouches") {
+                return products.filter({
+                    "ProductsList.ProductsList.useMemo[filteredData]": (product)=>product.type === "Pouches"
                 }["ProductsList.ProductsList.useMemo[filteredData]"]);
             } else {
                 return products.filter({
@@ -777,7 +793,7 @@ const ProductsList = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$pro
                 children: "Our Best Sellers"
             }, void 0, false, {
                 fileName: "[project]/src/components/products/ProductsList.tsx",
-                lineNumber: 49,
+                lineNumber: 51,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -787,12 +803,12 @@ const ProductsList = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$pro
                     setCategory: setCategory
                 }, void 0, false, {
                     fileName: "[project]/src/components/products/ProductsList.tsx",
-                    lineNumber: 53,
+                    lineNumber: 55,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/products/ProductsList.tsx",
-                lineNumber: 52,
+                lineNumber: 54,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -800,52 +816,44 @@ const ProductsList = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$pro
                 children: category === "All" ? "All Products" : `${category} Products`
             }, void 0, false, {
                 fileName: "[project]/src/components/products/ProductsList.tsx",
-                lineNumber: 55,
+                lineNumber: 57,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex items-center justify-center w-full",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 my-10 mx-auto ",
-                    children: filteredData?.length > 0 ? filteredData.map((product)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$product$2d$reveal$2d$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ProductRevealCard"], {
-                            id: product.id,
-                            name: product.name,
-                            price: product.price,
-                            originalPrice: product.originalPrice,
-                            image: product.image,
-                            description: product.description,
-                            rating: product.rating,
-                            reviewCount: product.reviewCount,
-                            size: product.size,
-                            type: product.type
+                    children: filteredData?.length > 0 ? filteredData.map((product, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$product$2d$reveal$2d$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ProductRevealCard"], {
+                            ...product,
+                            priority: index < 4
                         }, product.id, false, {
                             fileName: "[project]/src/components/products/ProductsList.tsx",
-                            lineNumber: 62,
+                            lineNumber: 64,
                             columnNumber: 15
                         }, this)) : Array.from({
                         length: 4
                     }).map((_, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ProductCardSkeleton, {}, index, false, {
                             fileName: "[project]/src/components/products/ProductsList.tsx",
-                            lineNumber: 78,
+                            lineNumber: 72,
                             columnNumber: 15
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/src/components/products/ProductsList.tsx",
-                    lineNumber: 59,
+                    lineNumber: 61,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/products/ProductsList.tsx",
-                lineNumber: 58,
+                lineNumber: 60,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/products/ProductsList.tsx",
-        lineNumber: 48,
+        lineNumber: 50,
         columnNumber: 5
     }, this);
-}, "O62rxpfauxzvt1ZFaikRaoQlMGM=")), "O62rxpfauxzvt1ZFaikRaoQlMGM=");
+}, "O2LDzzZXok/cu+NxljyLy7iKrY8=")), "O2LDzzZXok/cu+NxljyLy7iKrY8=");
 _c1 = ProductsList;
 ProductsList.displayName = "ProductsList";
 const __TURBOPACK__default__export__ = ProductsList;
@@ -865,7 +873,9 @@ const SlideTabs = ({ category, setCategory })=>{
                 "All",
                 "Oils",
                 "Baker's Choice",
-                "Oil Bottles"
+                "Baker's Day",
+                "Oil Bottles",
+                "Pouches"
             ].indexOf(category);
             const selectedTab = tabsRef.current[tabIndex];
             if (selectedTab) {
@@ -888,7 +898,9 @@ const SlideTabs = ({ category, setCategory })=>{
                 "All",
                 "Oils",
                 "Baker's Choice",
-                "Oil Bottles"
+                "Baker's Day",
+                "Oil Bottles",
+                "Pouches"
             ].indexOf(category);
             const selectedTab = tabsRef.current[tabIndex];
             if (selectedTab) {
@@ -906,7 +918,9 @@ const SlideTabs = ({ category, setCategory })=>{
                 "All",
                 "Oils",
                 "Baker's Choice",
-                "Oil Bottles"
+                "Baker's Day",
+                "Oil Bottles",
+                "Pouches"
             ].map((tab, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Tab, {
                     ref: (el)=>{
                         tabsRef.current[i] = el;
@@ -916,20 +930,20 @@ const SlideTabs = ({ category, setCategory })=>{
                     children: tab
                 }, tab, false, {
                     fileName: "[project]/src/components/products/ProductsList.tsx",
-                    lineNumber: 152,
+                    lineNumber: 150,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Cursor, {
                 position: position
             }, void 0, false, {
                 fileName: "[project]/src/components/products/ProductsList.tsx",
-                lineNumber: 164,
+                lineNumber: 162,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/products/ProductsList.tsx",
-        lineNumber: 129,
+        lineNumber: 125,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -952,7 +966,7 @@ const Tab = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$no
         children: children
     }, void 0, false, {
         fileName: "[project]/src/components/products/ProductsList.tsx",
-        lineNumber: 183,
+        lineNumber: 181,
         columnNumber: 7
     }, ("TURBOPACK compile-time value", void 0));
 });
@@ -967,7 +981,7 @@ const ProductCardSkeleton = ()=>{
                 className: "h-56 w-full rounded-t-2xl"
             }, void 0, false, {
                 fileName: "[project]/src/components/products/ProductsList.tsx",
-                lineNumber: 212,
+                lineNumber: 210,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -979,26 +993,26 @@ const ProductCardSkeleton = ()=>{
                             className: "h-4 w-24 rounded"
                         }, void 0, false, {
                             fileName: "[project]/src/components/products/ProductsList.tsx",
-                            lineNumber: 218,
+                            lineNumber: 216,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/components/products/ProductsList.tsx",
-                        lineNumber: 217,
+                        lineNumber: 215,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$skeleton$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Skeleton"], {
                         className: "h-6 w-full rounded"
                     }, void 0, false, {
                         fileName: "[project]/src/components/products/ProductsList.tsx",
-                        lineNumber: 222,
+                        lineNumber: 220,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$skeleton$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Skeleton"], {
                         className: "h-6 w-3/4 rounded"
                     }, void 0, false, {
                         fileName: "[project]/src/components/products/ProductsList.tsx",
-                        lineNumber: 223,
+                        lineNumber: 221,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1007,24 +1021,24 @@ const ProductCardSkeleton = ()=>{
                             className: "h-8 w-24 rounded"
                         }, void 0, false, {
                             fileName: "[project]/src/components/products/ProductsList.tsx",
-                            lineNumber: 227,
+                            lineNumber: 225,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/components/products/ProductsList.tsx",
-                        lineNumber: 226,
+                        lineNumber: 224,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/products/ProductsList.tsx",
-                lineNumber: 215,
+                lineNumber: 213,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/products/ProductsList.tsx",
-        lineNumber: 210,
+        lineNumber: 208,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -1037,7 +1051,7 @@ const Cursor = ({ position })=>{
         className: "absolute z-0 h-7 rounded-full bg-primary md:h-12"
     }, void 0, false, {
         fileName: "[project]/src/components/products/ProductsList.tsx",
-        lineNumber: 244,
+        lineNumber: 242,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -1528,14 +1542,14 @@ function calculateRepeatDuration(duration, repeat, _repeatDelay) {
 "[project]/node_modules/framer-motion/dist/es/animation/sequence/utils/calc-time.mjs [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-/**
- * Given a absolute or relative time definition and current/prev time state of the sequence,
- * calculate an absolute time for the next keyframes.
- */ __turbopack_context__.s([
+__turbopack_context__.s([
     "calcNextTime",
     ()=>calcNextTime
 ]);
-function calcNextTime(current, next, prev, labels) {
+/**
+ * Given a absolute or relative time definition and current/prev time state of the sequence,
+ * calculate an absolute time for the next keyframes.
+ */ function calcNextTime(current, next, prev, labels) {
     if (typeof next === "number") {
         return next;
     } else if (next.startsWith("-") || next.startsWith("+")) {
@@ -1593,16 +1607,16 @@ function addKeyframes(sequence, keyframes, easing, offset, startTime, endTime) {
 "[project]/node_modules/framer-motion/dist/es/animation/sequence/utils/normalize-times.mjs [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
+__turbopack_context__.s([
+    "normalizeTimes",
+    ()=>normalizeTimes
+]);
 /**
  * Take an array of times that represent repeated keyframes. For instance
  * if we have original times of [0, 0.5, 1] then our repeated times will
  * be [0, 0.5, 1, 1, 1.5, 2]. Loop over the times and scale them back
  * down to a 0-1 scale.
- */ __turbopack_context__.s([
-    "normalizeTimes",
-    ()=>normalizeTimes
-]);
-function normalizeTimes(times, repeat) {
+ */ function normalizeTimes(times, repeat) {
     for(let i = 0; i < times.length; i++){
         times[i] = times[i] / (repeat + 1);
     }
@@ -2190,18 +2204,18 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$mo
 "[project]/node_modules/lucide-react/dist/esm/icons/ellipsis.js [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-/**
- * @license lucide-react v0.555.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */ __turbopack_context__.s([
+__turbopack_context__.s([
     "__iconNode",
     ()=>__iconNode,
     "default",
     ()=>Ellipsis
 ]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-client] (ecmascript)");
+/**
+ * @license lucide-react v0.555.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-client] (ecmascript)");
 ;
 const __iconNode = [
     [

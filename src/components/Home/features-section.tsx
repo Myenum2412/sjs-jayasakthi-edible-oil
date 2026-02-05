@@ -9,7 +9,7 @@ export default function FeaturesSection() {
                     <h1 className="text-4xl font-semibold md:text-5xl">Experience the Essence of Purity</h1>
                     <p className="text-lg text-muted-foreground">Discover a range of premium edible oils crafted to perfection. From traditional extraction methods to modern quality standards, we ensure every drop adds value to your health.</p>
                 </div>
-                <div className="px-3 pt-3 md:-mx-8">
+                <div className="px-0 pt-3">
                     <div style={{ position: 'relative', paddingTop: '56.25%' }}>
                         <iframe
                             src="https://iframe.mediadelivery.net/embed/587211/e652e102-62e8-416f-a10c-f41eb9fbe7e2?autoplay=true&loop=false&muted=false&preload=true&responsive=true"

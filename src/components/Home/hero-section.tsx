@@ -30,7 +30,7 @@ export default function HeroSection() {
       <main className="overflow-hidden relative h-[90vh] max-md:h-[80vh]">
         <section>
           <div className="py-24 md:pb-32 lg:pb-36 lg:pt-72 h-full">
-            <div className="aspect-2/3 absolute inset-1 -z-10 overflow-hidden rounded-3xl border border-black/10 lg:aspect-video lg:rounded-[3rem] max-w-screen-xl mx-auto h-full w-full  ">
+            <div className="aspect-2/3 absolute inset-y-1 left-0 right-0 mx-auto -z-10 overflow-hidden rounded-3xl border border-black/10 lg:aspect-video lg:rounded-[3rem] max-w-screen-xl h-full w-full">
               <video
                 ref={videoRef}
                 autoPlay
@@ -41,6 +41,8 @@ export default function HeroSection() {
                 poster="/images/aboutus.png"
                 className="size-full object-cover opacity-100"
                 src="/intro.mp4"
+                // @ts-ignore
+                fetchpriority="high"
                 onLoadedData={(e) => {
                   // Force play on mobile devices when video is loaded
                   const video = e.currentTarget;

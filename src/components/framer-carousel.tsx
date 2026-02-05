@@ -58,7 +58,7 @@ export function FramerCarousel() {
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % items.length);
-    }, 5000);
+    }, 6000); // Slightly longer interval for better UX
     return () => clearInterval(timer);
   }, []);
 

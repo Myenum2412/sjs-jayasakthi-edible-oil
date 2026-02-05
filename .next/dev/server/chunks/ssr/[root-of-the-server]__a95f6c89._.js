@@ -345,6 +345,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$meta$2e$ts__$5
 ;
 ;
 ;
+"";
 // Lazy load all heavy components with code splitting
 const HeroSection = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"])(()=>__turbopack_context__.A("[project]/src/components/Home/hero-section.tsx [app-rsc] (ecmascript, next/dynamic entry, async loader)"), {
     loadableGenerated: {
@@ -354,7 +355,7 @@ const HeroSection = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_mod
     },
     loading: ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$LoadingSkeleton$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["HeroSkeleton"], {}, void 0, false, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 10,
+            lineNumber: 11,
             columnNumber: 18
         }, ("TURBOPACK compile-time value", void 0)),
     ssr: true
@@ -375,33 +376,33 @@ const ProductsSection = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node
                             className: "h-10 w-64"
                         }, void 0, false, {
                             fileName: "[project]/src/app/page.tsx",
-                            lineNumber: 18,
+                            lineNumber: 19,
                             columnNumber: 9
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$skeleton$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Skeleton"], {
                             className: "h-6 w-96"
                         }, void 0, false, {
                             fileName: "[project]/src/app/page.tsx",
-                            lineNumber: 19,
+                            lineNumber: 20,
                             columnNumber: 9
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 17,
+                    lineNumber: 18,
                     columnNumber: 7
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$LoadingSkeleton$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ProductsGridSkeleton"], {
                     count: 4
                 }, void 0, false, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 21,
+                    lineNumber: 22,
                     columnNumber: 7
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 16,
+            lineNumber: 17,
             columnNumber: 5
         }, ("TURBOPACK compile-time value", void 0)),
     ssr: true
@@ -414,7 +415,7 @@ const FeaturesSection = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node
     },
     loading: ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$LoadingSkeleton$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["FeaturesSkeleton"], {}, void 0, false, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 28,
+            lineNumber: 29,
             columnNumber: 18
         }, ("TURBOPACK compile-time value", void 0)),
     ssr: true
@@ -436,32 +437,32 @@ const StatsSection = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_mo
                             className: "h-12 w-12 rounded-full mx-auto"
                         }, void 0, false, {
                             fileName: "[project]/src/app/page.tsx",
-                            lineNumber: 37,
+                            lineNumber: 38,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$skeleton$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Skeleton"], {
                             className: "h-6 w-24 mx-auto"
                         }, void 0, false, {
                             fileName: "[project]/src/app/page.tsx",
-                            lineNumber: 38,
+                            lineNumber: 39,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$skeleton$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Skeleton"], {
                             className: "h-4 w-32 mx-auto"
                         }, void 0, false, {
                             fileName: "[project]/src/app/page.tsx",
-                            lineNumber: 39,
+                            lineNumber: 40,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, i, true, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 36,
+                    lineNumber: 37,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)))
         }, void 0, false, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 34,
+            lineNumber: 35,
             columnNumber: 5
         }, ("TURBOPACK compile-time value", void 0)),
     ssr: true
@@ -480,17 +481,17 @@ function HomePage() {
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(HeroSection, {}, void 0, false, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 62,
+                    lineNumber: 63,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(ProductsSection, {}, void 0, false, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 63,
+                    lineNumber: 64,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(FeaturesSection, {}, void 0, false, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 64,
+                    lineNumber: 65,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Suspense"], {
@@ -498,28 +499,28 @@ function HomePage() {
                         className: "h-64 w-full rounded-lg"
                     }, void 0, false, {
                         fileName: "[project]/src/app/page.tsx",
-                        lineNumber: 65,
+                        lineNumber: 66,
                         columnNumber: 29
                     }, void 0),
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(CTA2, {}, void 0, false, {
                         fileName: "[project]/src/app/page.tsx",
-                        lineNumber: 66,
+                        lineNumber: 67,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 65,
+                    lineNumber: 66,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 68,
+                    lineNumber: 69,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 61,
+            lineNumber: 62,
             columnNumber: 7
         }, this)
     }, void 0, false);

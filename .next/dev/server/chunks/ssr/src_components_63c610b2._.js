@@ -39,9 +39,9 @@ function WorldMap({ dots = [], lineColor = "#0ea5e9" }) {
     ]);
     const svgMap = map.getSVG({
         radius: 0.22,
-        color: theme === "dark" ? "#FFFFFF40" : "#00000040",
+        color: theme === "dark" ? "#FFFFFF" : "#000000",
         shape: "circle",
-        backgroundColor: theme === "dark" ? "black" : "white"
+        backgroundColor: "transparent"
     });
     const projectPoint = (lat, lng)=>{
         const x = (lng + 180) * (800 / 360);
@@ -57,7 +57,7 @@ function WorldMap({ dots = [], lineColor = "#0ea5e9" }) {
         return `M ${start.x} ${start.y} Q ${midX} ${midY} ${end.x} ${end.y}`;
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "w-full aspect-[2/1] dark:bg-black bg-white rounded-lg  relative font-sans",
+        className: "w-full aspect-[2/1] relative font-sans",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                 src: `data:image/svg+xml;utf8,${encodeURIComponent(svgMap)}`,
@@ -900,7 +900,7 @@ function AboutContactForm() {
                                                     placeholder: "Enter Name",
                                                     value: formData.name,
                                                     onChange: (e)=>handleInputChange("name", e.target.value),
-                                                    className: errors.name ? "border-red-500" : ""
+                                                    className: `!bg-white !text-black ${errors.name ? "border-red-500" : ""}`
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/AboutContactForm.tsx",
                                                     lineNumber: 303,
@@ -937,7 +937,7 @@ function AboutContactForm() {
                                                     placeholder: "Enter Email",
                                                     value: formData.email,
                                                     onChange: (e)=>handleInputChange("email", e.target.value),
-                                                    className: errors.email ? "border-red-500" : ""
+                                                    className: `!bg-white !text-black ${errors.email ? "border-red-500" : ""}`
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/AboutContactForm.tsx",
                                                     lineNumber: 317,
@@ -979,7 +979,7 @@ function AboutContactForm() {
                                                             },
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectTrigger"], {
-                                                                    className: errors.state ? "border-red-500" : "",
+                                                                    className: `!bg-white !text-black ${errors.state ? "border-red-500" : ""}`,
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectValue"], {
                                                                         placeholder: "Select State"
                                                                     }, void 0, false, {
@@ -1043,7 +1043,7 @@ function AboutContactForm() {
                                                             disabled: !formData.state,
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectTrigger"], {
-                                                                    className: errors.district ? "border-red-500" : "",
+                                                                    className: `!bg-white !text-black ${errors.district ? "border-red-500" : ""}`,
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectValue"], {
                                                                         placeholder: formData.state ? "Select District" : "Select State first"
                                                                     }, void 0, false, {
@@ -1112,7 +1112,7 @@ function AboutContactForm() {
                                                     onValueChange: (value)=>handleInputChange("productInterest", value),
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectTrigger"], {
-                                                            className: errors.productInterest ? "border-red-500" : "",
+                                                            className: `!bg-white !text-black ${errors.productInterest ? "border-red-500" : ""}`,
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectValue"], {
                                                                 placeholder: "Select Product"
                                                             }, void 0, false, {
@@ -1175,7 +1175,7 @@ function AboutContactForm() {
                                                     placeholder: "Enter Message",
                                                     value: formData.message,
                                                     onChange: (e)=>handleInputChange("message", e.target.value),
-                                                    className: `min-h-[120px] ${errors.message ? "border-red-500" : ""}`
+                                                    className: `min-h-[120px] !bg-white !text-black ${errors.message ? "border-red-500" : ""}`
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/AboutContactForm.tsx",
                                                     lineNumber: 412,
