@@ -222,6 +222,8 @@ self.__SERVER_FILES_MANIFEST={
         "@radix-ui/react-avatar",
         "@radix-ui/react-dropdown-menu",
         "@radix-ui/react-select",
+        "@radix-ui/react-slot",
+        "@radix-ui/react-tooltip",
         "date-fns",
         "lodash-es",
         "ramda",
