@@ -38,29 +38,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* PWA Meta Tags */}
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="SJS Oils" />
-        <link rel="apple-touch-icon" href="/logo.png" />
-        <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#16a34a" />
 
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              if ('serviceWorker' in navigator) {
-                window.addEventListener('load', function() {
-                  navigator.serviceWorker.register('/sw.js').then(function(registration) {
-                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
-                  }, function(err) {
-                    console.log('ServiceWorker registration failed: ', err);
-                  });
-                });
-              }
-            `,
-          }}
-        />
+        <link rel="icon" href="/logo.png" />
+
+
 
         {/* Preconnect to external domains for performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />

@@ -414,10 +414,10 @@ const data = [
     slug: "bakers-choice-puff-vanaspati",
     price: "",
     originalPrice: "₹109.99",
-    image: encodeImagePath("/products/Baker's-day-puff-vanaspati/Baker_s-day-puff-vanaspati-removebg-preview.png"),
-    imageSecondary: encodeImagePath("/products/Baker's-day-puff-vanaspati/Baker_s-day-puff-vanaspati-removebg-preview.png"),
+    image: encodeImagePath("/products/Baker_s-choice-puff-vanaspati/Baker_s-choice-puff-vanaspati-removebg-preview.png"),
+    imageSecondary: encodeImagePath("/products/Baker_s-choice-puff-vanaspati/Baker_s-choice-puff-vanaspati-removebg-preview.png"),
     imageGallery: [
-      encodeImagePath("/products/Baker's-day-puff-vanaspati/Baker_s-day-puff-vanaspati-removebg-preview.png"),
+      encodeImagePath("/products/Baker_s-choice-puff-vanaspati/Baker_s-choice-puff-vanaspati-removebg-preview.png"),
     ],
     description:
       "Baker's Choice Puff Vanaspati is crafted to deliver perfectly flaky, layered puffs and pastries. This premium vanaspati enhances dough lamination and ensures consistent, professional-quality results. Perfect for puffs, khari biscuits, and layered pastries.",

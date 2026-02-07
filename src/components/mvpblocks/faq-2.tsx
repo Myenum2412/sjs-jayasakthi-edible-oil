@@ -12,7 +12,7 @@ interface FaqItem {
   id: string;
   question: string;
   answer: string;
-  category: 'general' | 'Company Overview' | 'Products' | 'Manufacturing' | 'Support' ;
+  category: 'general' | 'Company Overview' | 'Products' | 'Manufacturing' | 'Support';
 }
 
 const faqItems: FaqItem[] = [
@@ -191,10 +191,10 @@ export default function Faq2({ showViewMore = false, initialItemsCount = 2 }: Fa
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.3, delay: index * 0.05 }}
                 className={cn(
-                  'border-border h-fit overflow-hidden rounded-xl border',
+                  'border-border h-fit overflow-hidden rounded-xl border bg-white text-black',
                   expandedId === faq.id
-                    ? 'shadow-3xl bg-card/50'
-                    : 'bg-card/50',
+                    ? 'shadow-3xl'
+                    : '',
                 )}
                 style={{ minHeight: '88px' }}
               >
@@ -224,7 +224,7 @@ export default function Faq2({ showViewMore = false, initialItemsCount = 2 }: Fa
                       className="overflow-hidden"
                     >
                       <div className="border-border border-t px-6 pt-2 pb-6">
-                        <p className="text-muted-foreground">{faq.answer}</p>
+                        <p className="text-gray-600">{faq.answer}</p>
                       </div>
                     </motion.div>
                   )}
@@ -235,6 +235,6 @@ export default function Faq2({ showViewMore = false, initialItemsCount = 2 }: Fa
         </div>
 
       </div>
-    </section>
+    </section >
   );
 }
