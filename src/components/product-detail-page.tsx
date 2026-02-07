@@ -74,7 +74,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
   const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
 
   return (
-    
+
     <div className="w-full relative mx-auto p-4 md:p-8 bg-background text-foreground overflow-hidden">
       {/* Spotlight Effect */}
       <Spotlight
@@ -83,7 +83,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
         )}
         fill="white"
       />
-      
+
       {/* Breadcrumbs Navigation */}
       <nav
         aria-label="Breadcrumb"
@@ -134,7 +134,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
               <img
                 src={product.images[currentImageIndex]}
                 alt={`${product.name} image ${currentImageIndex + 1}`}
-                className="object-cover w-full h-full"
+                className="object-contain w-full h-full p-4"
               />
             </motion.div>
           </AnimatePresence>
@@ -154,7 +154,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
                 />
               ))}
             </div>
-           
+
           </div>
         </div>
 
