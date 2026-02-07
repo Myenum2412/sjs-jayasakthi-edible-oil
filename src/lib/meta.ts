@@ -34,6 +34,7 @@ export function generateMetadata(options: {
   const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
 
   return {
+    metadataBase: new URL(siteUrl),
     title: fullTitle,
     description: description.substring(0, 160),
     keywords: keywords,
