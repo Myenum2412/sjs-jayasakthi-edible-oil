@@ -1,6 +1,6 @@
 "use client";
 
-import { memo, useCallback, useEffect, useState } from "react";
+import { memo, ReactNode, useCallback, useEffect, useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -23,7 +23,7 @@ export interface Gallery4Item {
 }
 
 export interface Gallery4Props {
-  title?: string;
+  title?: ReactNode;
   description?: string;
   products: {
     id: number;
@@ -42,7 +42,12 @@ export interface Gallery4Props {
 
 const ProductsCarousel = memo(function ProductsCarousel({
   products = productsData,
-  title = "Our Best Selling Products",
+  title = (
+    <>
+      Our Best Selling{" "}
+      <span className="bg-white text-primary px-2 rounded-lg">Products</span>
+    </>
+  ),
   description = "From the kitchen to the prayer room, experience the purity of Sri Jayasakthi Edible Oils. Trusted since 1995.",
 }: Gallery4Props) {
   const [carouselApi, setCarouselApi] = useState<CarouselApi>();

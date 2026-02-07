@@ -88,6 +88,7 @@ interface SlideTabsProps {
 }
 
 export const SlideTabs = ({ category, setCategory }: SlideTabsProps) => {
+  const [activeTab, setActiveTab] = useState(category);
   const [position, setPosition] = useState<{
     left: number;
     width: number;
@@ -102,6 +103,7 @@ export const SlideTabs = ({ category, setCategory }: SlideTabsProps) => {
   // This effect runs when the component mounts or when the selected tab changes.
   // It calculates the position of the selected tab and sets the cursor.
   useEffect(() => {
+    setActiveTab(category);
     const tabIndex = [
       "All",
       "Oils",
@@ -126,6 +128,7 @@ export const SlideTabs = ({ category, setCategory }: SlideTabsProps) => {
       onMouseLeave={() => {
         // When the mouse leaves the container, reset the cursor
         // to the position of the currently selected tab.
+        setActiveTab(category);
         const tabIndex = [
           "All",
           "Oils",
@@ -154,6 +157,8 @@ export const SlideTabs = ({ category, setCategory }: SlideTabsProps) => {
           }}
           setPosition={setPosition}
           onClick={() => setCategory(tab)}
+          isActive={activeTab === tab}
+          onMouseEnter={() => setActiveTab(tab)}
         >
           {tab}
         </Tab>
@@ -173,15 +178,18 @@ interface TabProps {
     opacity: number;
   }) => void;
   onClick: () => void;
+  isActive: boolean;
+  onMouseEnter: () => void;
 }
 
 const Tab = forwardRef<HTMLLIElement, TabProps>(
-  ({ children, setPosition, onClick }, ref) => {
+  ({ children, setPosition, onClick, isActive, onMouseEnter }, ref) => {
     return (
       <li
         ref={ref}
         onClick={onClick}
         onMouseEnter={() => {
+          onMouseEnter();
           if (!ref || typeof ref === "function" || !ref.current) return;
 
           const { width } = ref.current.getBoundingClientRect();
@@ -192,7 +200,8 @@ const Tab = forwardRef<HTMLLIElement, TabProps>(
             opacity: 1,
           });
         }}
-        className="relative z-10 block cursor-pointer px-3 py-1.5 text-xs uppercase text-foreground  md:px-5 md:py-3 md:text-base hover:text-primary/80"
+        className={`relative z-10 block cursor-pointer px-3 py-1.5 text-xs uppercase md:px-5 md:py-3 md:text-base transition-colors duration-200 ${isActive ? "text-white" : "text-primary"
+          }`}
       >
         {children}
       </li>

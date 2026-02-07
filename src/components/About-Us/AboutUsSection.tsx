@@ -60,7 +60,7 @@ const projects = [
     title: "Our Commitment to Quality",
     description:
       "With a robust production capacity of 3,000 tonnes of refined palm olien and edible oils per month, we have become a trusted name serving wholesalers, retailers, and industries across the nation.",
-    link: "/images/lab.jpg",
+    link: "/images/lab.png",
     color: "#fd521a",
   },
 ];

@@ -241,7 +241,7 @@ const data = [
   },
   {
     id: 9,
-    name: "Suriya Refined Sunflower Oil 15kg",
+    name: "Suriya Refined Palm Oil 15kg",
     slug: "suriya-refined-sunflower-oil-15kg",
     price: "",
     originalPrice: "",
@@ -522,7 +522,7 @@ const data = [
   },
   {
     id: 19,
-    name: "Sir Gold Refined Sunflower Oil 1 Liter",
+    name: "Sir Gold Deepam Oil 1 Liter",
     slug: "sir-gold-refined-sunflower-oil-1-liter",
     price: "₹145.00",
     originalPrice: "₹165.00",

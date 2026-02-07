@@ -12,7 +12,7 @@ export default function FeaturesSection() {
                 <div className="px-0 pt-3">
                     <div style={{ position: 'relative', paddingTop: '56.25%' }}>
                         <iframe
-                            src="https://iframe.mediadelivery.net/embed/587211/e652e102-62e8-416f-a10c-f41eb9fbe7e2?autoplay=true&loop=false&muted=false&preload=true&responsive=true"
+                            src="https://iframe.mediadelivery.net/embed/587211/d1ec7d7f-4452-4572-a445-ece45f66fd0b?autoplay=false&loop=false&muted=false&preload=true&responsive=true"
                             loading="lazy"
                             style={{ border: 0, position: 'absolute', top: 0, height: '100%', width: '100%' }}
                             allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;"

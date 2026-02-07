@@ -83,7 +83,7 @@ export function TimelineDemo() {
       content: (
         <div>
           <p className="mb-4 text-base font-normal text-muted-foreground md:text-xl">
-            Our journey began in 1980 with Sri Tirupathiyar chatera, who laid the foundation by running a small grocery and oil shop, producing approximately 200 tins. This phase established our values of quality, trust, and customer commitment.
+            Our journey began in 1980 with Sri Thirupathi chettiyar and rangasamy chettiyar, rajalingam chettiyar, who laid the foundation by running a small grocery and oil shop, producing approximately 200 tins. This phase established our values of quality, trust, and customer commitment.
           </p>
         </div>
       ),
