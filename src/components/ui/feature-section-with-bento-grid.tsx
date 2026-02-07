@@ -54,7 +54,7 @@ function Feature() {
                   Trusted by Generations
                 </h3>
                 <p className=" max-w-xl text-base">
-                  Purity you can taste. Quality you can trust. Tradition you can
+                  Purity you can trust. Quality you can taste. Tradition you can
                   feel.
                 </p>
               </div>

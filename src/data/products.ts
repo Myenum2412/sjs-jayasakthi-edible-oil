@@ -679,6 +679,34 @@ const data = [
     ],
     seoKeywords: "three roses castor oil pouch, 500ml castor oil, medicinal castor oil",
   },
+  {
+    id: 25,
+    name: "Baker's Day Puff Vanaspati",
+    slug: "bakers-day-puff-vanaspati",
+    price: "",
+    originalPrice: "₹109.99",
+    image: encodeImagePath("/products/Baker's-day-puff-vanaspati/Baker_s-day-puff-vanaspati-removebg-preview.png"),
+    imageSecondary: encodeImagePath("/products/Baker's-day-puff-vanaspati/Baker_s-day-puff-vanaspati-removebg-preview.png"),
+    imageGallery: [
+      encodeImagePath("/products/Baker's-day-puff-vanaspati/Baker_s-day-puff-vanaspati-removebg-preview.png"),
+    ],
+    description:
+      "Baker's Day Puff Vanaspati is specially crafted to deliver perfectly flaky, layered puffs and pastries. This premium vanaspati enhances dough lamination and ensures consistent, professional-quality results. Perfect for puffs, khari biscuits, and layered pastries.",
+    rating: 4.7,
+    reviewCount: 156,
+    size: "15 Kg",
+    type: "Baker's Day",
+    category: "Bakery Vanaspati",
+    benefits: [
+      "Perfect Flakiness: Ensures excellent layer separation for crisp puffs.",
+      "Consistent Quality: Reliable results batch after batch.",
+      "Easy to Work With: Smooth texture for easy lamination.",
+      "Professional Results: Meets commercial bakery standards.",
+      "Versatile Application: Perfect for puffs, khari, and layered pastries.",
+      "Long Shelf Life: Maintains freshness and stability.",
+    ],
+    seoKeywords: "bakers day puff vanaspati, puff pastry fat, flaky pastry vanaspati, layered pastry fat",
+  },
 ];
 
 // Helper function to generate SEO-friendly slug
