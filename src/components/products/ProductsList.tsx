@@ -39,8 +39,6 @@ const ProductsList = memo(function ProductsList({ products }: ProductsListProps)
         );
       } else if (category === "Pouches") {
         return products.filter((product) => product.type === "Pouches");
-      } else if (category === "Baker's Choice Puff Vanaspati") {
-        return products.filter((product) => product.name === "Baker's Choice Puff Vanaspati");
       } else {
         return products.filter((product) => product.type === category);
       }
@@ -113,7 +111,6 @@ export const SlideTabs = ({ category, setCategory }: SlideTabsProps) => {
       "Baker's Day",
       "Oil Bottles",
       "Pouches",
-      "Baker's Choice Puff Vanaspati",
     ].indexOf(category);
     const selectedTab = tabsRef.current[tabIndex];
     if (selectedTab) {
@@ -139,7 +136,6 @@ export const SlideTabs = ({ category, setCategory }: SlideTabsProps) => {
           "Baker's Day",
           "Oil Bottles",
           "Pouches",
-          "Baker's Choice Puff Vanaspati",
         ].indexOf(category);
         const selectedTab = tabsRef.current[tabIndex];
         if (selectedTab) {
@@ -160,7 +156,6 @@ export const SlideTabs = ({ category, setCategory }: SlideTabsProps) => {
         "Baker's Day",
         "Oil Bottles",
         "Pouches",
-        "Baker's Choice Puff Vanaspati"
       ].map((tab, i) => (
         <Tab
           key={tab}
