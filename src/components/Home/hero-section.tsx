@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 export default function HeroSection() {
   const videoRef = React.useRef<HTMLVideoElement>(null);
@@ -30,7 +31,14 @@ export default function HeroSection() {
       <main className="overflow-hidden relative h-[90vh] max-md:h-[80vh]">
         <section>
           <div className="py-24 md:pb-32 lg:pb-36 lg:pt-72 h-full">
-            <div className="aspect-2/3 absolute inset-y-1 left-0 right-0 mx-auto -z-10 overflow-hidden rounded-3xl border border-black/10 lg:aspect-video lg:rounded-[3rem] max-w-screen-xl h-full w-full">
+            <div className="aspect-2/3 absolute inset-y-1 left-0 right-0 mx-auto -z-10 overflow-hidden rounded-3xl border border-black/10 lg:aspect-video lg:rounded-[3rem] max-w-7xl h-full w-full">
+              <Image
+                src="/images/aboutus.png"
+                alt="Hero Background"
+                fill
+                priority
+                className="object-cover -z-10"
+              />
               <video
                 ref={videoRef}
                 autoPlay
@@ -38,8 +46,7 @@ export default function HeroSection() {
                 loop
                 playsInline
                 preload="auto"
-                poster="/images/aboutus.png"
-                className="size-full object-cover opacity-100"
+                className="absolute inset-0 size-full object-cover opacity-100"
                 src="/intro.mp4"
                 // @ts-ignore
                 fetchpriority="high"

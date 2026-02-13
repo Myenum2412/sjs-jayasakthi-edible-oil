@@ -6,7 +6,34 @@ function encodeImagePath(path: string): string {
 }
 
 // SEO-friendly product data matching folder structure
-const data = [
+export interface Product {
+  id: number;
+  name: string;
+  slug: string;
+  price: string | number;
+  currency?: string;
+  originalPrice: string | number;
+  rating: number;
+  reviewCount: number;
+  tags?: { label: string; iconName: string }[];
+  size: string;
+  image: string;
+  imageSecondary?: string;
+  imageGallery?: string[];
+  images?: string[]; // Kept for backward compatibility if used elsewhere, though data uses imageGallery mostly? No, data has imageGallery but ProductDetailPage uses images. Wait, let me check the data again.
+  description: string;
+  benefits: string[];
+  model?: string;
+  type?: string;
+  category?: string;
+  seoKeywords?: string;
+  seller?: {
+    name: string;
+    avatarUrl: string;
+  };
+}
+
+const data: Product[] = [
   {
     id: 1,
     name: "Arun Gold Coconut Oil",

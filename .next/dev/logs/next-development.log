@@ -1,6 +1,0 @@
-[00:00:03.287] Server  LOG     ✓ Ready in 2.4s
-[00:00:06.461] Server  LOG     ○ Compiling /bulk-order ...
-[00:00:15.157] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3001". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
-[00:00:21.229] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:24.515] Server  ERROR   Invalid DOM property `fetchpriority`. Did you mean `fetchPriority`?
-[00:01:19.039] Browser LOG     ServiceWorker registration successful with scope:  http://localhost:3001/

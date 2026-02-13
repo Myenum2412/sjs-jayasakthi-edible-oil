@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { productsData } from "@/data/products";
+import { productsData, Product } from "@/data/products";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sri-jayasakthi-oils.com";
 const siteName = "Sri Jayasakthi Edible Oils Pvt. Ltd";
@@ -102,14 +102,7 @@ export function generateProductsPageMetadata(): Metadata {
   };
 }
 
-export function generateProductMetadata(product: {
-  id: number;
-  name: string;
-  description: string;
-  price: string;
-  image: string;
-  seoKeywords?: string;
-}): Metadata {
+export function generateProductMetadata(product: Product): Metadata {
   const productUrl = `${siteUrl}/products/${product.id}`;
   const productImage = product.image.startsWith("http")
     ? product.image
@@ -159,7 +152,7 @@ export function generateProductsListStructuredData(products: typeof productsData
           : `${siteUrl}${product.image}`,
         offers: {
           "@type": "Offer",
-          price: product.price.replace(/[^0-9.]/g, ""),
+          price: product.price.toString().replace(/[^0-9.]/g, ""),
           priceCurrency: "INR",
           availability: "https://schema.org/InStock",
         },
@@ -225,7 +218,7 @@ export function generateAllProductStructuredData(product: (typeof productsData)[
       },
       offers: {
         "@type": "Offer",
-        price: product.price.replace(/[^0-9.]/g, ""),
+        price: product.price.toString().replace(/[^0-9.]/g, ""),
         priceCurrency: "INR",
         availability: "https://schema.org/InStock",
         url: productUrl,
