@@ -9,21 +9,13 @@ import { useRouter } from "next/navigation";
 import { Spotlight } from "@/components/ui/spotlight";
 import Image from "next/image";
 
-interface ProductRevealCardProps {
-  id?: number;
-  name?: string;
-  price?: string;
-  originalPrice?: string;
-  image?: string;
-  description?: string;
-  rating?: number;
-  reviewCount?: number;
+import { Product } from "@/data/products";
+
+interface ProductRevealCardProps extends Partial<Product> {
   onAdd?: () => void;
   onFavorite?: () => void;
   enableAnimations?: boolean;
   className?: string;
-  size?: string;
-  type?: string;
   priority?: boolean;
 }
 

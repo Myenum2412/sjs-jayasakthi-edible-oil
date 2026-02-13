@@ -1,25 +1,15 @@
-"use client";
 import * as React from "react";
 import {
   ChevronRight,
-  Tag,
-  Ruler,
-  Users,
-  Info,
-  Heart,
   Share2,
-  ShoppingCart,
-  Send,
-  Camera,
 } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-
-import { cn } from "@/lib/utils"; // Your utility for merging tailwind classes
+import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Spotlight } from "@/components/ui/spotlight";
+import { ProductGallery } from "@/components/products/product-gallery";
+import { ProductActions } from "@/components/products/product-actions";
 
 // Define TypeScript interfaces for component props for type safety and reusability
 interface BreadcrumbItem {
@@ -58,23 +48,12 @@ export interface ProductDetailPageProps {
   breadcrumbs: BreadcrumbItem[];
 }
 
-// Icon mapping for tag icons
-const iconMap: Record<string, React.ElementType> = {
-  Ruler,
-  Tag,
-  Info,
-  Users,
-};
-
 export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
   product,
   seller,
   breadcrumbs,
 }) => {
-  const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
-
   return (
-
     <div className="w-full relative mx-auto p-4 md:p-8 bg-background text-foreground overflow-hidden">
       {/* Spotlight Effect */}
       <Spotlight
@@ -121,42 +100,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
       {/* Main content grid */}
       <main className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
         {/* Image Gallery Section */}
-        <div className="flex flex-col gap-4">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={currentImageIndex}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.3 }}
-              className="relative aspect-[4/5] w-full overflow-hidden rounded-xl border"
-            >
-              <img
-                src={product.images[currentImageIndex]}
-                alt={`${product.name} image ${currentImageIndex + 1}`}
-                className="object-contain w-full h-full p-4"
-              />
-            </motion.div>
-          </AnimatePresence>
-          <div className="flex items-center justify-between">
-            <div className="flex gap-2 justify-center items-center w-full">
-              {product.images.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentImageIndex(index)}
-                  className={cn(
-                    "h-2 w-2 rounded-full transition-colors",
-                    currentImageIndex === index
-                      ? "bg-primary"
-                      : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
-                  )}
-                  aria-label={`View image ${index + 1}`}
-                />
-              ))}
-            </div>
-
-          </div>
-        </div>
+        <ProductGallery images={product.images} productName={product.name} />
 
         {/* Product Details Section */}
         <div className="flex flex-col">
@@ -164,14 +108,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
             {product.name}
           </h1>
 
-          <div className="flex gap-2 my-6">
-            <Button size="lg" className="flex-1 gap-2 rounded-full">
-              <ShoppingCart className="h-5 w-5" /> Buy Now
-            </Button>
-            <Button size="lg" variant="outline" className="flex-1 gap-2">
-              <Send className="h-5 w-5" /> Contact Seller
-            </Button>
-          </div>
+          <ProductActions productName={product.name} />
 
           {/* Description */}
           <p className="text-muted-foreground leading-relaxed">

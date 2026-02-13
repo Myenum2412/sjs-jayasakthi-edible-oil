@@ -14,24 +14,13 @@ import Link from "next/link";
 import { Spotlight } from "@/components/ui/spotlight";
 
 // Define the type for a single drop item
-export interface DropItem {
-  id: number;
-  name: string;
-  price: string;
-  originalPrice: string;
-  image: string;
-  description: string;
-  rating: number;
-  reviewCount: number;
-  size: string;
-  benefits: string[];
-}
+import { Product } from "@/data/products";
 
 // Define the props for the main component
 export interface ProductDropCardProps {
   title: string;
   subtitle: string;
-  items: DropItem[];
+  items: Product[];
 }
 
 export const ProductDropCard = memo(function ProductDropCard({
@@ -104,31 +93,31 @@ export const ProductDropCard = memo(function ProductDropCard({
               className="flex-shrink-0 w-full rounded-lg border bg-card p-4 text-card-foreground relative group overflow-hidden"
               style={{ flexBasis: `calc((100% / ${itemsToShow}) - (${(itemsToShow - 1) * 16}px / ${itemsToShow}))` }}
             >
-            {/* Spotlight Effect */}
-            <Spotlight
-              className={cn(
-                "opacity-0 group-hover:opacity-100 transition-opacity duration-500",
-                "-top-40 -left-40"
-              )}
-              fill="white"
-            />
-            <Link href={`/products/${item.id}`} key={index}>
-              <div className="space-y-3">
-                <div className="aspect-video w-full overflow-hidden rounded-md bg-muted">
-                  <img
-                    src={item.image}
-                    alt={item.name}
-                    className="h-full w-full bg-white object-contain object-center"
-                  />
+              {/* Spotlight Effect */}
+              <Spotlight
+                className={cn(
+                  "opacity-0 group-hover:opacity-100 transition-opacity duration-500",
+                  "-top-40 -left-40"
+                )}
+                fill="white"
+              />
+              <Link href={`/products/${item.id}`} key={index}>
+                <div className="space-y-3">
+                  <div className="aspect-video w-full overflow-hidden rounded-md bg-muted">
+                    <img
+                      src={item.image}
+                      alt={item.name}
+                      className="h-full w-full bg-white object-contain object-center"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold">{item.name}</h3>
+                    <p className="text-sm text-muted-foreground">
+                      {item.description?.slice(0, 100)}...
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="font-semibold">{item.name}</h3>
-                  <p className="text-sm text-muted-foreground">
-                    {item.description?.slice(0, 100)}...
-                  </p>
-                </div>
-              </div>
-            </Link>
+              </Link>
             </div>
           ))}
         </div>

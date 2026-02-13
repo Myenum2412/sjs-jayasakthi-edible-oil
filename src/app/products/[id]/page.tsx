@@ -59,10 +59,12 @@ export default async function page({
   const productUrl = `${siteUrl}/products/${productData.id}`;
 
   // Extract currency symbol from price string
-  const currency = productData.price.replace(/[0-9.,]/g, "").trim() || "₹";
+  const currency = productData.price.toString().replace(/[0-9.,]/g, "").trim() || "₹";
 
   // Extract numeric price value
-  const priceValue = parseFloat(productData.price.replace(/[^0-9.]/g, "")) || 0;
+  const priceValue = typeof productData.price === 'number'
+    ? productData.price
+    : parseFloat(productData.price.toString().replace(/[^0-9.]/g, "")) || 0;
 
   // Calculate shipping cost (5% of price, minimum ₹2.00)
   const shippingCost = Math.max(priceValue * 0.05, 2.0);
@@ -71,11 +73,11 @@ export default async function page({
   const images = productData.imageGallery && productData.imageGallery.length > 0
     ? productData.imageGallery
     : [
-        productData.image,
-        ...(productData.imageSecondary ? [productData.imageSecondary] : []),
-        // Fallback to primary image if no secondary image
-        ...(productData.imageSecondary ? [] : [productData.image]),
-      ];
+      productData.image,
+      ...(productData.imageSecondary ? [productData.imageSecondary] : []),
+      // Fallback to primary image if no secondary image
+      ...(productData.imageSecondary ? [] : [productData.image]),
+    ];
 
   // Create tags from product data (using icon names as strings for serialization)
   const tags = [

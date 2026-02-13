@@ -1,5 +1,6 @@
 "use client"
 import * as React from "react";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { Play, X } from "lucide-react";
 
@@ -43,11 +44,11 @@ const VideoPlayer = React.forwardRef<HTMLDivElement, VideoPlayerProps>(
 
     // Prevent body scroll when modal is open
     React.useEffect(() => {
-        if (isModalOpen) {
-            document.body.style.overflow = 'hidden';
-        } else {
-            document.body.style.overflow = 'auto';
-        }
+      if (isModalOpen) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = 'auto';
+      }
     }, [isModalOpen]);
 
 
@@ -68,13 +69,15 @@ const VideoPlayer = React.forwardRef<HTMLDivElement, VideoPlayerProps>(
           {...props}
         >
           {/* Thumbnail Image */}
-          <img
+          <Image
             src={thumbnailUrl}
             alt={`Thumbnail for ${title}`}
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
             className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
           />
           {/* Overlay Gradient */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+          <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent" />
 
           {/* Play Button */}
           <div className="absolute inset-0 flex items-center justify-center">
@@ -111,14 +114,14 @@ const VideoPlayer = React.forwardRef<HTMLDivElement, VideoPlayerProps>(
 
             {/* Video Iframe */}
             <div className="w-full max-w-4xl aspect-video p-4">
-               <iframe
-                    src={videoUrl}
-                    title={title}
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="h-full w-full rounded-lg"
-                ></iframe>
+              <iframe
+                src={videoUrl}
+                title={title}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="h-full w-full rounded-lg"
+              ></iframe>
             </div>
           </div>
         )}

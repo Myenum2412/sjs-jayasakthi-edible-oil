@@ -1,27 +1,15 @@
 "use client";
-"use client";
 import type { ReactNode } from "react";
 import { forwardRef, memo, useEffect, useMemo, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { ProductRevealCard } from "../product-reveal-card";
 import { Skeleton } from "../skeleton";
+import { Product } from "@/data/products";
 
 // Sample product data with category/size information
 
 interface ProductsListProps {
-  products: {
-    id: number;
-    name: string;
-    price: string;
-    originalPrice: string;
-    image: string;
-    description: string;
-    rating: number;
-    reviewCount: number;
-    size: string;
-    type?: string;
-    benefits: string[];
-  }[];
+  products: Product[];
 }
 
 const ProductsList = memo(function ProductsList({ products }: ProductsListProps) {

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { memo, ReactNode, useCallback, useEffect, useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
@@ -10,7 +11,7 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
-import { productsData } from "@/data/products";
+import { productsData, Product } from "@/data/products";
 import { Spotlight } from "@/components/ui/spotlight";
 import { cn } from "@/lib/utils";
 
@@ -25,19 +26,7 @@ export interface Gallery4Item {
 export interface Gallery4Props {
   title?: ReactNode;
   description?: string;
-  products: {
-    id: number;
-    name: string;
-    price: string;
-    originalPrice: string;
-    image: string;
-    description: string;
-    rating: number;
-    reviewCount: number;
-    size: string;
-    type?: string;
-    benefits: string[];
-  }[];
+  products: Product[];
 }
 
 const ProductsCarousel = memo(function ProductsCarousel({
@@ -134,7 +123,7 @@ const ProductsCarousel = memo(function ProductsCarousel({
                 className="max-w-[320px] pl-[20px] lg:max-w-[360px]"
               >
                 <a href={`/products/${product.id.toString()}`} className="group rounded-xl">
-                  <div className="group relative h-full min-h-[27rem] max-w-full overflow-hidden rounded-xl md:aspect-[5/4] lg:aspect-[16/9]">
+                  <div className="group relative h-full min-h-108 max-w-full overflow-hidden rounded-xl md:aspect-5/4 lg:aspect-video">
                     {/* Spotlight Effect */}
                     <Spotlight
                       className={cn(
@@ -143,12 +132,14 @@ const ProductsCarousel = memo(function ProductsCarousel({
                       )}
                       fill="white"
                     />
-                    <img
+                    <Image
                       src={product.image}
                       alt={product.name}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className="absolute h-full w-full object-contain p-8 object-center transition-transform duration-300 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 h-full bg-gradient-to-b from-primary/0 to-black/80 mix-blend-multiply " />
+                    <div className="absolute inset-0 h-full bg-linear-to-b from-primary/0 to-black/80 mix-blend-multiply " />
                     <div className="absolute inset-x-0 bottom-0 flex flex-col items-start p-6 text-primary-foreground md:p-8">
                       <div className="mb-2 pt-4 text-xl font-semibold md:mb-3 md:pt-4 lg:pt-4">
                         {product.name}
