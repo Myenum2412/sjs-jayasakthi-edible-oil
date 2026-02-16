@@ -12,7 +12,7 @@ import { WebVitals } from "@/components/WebVitals";
 import { WebVitalsScript } from "@/components/WebVitalsScript";
 import Script from "next/script";
 
-const geistSans = Poppins({
+const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
@@ -23,34 +23,35 @@ const geistSans = Poppins({
 
 export const metadata: Metadata = generateBaseMetadata({
   title: "Sri Jayasakthi Edible Oils Pvt. Ltd",
-  description: "Sri Jayasakthi Edible Oils Pvt. Ltd is a leading manufacturer and supplier of edible oils and related products in India. Quality cooking oils including coconut oil, sunflower oil, groundnut oil, and more.",
-  keywords: "edible oils, cooking oils, coconut oil, sunflower oil, groundnut oil, vegetable oil, vanaspati, rice bran oil, Sri Jayasakthi, India",
+  description:
+    "Sri Jayasakthi Edible Oils Pvt. Ltd is a leading manufacturer and supplier of edible oils and related products in India. Quality cooking oils including coconut oil, sunflower oil, groundnut oil, and more.",
+  keywords:
+    "edible oils, cooking oils, coconut oil, sunflower oil, groundnut oil, vegetable oil, vanaspati, rice bran oil, Sri Jayasakthi, India",
   image: "/logo.png",
 });
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sri-jayasakthi-oils.com";
+}) {
+  const siteUrl =
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    "https://sri-jayasakthi-oils.com";
 
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-
         <link rel="icon" href="/logo.png" />
 
-
-
-        {/* Preconnect to external domains for performance */}
+        {/* Preconnect */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
 
-        {/* DNS prefetch for common resources */}
+        {/* DNS Prefetch */}
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
 
-        {/* Structured Data for Organization */}
+        {/* Organization Schema */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -60,7 +61,8 @@ export default function RootLayout({
               name: "Sri Jayasakthi Edible Oils Pvt. Ltd",
               url: siteUrl,
               logo: `${siteUrl}/logo.png`,
-              description: "Leading manufacturer and supplier of edible oils and related products in India",
+              description:
+                "Leading manufacturer and supplier of edible oils and related products in India",
               contactPoint: {
                 "@type": "ContactPoint",
                 contactType: "Customer Service",
@@ -71,7 +73,7 @@ export default function RootLayout({
           }}
         />
 
-        {/* Structured Data for Site Search Box */}
+        {/* Website Search Schema */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -83,15 +85,15 @@ export default function RootLayout({
                 "@type": "SearchAction",
                 target: {
                   "@type": "EntryPoint",
-                  urlTemplate: `${siteUrl}/products?search={search_term_string}`
+                  urlTemplate: `${siteUrl}/products?search={search_term_string}`,
                 },
-                "query-input": "required name=search_term_string"
-              }
+                "query-input": "required name=search_term_string",
+              },
             }),
           }}
         />
 
-        {/* Structured Data for Breadcrumbs */}
+        {/* Breadcrumb Schema */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -103,38 +105,43 @@ export default function RootLayout({
                   "@type": "ListItem",
                   position: 1,
                   name: "Home",
-                  item: siteUrl
+                  item: siteUrl,
                 },
                 {
                   "@type": "ListItem",
                   position: 2,
                   name: "Products",
-                  item: `${siteUrl}/products`
-                }
-              ]
+                  item: `${siteUrl}/products`,
+                },
+              ],
             }),
           }}
         />
       </head>
-      <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-5W2ZTPYWMG"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
 
-        gtag('config', 'G-5W2ZTPYWMG');
-      </script>
       <body
-        className={`${geistSans.variable} antialiased`}
+        className={`${poppins.variable} antialiased`}
         suppressHydrationWarning
       >
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-5W2ZTPYWMG"
+          strategy="afterInteractive"
+        />
+        <Script id="ga-script" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-5W2ZTPYWMG');
+          `}
+        </Script>
+
         <ErrorBoundaryWrapper>
           <ThemeProvider
             attribute="class"
             defaultTheme="light"
             enableSystem={false}
-            disableTransitionOnChange={false}
           >
             <QueryProvider>
               <ConditionalLayout>
