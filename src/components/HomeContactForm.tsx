@@ -199,7 +199,7 @@ export default function HomeContactForm() {
                         type="email"
                         value={formData.email}
                         onChange={(e) => handleInputChange('email', e.target.value)}
-                        className={`border-border bg-input block w-full rounded-lg border py-3 pr-3 pl-10 text-sm ${
+                        className={`border-border bg-white block w-full rounded-lg border py-3 pr-3 pl-10 text-sm ${
                           errors.email ? 'border-red-500 focus:border-red-500' : ''
                         }`}
                         placeholder="Enter your email"

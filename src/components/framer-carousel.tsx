@@ -8,31 +8,7 @@ export const items = [
     src: "/intro.mp4",
     title: "Winter Wonderland",
     type: "video",
-  },
-  {
-    id: 1,
-    src: "https://z1mha2833x.ufs.sh/f/79Y9MKyI6eTfpZYax7X1kTo3QO5EziHcPl9uaSrUmIh0qDdf",
-    title: "Misty Mountain Majesty",
-    type: "image",
-  },
-  {
-    id: 2,
-    src: "/banner/bakes.mp4",
-    title: "Winter Wonderland",
-    type: "video",
-  },
-  {
-    id: 3,
-    src: "/banner/cakes.mp4",
-    title: "Autumn Mountain Retreat",
-    type: "video",
-  },
-  {
-    id: 4,
-    src: "/banner/oilss.mp4",
-    title: "Tranquil Lake Reflection",
-    type: "video",
-  },
+  }
 ];
 
 export function FramerCarousel() {

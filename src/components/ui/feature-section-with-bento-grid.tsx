@@ -19,20 +19,20 @@ function Feature() {
             </div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className=" rounded-md h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto relative flex justify-between flex-col">
+            <div className="rounded-md h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto relative flex justify-between flex-col group">
               <Image
                 src="/Home/feature1.png"
                 alt="Product 1"
                 width={100}
                 height={100}
-                className="absolute top-0 left-0 w-full h-full object-cover rounded-md z-[-10] opacity-50 blur-[1px]"
+                className="absolute top-0 left-0 w-full h-full object-cover rounded-md z-[-10]"
               />
-              <User className="w-8 h-8 stroke-1" />
-              <div className="flex flex-col">
+              <User className="w-8 h-8 stroke-1 text-white transition-colors group-hover:text-primary" />
+              <div className="flex flex-col text-white">
                 <h3 className="text-xl tracking-tight font-semibold">
                   A Legacy of Quality Since 1985
                 </h3>
-                <p className=" max-w-xl text-base">
+                <p className="max-w-xl text-base">
                   At Sri Jayasakthi Edible Oils Pvt Ltd, we believe that quality
                   is not just a standard it's a tradition. For over three
                   decades, we have been dedicated to extracting the finest oils
@@ -40,28 +40,28 @@ function Feature() {
                 </p>
               </div>
             </div>
-            <div className=" rounded-md relative aspect-square p-6 flex justify-between flex-col">
+            <div className="rounded-md relative aspect-square p-6 flex justify-between flex-col group">
               <Image
                 src="/Home/feature2.png"
                 alt="Product 2"
                 width={100}
                 height={100}
-                className="absolute top-0 left-0 w-full h-full object-cover rounded-md z-[-10] opacity-50 blur-[1px] "
+                className="absolute top-0 left-0 w-full h-full object-cover rounded-md z-[-10]"
               />
-              <User className="w-8 h-8 stroke-1" />
-              <div className="flex flex-col">
+              <User className="w-8 h-8 stroke-1 text-white transition-colors group-hover:text-primary" />
+              <div className="flex flex-col text-white">
                 <h3 className="text-xl tracking-tight font-semibold">
                   Trusted by Generations
                 </h3>
-                <p className=" max-w-xl text-base">
+                <p className="max-w-xl text-base">
                   Purity you can trust. Quality you can taste. Tradition you can
                   feel.
                 </p>
               </div>
             </div>
 
-            <div className="bg-muted rounded-md aspect-square p-6 flex justify-between flex-col">
-              <User className="w-8 h-8 stroke-1" />
+            <div className="bg-muted rounded-md aspect-square p-6 flex justify-between flex-col group">
+              <User className="w-8 h-8 stroke-1 text-white transition-colors group-hover:text-primary" />
               <div className="flex flex-col">
                 <h3 className="text-xl tracking-tight">
                   Premium Quality Assurance
@@ -83,7 +83,7 @@ function Feature() {
                 <source src="/banner/oilss.mp4" type="video/mp4" />
               </video>
               <div className="absolute inset-0 bg-black/40 z-[-1]" />
-              <User className="w-8 h-8 stroke-1 text-white" />
+              <User className="w-8 h-8 stroke-1 text-white transition-colors group-hover:text-yellow-300" />
               <div className="flex flex-col text-white">
                 <h3 className="text-xl tracking-tight font-semibold">
                   Nature's Best, Delivered

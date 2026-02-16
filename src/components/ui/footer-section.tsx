@@ -15,13 +15,13 @@ import {
   Instagram,
   Linkedin,
   Send,
-  Twitter,
   Mail,
   Phone,
   MapPin,
   Loader2,
   CheckCircle2,
 } from "lucide-react";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { motion } from "framer-motion";
 import { toast } from "sonner";
 import MaxWidthWrapper from "../MaxWidthWrapper";
@@ -29,25 +29,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 
-function WhatsAppIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      viewBox="0 0 32 32"
-      fill="currentColor"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-hidden="true"
-      {...props}
-    >
-      <path d="M19.11 17.41c-.28-.14-1.65-.82-1.9-.91-.25-.09-.43-.14-.61.14-.18.28-.7.91-.86 1.1-.16.18-.32.21-.6.07-.28-.14-1.17-.43-2.23-1.38-.82-.73-1.38-1.64-1.54-1.92-.16-.28-.02-.43.12-.57.12-.12.28-.32.42-.48.14-.16.18-.28.28-.46.09-.18.05-.35-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.45-.46-.61-.46h-.52c-.18 0-.48.07-.73.35-.25.28-.95.93-.95 2.27 0 1.34.98 2.64 1.12 2.83.14.18 1.93 2.95 4.68 4.13.65.28 1.15.45 1.54.58.65.21 1.24.18 1.71.11.52-.08 1.65-.67 1.88-1.32.23-.65.23-1.2.16-1.32-.07-.12-.25-.18-.53-.32Z" />
-      <path d="M26.67 5.33A14.5 14.5 0 0 0 3.58 22.3L2 30l7.86-1.55A14.5 14.5 0 0 0 30.5 16c0-3.87-1.5-7.51-3.83-10.67Zm-10.67 23a12 12 0 0 1-6.1-1.67l-.44-.26-4.66.92.94-4.54-.29-.47A12 12 0 1 1 28 16c0 6.63-5.37 12-12 12Z" />
-    </svg>
-  );
-}
-
 // Social media links - update these with your actual social media URLs
 const socialLinks = {
   facebook: "https://www.facebook.com",
-  twitter: "https://www.twitter.com",
   instagram: "https://www.instagram.com",
   linkedin: "https://www.linkedin.com",
   whatsapp:
@@ -249,11 +233,11 @@ function Footerdemo() {
                   </div>
                 </div>
                 <a
-                  href="mailto:info@sriJayasakthiedibleoil.com"
+                  href="mailto:info@srijayasaktiedibileoils"
                   className="group flex items-center gap-3 transition-colors hover:text-primary break-all"
                 >
                   <Mail className="h-4 w-4 shrink-0 text-primary" />
-                  <span>info@sriJayasakthiedibleoil.com</span>
+                  <span>info@srijayasaktiedibileoils</span>
                 </a>
               </address>
             </motion.div>
@@ -272,7 +256,7 @@ function Footerdemo() {
                         variant="outline"
                         size="icon"
                         asChild
-                        className="rounded-full transition-all hover:scale-110 hover:bg-blue-500 hover:text-white hover:border-blue-500"
+                        className="rounded-full transition-all hover:scale-110 bg-blue-500 text-white border-blue-500 hover:bg-blue-600"
                       >
                         <a
                           href={socialLinks.facebook}
@@ -289,6 +273,7 @@ function Footerdemo() {
                     </TooltipContent>
                   </Tooltip>
                 </TooltipProvider>
+
                 <TooltipProvider>
                   <Tooltip>
                     <TooltipTrigger asChild>
@@ -296,31 +281,7 @@ function Footerdemo() {
                         variant="outline"
                         size="icon"
                         asChild
-                        className="rounded-full transition-all hover:scale-110 hover:bg-sky-500 hover:text-white hover:border-sky-500"
-                      >
-                        <a
-                          href={socialLinks.twitter}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          aria-label="Twitter"
-                        >
-                          <Twitter className="h-4 w-4" />
-                        </a>
-                      </Button>
-                    </TooltipTrigger>
-                    <TooltipContent>
-                      <p>Follow us on Twitter</p>
-                    </TooltipContent>
-                  </Tooltip>
-                </TooltipProvider>
-                <TooltipProvider>
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <Button
-                        variant="outline"
-                        size="icon"
-                        asChild
-                        className="rounded-full transition-all hover:scale-110 hover:bg-linear-to-r hover:from-purple-500 hover:to-pink-500 hover:text-white hover:border-transparent"
+                        className="rounded-full transition-all hover:scale-110 bg-gradient-to-r from-purple-500 to-pink-500 text-white border-transparent hover:from-purple-600 hover:to-pink-600"
                       >
                         <a
                           href={socialLinks.instagram}
@@ -344,7 +305,7 @@ function Footerdemo() {
                         variant="outline"
                         size="icon"
                         asChild
-                        className="rounded-full transition-all hover:scale-110 hover:bg-blue-600 hover:text-white hover:border-blue-600"
+                        className="rounded-full transition-all hover:scale-110 bg-blue-600 text-white border-blue-600 hover:bg-blue-700"
                       >
                         <a
                           href={socialLinks.linkedin}
@@ -368,7 +329,7 @@ function Footerdemo() {
                         variant="outline"
                         size="icon"
                         asChild
-                        className="rounded-full transition-all hover:scale-110 hover:bg-emerald-500 hover:text-white hover:border-emerald-500"
+                        className="rounded-full transition-all hover:scale-110 bg-emerald-500 text-white border-emerald-500 hover:bg-emerald-600"
                       >
                         <a
                           href={socialLinks.whatsapp}

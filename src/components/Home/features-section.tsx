@@ -10,9 +10,9 @@ export default function FeaturesSection() {
                     <p className="text-lg text-muted-foreground">Discover a range of premium edible oils crafted to perfection. From traditional extraction methods to modern quality standards, we ensure every drop adds value to your health.</p>
                 </div>
                 <div className="px-0 pt-3">
-                    <div style={{ position: 'relative', paddingTop: '56.25%' }}>
+                    <div style={{ position: 'relative', paddingTop: '56.25%',borderRadius: '8px' }}>
                         <iframe
-                            src="https://iframe.mediadelivery.net/embed/587211/d1ec7d7f-4452-4572-a445-ece45f66fd0b?autoplay=false&loop=false&muted=false&preload=true&responsive=true"
+                            src="https://z1mha2833x.ufs.sh/f/79Y9MKyI6eTfJFQveKMTXeqQpjFZ3mINRBUifgw2GJ1HxV7E?autoplay=false&loop=false&muted=false&preload=true&responsive=true"
                             loading="lazy"
                             style={{ border: 0, position: 'absolute', top: 0, height: '100%', width: '100%' }}
                             allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;"

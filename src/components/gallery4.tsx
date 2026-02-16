@@ -37,7 +37,7 @@ const ProductsCarousel = memo(function ProductsCarousel({
       <span className="bg-white text-primary px-2 rounded-lg">Products</span>
     </>
   ),
-  description = "From the kitchen to the prayer room, experience the purity of Sri Jayasakthi Edible Oils. Trusted since 1995.",
+  description = "From the kitchen to the prayer room, experience the purity of Sri Jayasakthi Edible Oils. Trusted since 1985.",
 }: Gallery4Props) {
   const [carouselApi, setCarouselApi] = useState<CarouselApi>();
   const [canScrollPrev, setCanScrollPrev] = useState(false);

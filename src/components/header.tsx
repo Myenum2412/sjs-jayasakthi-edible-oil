@@ -237,13 +237,6 @@ export const HeroHeader = () => {
                         )}
                       >
                         <span className="relative z-10">{item.name}</span>
-                        {active && (
-                          <motion.div
-                            layoutId="activeTab"
-                            className="absolute inset-0 rounded-lg bg-primary/10"
-                            transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
-                          />
-                        )}
                         {/* Underline animation */}
                         <motion.div
                           className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary origin-left"
@@ -252,7 +245,6 @@ export const HeroHeader = () => {
                           whileHover={{ scaleX: 1 }}
                           transition={{ duration: 0.3, ease: "easeInOut" }}
                         />
-                        <span className="absolute inset-0 rounded-lg bg-primary/5 opacity-0 transition-opacity group-hover:opacity-100" />
                       </Link>
                     </li>
                   );

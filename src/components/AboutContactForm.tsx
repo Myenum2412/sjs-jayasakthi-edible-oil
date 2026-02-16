@@ -207,7 +207,7 @@ export default function AboutContactForm() {
 
                         <div className="space-y-6">
                             <div className="flex items-start space-x-4">
-                                <div className="bg-green-100 p-3 rounded-full text-green-600 shrink-0">
+                                <div className="bg-white p-3 rounded-full text-green-600 shrink-0">
                                     <MapPin className="h-6 w-6" />
                                 </div>
                                 <div>
@@ -221,7 +221,7 @@ export default function AboutContactForm() {
                             </div>
 
                             <div className="flex items-center space-x-4">
-                                <div className="bg-green-100 p-3 rounded-full text-green-600 shrink-0">
+                                <div className="bg-white p-3 rounded-full text-green-600 shrink-0">
                                     <Phone className="h-6 w-6" />
                                 </div>
                                 <div>
@@ -231,7 +231,7 @@ export default function AboutContactForm() {
                             </div>
 
                             <div className="flex items-center space-x-4">
-                                <div className="bg-green-100 p-3 rounded-full text-green-600 shrink-0">
+                                <div className="bg-white p-3 rounded-full text-green-600 shrink-0">
                                     <Mail className="h-6 w-6" />
                                 </div>
                                 <div>
@@ -243,7 +243,7 @@ export default function AboutContactForm() {
                             </div>
 
                             <div className="flex items-center space-x-4">
-                                <div className="bg-green-100 p-3 rounded-full text-green-600 shrink-0">
+                                <div className="bg-white p-3 rounded-full text-green-600 shrink-0">
                                     <div className="h-3 w-3 bg-green-600 rounded-full"></div>
                                 </div>
                                 <div className="space-y-3">
@@ -251,31 +251,31 @@ export default function AboutContactForm() {
                                     <div className="flex space-x-3">
                                         <a
                                             href="#"
-                                            className="bg-green-100 p-2 rounded-full text-green-600 hover:bg-green-200 transition-colors"
+                                            className="bg-white p-2 rounded-full text-green-600 hover:bg-gray-100 transition-colors"
                                         >
                                             <Facebook className="h-5 w-5" />
                                         </a>
                                         <a
                                             href="#"
-                                            className="bg-green-100 p-2 rounded-full text-green-600 hover:bg-green-200 transition-colors"
+                                            className="bg-white p-2 rounded-full text-green-600 hover:bg-gray-100 transition-colors"
                                         >
                                             <Instagram className="h-5 w-5" />
                                         </a>
                                         <a
                                             href="#"
-                                            className="bg-green-100 p-2 rounded-full text-green-600 hover:bg-green-200 transition-colors"
+                                            className="bg-white p-2 rounded-full text-green-600 hover:bg-gray-100 transition-colors"
                                         >
                                             <Linkedin className="h-5 w-5" />
                                         </a>
                                         <a
                                             href="#"
-                                            className="bg-green-100 p-2 rounded-full text-green-600 hover:bg-green-200 transition-colors"
+                                            className="bg-white p-2 rounded-full text-green-600 hover:bg-gray-100 transition-colors"
                                         >
                                             <Twitter className="h-5 w-5" />
                                         </a>
                                         <a
                                             href="#"
-                                            className="bg-green-100 p-2 rounded-full text-green-600 hover:bg-green-200 transition-colors"
+                                            className="bg-white p-2 rounded-full text-green-600 hover:bg-gray-100 transition-colors"
                                         >
                                             <MessageCircleIcon className="h-5 w-5" />
                                         </a>
@@ -363,7 +363,7 @@ export default function AboutContactForm() {
                                         disabled={!formData.state}
                                     >
                                         <SelectTrigger
-                                            className={`!bg-white !text-black ${errors.district ? "border-red-500" : ""}`}
+                                            className={`${errors.district ? "border-red-500" : ""}`}
                                         >
                                             <SelectValue
                                                 placeholder={
@@ -391,7 +391,7 @@ export default function AboutContactForm() {
                                     value={formData.productInterest}
                                     onValueChange={(value) => handleInputChange("productInterest", value)}
                                 >
-                                    <SelectTrigger className={`!bg-white !text-black ${errors.productInterest ? "border-red-500" : ""}`}>
+                                    <SelectTrigger className={`${errors.productInterest ? "border-red-500" : ""}`}>
                                         <SelectValue placeholder="Select Product" />
                                     </SelectTrigger>
                                     <SelectContent>
