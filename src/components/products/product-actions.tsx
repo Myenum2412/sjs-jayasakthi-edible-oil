@@ -14,8 +14,10 @@ export function ProductActions({ productName }: ProductActionsProps) {
             <Button size="lg" className="flex-1 gap-2 rounded-full">
                 <ShoppingCart className="h-5 w-5" /> Buy Now
             </Button>
-            <Button size="lg" variant="outline" className="flex-1 gap-2">
-                <Send className="h-5 w-5" /> Contact Seller
+            <Button size="lg" variant="outline" className="flex-1 gap-2" asChild>
+                <a href="tel:919443233991">
+                    <Send className="h-5 w-5" /> Contact Seller
+                </a>
             </Button>
         </div>
     );
