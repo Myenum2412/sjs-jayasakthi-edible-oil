@@ -17,9 +17,9 @@ const AboutUsSection = dynamic(() => import('@/components/About-Us/AboutUsSectio
 });
 
 export const metadata = generateBaseMetadata({
-  title: 'About Us',
-  description: 'Learn about Sri Jayasakthi Edible Oils Pvt. Ltd - A trusted manufacturer and supplier of premium edible oils in India. Our commitment to quality and excellence.',
-  keywords: 'about us, Sri Jayasakthi, edible oils manufacturer, company history, quality commitment',
+  title: "About Sri Jayasakthi Edible Oils - Salem's Trusted Brand",
+  description: "A legacy of purity since 1985. Learn how Sri Jayasakthi became a leading manufacturer of quality cooking oils in Salem, Tamil Nadu. Trusted by generations in Salem.",
+  keywords: "about us, Sri Jayasakthi, edible oil manufacturer Salem, pure oil company Salem, Tamil Nadu oil suppliers",
   url: '/about-us',
 });
 

@@ -61,7 +61,7 @@ const data: Product[] = [
       "Protective Packaging: The 5Kg metal tin ensures the oil remains protected from sunlight and moisture.",
       "Versatile Utility: Excellent for cooking and suitable for external applications like hair and skin care.",
     ],
-    seoKeywords: "arun gold coconut oil, 5kg coconut oil, edible coconut oil, sri jayasakthi oils, pure coconut oil",
+    seoKeywords: "arun gold coconut oil, 5kg coconut oil, edible coconut oil, sri jayasakthi oils, pure coconut oil, Salem, Salem Tamil Nadu",
   },
   {
     id: 2,
@@ -90,7 +90,7 @@ const data: Product[] = [
       "Non-Greasy Texture: Foods cooked in Nawin Gold absorb less oil, resulting in lighter meals.",
       "Bulk Economy Pack: The 15kg tin offers great economic value for high-volume usage.",
     ],
-    seoKeywords: "nawin gold cotton seed oil, 15kg refined oil, fortified cooking oil, bulk cooking oil",
+    seoKeywords: "nawin gold cotton seed oil, 15kg refined oil, fortified cooking oil, bulk cooking oil, Salem, Salem Tamil Nadu",
   },
   {
     id: 3,
@@ -119,7 +119,7 @@ const data: Product[] = [
       "Robust Bulk Packaging: The 15kg tin offers excellent durability for transport and storage.",
       "Trusted Heritage: Produced by SJS, a brand with a legacy dating back to 1985.",
     ],
-    seoKeywords: "three roses castor oil, pure castor oil, castor oil for hair, traditional castor oil",
+    seoKeywords: "three roses castor oil, pure castor oil, castor oil for hair, traditional castor oil, Salem, Salem Tamil Nadu",
   },
   {
     id: 4,
@@ -148,7 +148,7 @@ const data: Product[] = [
       "Neutral Taste: Mild flavor that does not overpower the natural taste of ingredients.",
       "Fortified Quality: Manufactured by an ISO 9001:2008 Certified Company.",
     ],
-    seoKeywords: "surya rice bran oil, healthy cooking oil, oryzanol rich oil, heart healthy oil",
+    seoKeywords: "surya rice bran oil, healthy cooking oil, oryzanol rich oil, heart healthy oil, Salem, Salem Tamil Nadu",
   },
   {
     id: 5,
@@ -177,7 +177,7 @@ const data: Product[] = [
       "Standardized Quality: Produced with FSSAI certification.",
       "Convenient Bulk Pack: The 13.200 Kgs net weight is ideal for monthly household stocking.",
     ],
-    seoKeywords: "suriya drops oil, vitamin fortified oil, light cooking oil, refined vegetable oil",
+    seoKeywords: "suriya drops oil, vitamin fortified oil, light cooking oil, refined vegetable oil, Salem, Salem Tamil Nadu",
   },
   {
     id: 6,
@@ -206,7 +206,7 @@ const data: Product[] = [
       "Trusted Manufacturing: Produced by SJS, an established manufacturer.",
       "Vegetarian Friendly: Marked with the Green Dot symbol, 100% suitable for vegetarian diets.",
     ],
-    seoKeywords: "suriya vegetable oil, palmolein oil, bulk cooking oil, refined palm oil",
+    seoKeywords: "suriya vegetable oil, palmolein oil, bulk cooking oil, refined palm oil, Salem, Salem Tamil Nadu",
   },
   {
     id: 7,
@@ -235,7 +235,7 @@ const data: Product[] = [
       "100% Vegetarian: Guaranteed suitable for vegetarian and vegan diets.",
       "Trusted Compliance: Manufactured under strict FSSAI regulations.",
     ],
-    seoKeywords: "sri jayasakthi gold sunflower oil, vitamin fortified sunflower oil, premium cooking oil",
+    seoKeywords: "sri jayasakthi gold sunflower oil, vitamin fortified sunflower oil, premium cooking oil, Salem, Salem Tamil Nadu",
   },
   {
     id: 8,
@@ -264,7 +264,7 @@ const data: Product[] = [
       "Bulk Quantity: The 15 Kg size is perfect for large families or food businesses.",
       "Quality Assurance: Manufactured by SJS, an ISO-certified company.",
     ],
-    seoKeywords: "gem groundnut oil, peanut oil, groundnut oil for cooking, traditional cooking oil",
+    seoKeywords: "gem groundnut oil, peanut oil, groundnut oil for cooking, traditional cooking oil, Salem, Salem Tamil Nadu",
   },
   {
     id: 9,
@@ -293,7 +293,7 @@ const data: Product[] = [
       "Bulk Packaging: The 15 Kg tin offers excellent value for money.",
       "Quality Certified: Manufactured under strict quality standards.",
     ],
-    seoKeywords: "suriya sunflower oil, refined sunflower oil, bulk sunflower oil, healthy cooking oil",
+    seoKeywords: "suriya sunflower oil, refined sunflower oil, bulk sunflower oil, healthy cooking oil, Salem, Salem Tamil Nadu",
   },
   {
     id: 10,
@@ -321,7 +321,7 @@ const data: Product[] = [
       "Versatile Application: Perfect for cakes, pastries, and aerated products.",
       "Quality Assured: Manufactured to professional bakery standards.",
     ],
-    seoKeywords: "bakers choice shortening, aerated bakery shortening, professional bakery fat, cake shortening",
+    seoKeywords: "bakers choice shortening, aerated bakery shortening, professional bakery fat, cake shortening, Salem, Salem Tamil Nadu",
   },
   {
     id: 11,
@@ -349,7 +349,7 @@ const data: Product[] = [
       "Long Shelf Life: Maintains freshness and stability.",
       "Trusted Brand: Used by professional bakers nationwide.",
     ],
-    seoKeywords: "bakers choice vanaspati, biscuit vanaspati, cookie fat, bakery vanaspati",
+    seoKeywords: "bakers choice vanaspati, biscuit vanaspati, cookie fat, bakery vanaspati, Salem, Salem Tamil Nadu",
   },
   {
     id: 12,
@@ -377,7 +377,7 @@ const data: Product[] = [
       "Cost-Effective: Reliable results with optimized usage for bulk production.",
       "100% Vegetarian & Fortified: Made from permitted vegetable oils.",
     ],
-    seoKeywords: "bakers days biscuit vanaspati, cookie vanaspati, biscuit fat, bakery vanaspati",
+    seoKeywords: "bakers days biscuit vanaspati, cookie vanaspati, biscuit fat, bakery vanaspati, Salem, Salem Tamil Nadu",
   },
   {
     id: 13,
@@ -405,7 +405,7 @@ const data: Product[] = [
       "Long Shelf Life: Stays fresh and stable for extended periods.",
       "Value for Money: Bulk packaging offers excellent economic value.",
     ],
-    seoKeywords: "bakers day vanaspati, all purpose bakery fat, versatile baking fat, commercial vanaspati",
+    seoKeywords: "bakers day vanaspati, all purpose bakery fat, versatile baking fat, commercial vanaspati, Salem, Salem Tamil Nadu",
   },
   {
     id: 14,
@@ -433,7 +433,7 @@ const data: Product[] = [
       "Versatile Use: Perfect for cakes, sponges, and aerated products.",
       "Quality Assured: Manufactured to highest bakery standards.",
     ],
-    seoKeywords: "bakers day cream shortening, aerated shortening, cake shortening, bakery cream",
+    seoKeywords: "bakers day cream shortening, aerated shortening, cake shortening, bakery cream, Salem, Salem Tamil Nadu",
   },
   {
     id: 15,
@@ -461,7 +461,7 @@ const data: Product[] = [
       "Versatile Application: Perfect for puffs, khari, and layered pastries.",
       "Long Shelf Life: Maintains freshness and stability.",
     ],
-    seoKeywords: "bakers choice puff vanaspati, puff pastry fat, flaky pastry vanaspati, layered pastry fat",
+    seoKeywords: "bakers choice puff vanaspati, puff pastry fat, flaky pastry vanaspati, layered pastry fat, Salem, Salem Tamil Nadu",
   },
   {
     id: 16,
@@ -489,7 +489,7 @@ const data: Product[] = [
       "Long Shelf Life: Maintains freshness and stability.",
       "Trusted Brand: Used by professional bakers nationwide.",
     ],
-    seoKeywords: "bakers choice biscuit vanaspati, cookie vanaspati, biscuit fat, bakery vanaspati",
+    seoKeywords: "bakers choice biscuit vanaspati, cookie vanaspati, biscuit fat, bakery vanaspati, Salem, Salem Tamil Nadu",
   },
   {
     id: 17,
@@ -517,7 +517,7 @@ const data: Product[] = [
       "Convenient Bottle: Easy to pour and store.",
       "Legacy of Quality: From the trusted house of Sri Jayasakthi Edible Oils.",
     ],
-    seoKeywords: "arun gold coconut oil 1l, coconut oil bottle, edible coconut oil, pure coconut oil",
+    seoKeywords: "arun gold coconut oil 1l, coconut oil bottle, edible coconut oil, pure coconut oil, Salem, Salem Tamil Nadu",
   },
   {
     id: 18,
@@ -545,7 +545,7 @@ const data: Product[] = [
       "Multipurpose: Great for lamps, skin care, and medicine.",
       "Convenient Pack: Easy to use 1 Liter bottle.",
     ],
-    seoKeywords: "three roses castor oil 1l, pure castor oil bottle, castor oil for hair, traditional castor oil",
+    seoKeywords: "three roses castor oil 1l, pure castor oil bottle, castor oil for hair, traditional castor oil, Salem, Salem Tamil Nadu",
   },
   {
     id: 19,
@@ -574,7 +574,7 @@ const data: Product[] = [
       "Convenient Pour: 1 Liter bottle designed for easy handling and storage.",
       "Heart Friendly: Low in saturated fats, supporting a healthy lifestyle.",
     ],
-    seoKeywords: "sir gold sunflower oil 1l, premium sunflower oil, refined oil bottle, healthy cooking oil",
+    seoKeywords: "sir gold sunflower oil 1l, premium sunflower oil, refined oil bottle, healthy cooking oil, Salem, Salem Tamil Nadu",
   },
   {
     id: 20,
@@ -600,7 +600,7 @@ const data: Product[] = [
       "Rich Aroma: Retains the natural fragrance of fresh coconuts.",
       "Multi-purpose: Ideal for cooking, hair care, and skin care.",
     ],
-    seoKeywords: "arun gold coconut oil pouch, 1l coconut oil pouch, pure coconut oil, sjs oils",
+    seoKeywords: "arun gold coconut oil pouch, 1l coconut oil pouch, pure coconut oil, sjs oils, Salem, Salem Tamil Nadu",
   },
   {
     id: 21,
@@ -626,7 +626,7 @@ const data: Product[] = [
       "Compact Size: Easy to store in kitchen cabinets.",
       "Natural Goodness: Contains essential fatty acids for health.",
     ],
-    seoKeywords: "arun gold 500ml pouch, coconut oil 500ml, small pouch coconut oil",
+    seoKeywords: "arun gold 500ml pouch, coconut oil 500ml, small pouch coconut oil, Salem, Salem Tamil Nadu",
   },
   {
     id: 22,
@@ -652,7 +652,7 @@ const data: Product[] = [
       "Heart Healthy: Naturally cholesterol-free.",
       "Convenient Pouch: Easy to pour and dispose.",
     ],
-    seoKeywords: "gem groundnut oil pouch, 1l groundnut oil, peanut oil pouch, traditional cooking oil",
+    seoKeywords: "gem groundnut oil pouch, 1l groundnut oil, peanut oil pouch, traditional cooking oil, Salem, Salem Tamil Nadu",
   },
   {
     id: 23,
@@ -678,7 +678,7 @@ const data: Product[] = [
       "Leak-proof Packaging: Sturdy pouch design for safety.",
       "Versatile Use: Great for sautéing and tempering.",
     ],
-    seoKeywords: "gem 500ml peanut oil, groundnut oil pouch 500ml, small pack groundnut oil",
+    seoKeywords: "gem 500ml peanut oil, groundnut oil pouch 500ml, small pack groundnut oil, Salem, Salem Tamil Nadu",
   },
   {
     id: 24,
@@ -704,7 +704,7 @@ const data: Product[] = [
       "Thick Consistency: Retains all natural properties.",
       "Safe Packaging: Easy to use and store.",
     ],
-    seoKeywords: "three roses castor oil pouch, 500ml castor oil, medicinal castor oil",
+    seoKeywords: "three roses castor oil pouch, 500ml castor oil, medicinal castor oil, Salem, Salem Tamil Nadu",
   },
   {
     id: 25,
@@ -732,7 +732,7 @@ const data: Product[] = [
       "Versatile Application: Perfect for puffs, khari, and layered pastries.",
       "Long Shelf Life: Maintains freshness and stability.",
     ],
-    seoKeywords: "bakers day puff vanaspati, puff pastry fat, flaky pastry vanaspati, layered pastry fat",
+    seoKeywords: "bakers day puff vanaspati, puff pastry fat, flaky pastry vanaspati, layered pastry fat, Salem, Salem Tamil Nadu",
   },
 ];
 

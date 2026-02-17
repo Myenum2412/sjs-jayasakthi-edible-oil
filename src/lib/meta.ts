@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { productsData, Product } from "@/data/products";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sri-jayasakthi-oils.com";
-const siteName = "Sri Jayasakthi Edible Oils Pvt. Ltd";
-const defaultDescription = "Sri Jayasakthi Edible Oils Pvt. Ltd is a leading manufacturer and supplier of edible oils and related products in India.";
-const defaultKeywords = "edible oils, cooking oils, coconut oil, sunflower oil, groundnut oil, vegetable oil, vanaspati, rice bran oil, Sri Jayasakthi, India";
+const siteName = "Sri Jayasakthi Edible Oils - Salem's Trusted Brand";
+const defaultDescription = "Sri Jayasakthi Edible Oils Pvt. Ltd is Salem's leading manufacturer of premium edible oils. Purity and quality since 1985 for homes and businesses in Salem, Tamil Nadu.";
+const defaultKeywords = "edible oils Salem, cooking oils Salem Tamil Nadu, coconut oil near Salem, groundnut oil Salem, sunflower oil Salem, bulk oil suppliers Salem";
 const twitterHandle = "@jayasakthioils"; // Update with actual handle
 const locale = "en_IN";
 
@@ -84,20 +84,20 @@ export function generateMetadata(options: {
 
 export function generateProductsPageMetadata(): Metadata {
   return {
-    title: `Products - ${siteName}`,
-    description: "Browse our premium collection of edible oils including coconut oil, sunflower oil, groundnut oil, and more. Quality products for your kitchen.",
-    keywords: "edible oils, cooking oils, coconut oil, sunflower oil, groundnut oil, vegetable oil, Sri Jayasakthi",
+    title: `Pure Cooking Oils in Salem - Products | ${siteName}`,
+    description: "Explore our range of premium edible oils in Salem. Quality coconut, sunflower, and groundnut oils for your kitchen, refined for health and tradition.",
+    keywords: "cooking oils Salem, best edible oils Salem Tamil Nadu, groundnut oil price Salem, Sri Jayasakthi oils",
     openGraph: {
-      title: `Products - ${siteName}`,
-      description: "Browse our premium collection of edible oils",
+      title: `Pure Cooking Oils in Salem - Products | ${siteName}`,
+      description: "Explore our range of premium edible oils in Salem",
       url: `${siteUrl}/products`,
       siteName,
       type: "website",
     },
     twitter: {
       card: "summary_large_image",
-      title: `Products - ${siteName}`,
-      description: "Browse our premium collection of edible oils",
+      title: `Pure Cooking Oils in Salem - Products | ${siteName}`,
+      description: "Explore our range of premium edible oils in Salem",
     },
   };
 }
@@ -109,9 +109,9 @@ export function generateProductMetadata(product: Product): Metadata {
     : `${siteUrl}${product.image}`;
 
   return {
-    title: `${product.name} - ${siteName}`,
-    description: product.description.substring(0, 160),
-    keywords: product.seoKeywords || `${product.name}, edible oil, cooking oil`,
+    title: `${product.name} - Best Edible Oil in Salem`,
+    description: `${product.description.substring(0, 130)} - Available in Salem, Tamil Nadu.`,
+    keywords: product.seoKeywords ? `${product.seoKeywords}, Salem, near me` : `${product.name}, edible oil Salem, cooking oil Salem`,
     openGraph: {
       title: `${product.name} - ${siteName}`,
       description: product.description.substring(0, 160),

@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { productsData } from "@/data/products";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sri-jayasakthi-oils.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.srijayasaktiedibileoils.com/";
   const baseUrl = siteUrl;
   const now = new Date();
 

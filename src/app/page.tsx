@@ -51,9 +51,9 @@ const Faq2 = lazy(() => import('@/components/mvpblocks/faq-2'));
 
 // Generate metadata for SEO
 export const metadata = generateBaseMetadata({
-  title: "Home",
-  description: "Sri Jayasakthi Edible Oils Pvt. Ltd - Premium edible oils including coconut oil, sunflower oil, groundnut oil, and more. Quality products for your kitchen.",
-  keywords: "edible oils, cooking oils, coconut oil, sunflower oil, groundnut oil, vegetable oil, vanaspati, Sri Jayasakthi, India",
+  title: "Best Edible Oils in Salem | Sri Jayasakthi Edible Oils",
+  description: "Sri Jayasakthi Edible Oils is Salem's leading manufacturer of premium coconut, sunflower, and groundnut oils. Quality cooking oils delivered near Salem, Tamil Nadu.",
+  keywords: "edible oils in Salem, cooking oils Salem Tamil Nadu, coconut oil near Salem, Sri Jayasakthi oils Salem",
 });
 
 export default function HomePage() {

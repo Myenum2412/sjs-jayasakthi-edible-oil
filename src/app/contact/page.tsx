@@ -18,9 +18,9 @@ const ContactPageSection = dynamic(() => import('@/components/Contact/ContactPag
 const Faq2 = lazy(() => import('@/components/mvpblocks/faq-2'));
 
 export const metadata = generateBaseMetadata({
-  title: 'Contact Us',
-  description: 'Get in touch with Sri Jayasakthi Edible Oils Pvt. Ltd. Contact us for inquiries, bulk orders, or any questions about our premium edible oils.',
-  keywords: 'contact, customer service, inquiry, bulk order, Sri Jayasakthi contact',
+  title: 'Contact Sri Jayasakthi Edible Oils | Visit Us in Salem',
+  description: "Have questions? Contact Salem's top edible oil manufacturer. Visit our Kandhampatty office for bulk orders and inquiries. Proudly serving Salem, Tamil Nadu.",
+  keywords: 'contact Sri Jayasakthi Salem, edible oil factory Salem, oil supplier Kandhampatty Salem, customer service Salem',
   url: '/contact',
 });
 
