@@ -41,6 +41,11 @@ export function generateMetadata(options: {
     authors: [{ name: siteName }],
     creator: siteName,
     publisher: siteName,
+    manifest: "/manifest.json",
+    icons: {
+      icon: "/logo.png",
+      apple: "/logo.png",
+    },
     robots: {
       index: !noindex,
       follow: !noindex,
@@ -55,7 +60,7 @@ export function generateMetadata(options: {
     openGraph: {
       type,
       locale,
-      url,
+      url: url.startsWith("http") ? url : `${siteUrl}${url}`,
       siteName,
       title: fullTitle,
       description: description.substring(0, 160),
@@ -77,7 +82,7 @@ export function generateMetadata(options: {
       images: [ogImage],
     },
     alternates: {
-      canonical: url,
+      canonical: url.startsWith("http") ? url : `${siteUrl}${url}`,
     },
   };
 }
@@ -103,33 +108,44 @@ export function generateProductsPageMetadata(): Metadata {
 }
 
 export function generateProductMetadata(product: Product): Metadata {
-  const productUrl = `${siteUrl}/products/${product.id}`;
+  const productUrl = `${siteUrl}/products/${product.slug}`;
   const productImage = product.image.startsWith("http")
     ? product.image
     : `${siteUrl}${product.image}`;
 
   return {
-    title: `${product.name} - Best Edible Oil in Salem`,
-    description: `${product.description.substring(0, 130)} - Available in Salem, Tamil Nadu.`,
+    title: product.seoTitle || `${product.name} - Best Edible Oil in Salem`,
+    description: (product.seoDescription || product.description).substring(0, 160) + (product.seoDescription ? "" : " - Available in Salem, Tamil Nadu."),
     keywords: product.seoKeywords ? `${product.seoKeywords}, Salem, near me` : `${product.name}, edible oil Salem, cooking oil Salem`,
     openGraph: {
-      title: `${product.name} - ${siteName}`,
-      description: product.description.substring(0, 160),
+      title: product.seoTitle || `${product.name} - ${siteName}`,
+      description: (product.seoDescription || product.description).substring(0, 160),
       url: productUrl,
       siteName,
       type: "website",
       images: [
         {
           url: productImage,
+          width: 1200,
+          height: 630,
           alt: product.name,
         },
+        ...(product.imageSecondary ? [{
+          url: product.imageSecondary.startsWith("http") ? product.imageSecondary : `${siteUrl}${product.imageSecondary}`,
+          width: 1200,
+          height: 630,
+          alt: `${product.name} Alternate View`,
+        }] : []),
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${product.name} - ${siteName}`,
-      description: product.description.substring(0, 160),
+      title: product.seoTitle || `${product.name} - ${siteName}`,
+      description: (product.seoDescription || product.description).substring(0, 160),
       images: [productImage],
+    },
+    alternates: {
+      canonical: productUrl,
     },
   };
 }
@@ -156,7 +172,7 @@ export function generateProductsListStructuredData(products: typeof productsData
           priceCurrency: "INR",
           availability: "https://schema.org/InStock",
         },
-        url: `${siteUrl}/products/${product.id}`,
+        url: `${siteUrl}/products/${product.slug}`,
       },
     })),
   };
@@ -200,7 +216,7 @@ export function generateWebSiteStructuredData() {
 }
 
 export function generateAllProductStructuredData(product: (typeof productsData)[0]) {
-  const productUrl = `${siteUrl}/products/${product.id}`;
+  const productUrl = `${siteUrl}/products/${product.slug}`;
   const productImage = product.image.startsWith("http")
     ? product.image
     : `${siteUrl}${product.image}`;

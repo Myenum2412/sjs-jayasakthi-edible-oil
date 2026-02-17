@@ -82,12 +82,12 @@ export const HeroHeader = () => {
   // Group products by name and show all size variants
   const filteredProducts = React.useMemo(() => {
     if (!searchQuery.trim()) return [];
-    
+
     const query = searchQuery.toLowerCase();
-    
+
     // Group products by name
     const productGroups = new Map<string, typeof productsData>();
-    
+
     productsData.forEach((product) => {
       // Check if product matches search query
       const matches =
@@ -95,7 +95,7 @@ export const HeroHeader = () => {
         product.description.toLowerCase().includes(query) ||
         product.type?.toLowerCase().includes(query) ||
         product.size?.toLowerCase().includes(query);
-      
+
       if (matches) {
         const productName = product.name.toLowerCase();
         if (!productGroups.has(productName)) {
@@ -104,14 +104,14 @@ export const HeroHeader = () => {
         productGroups.get(productName)!.push(product);
       }
     });
-    
+
     // Convert map to array and limit results
     const groupedResults: Array<{
       name: string;
       variants: typeof productsData;
       primaryProduct: (typeof productsData)[0];
     }> = [];
-    
+
     productGroups.forEach((variants, name) => {
       // Sort variants by size (extract numeric value for sorting)
       const sortedVariants = [...variants].sort((a, b) => {
@@ -119,19 +119,19 @@ export const HeroHeader = () => {
         const sizeB = parseFloat(b.size?.replace(/[^\d.]/g, '') || '0');
         return sizeA - sizeB;
       });
-      
+
       groupedResults.push({
         name: variants[0].name, // Use original casing
         variants: sortedVariants,
         primaryProduct: sortedVariants[0], // First variant as primary
       });
     });
-    
+
     return groupedResults.slice(0, 6); // Limit to 6 product groups
   }, [searchQuery]);
 
-  const handleProductClick = React.useCallback((productId: number) => {
-    router.push(`/products/${productId}`);
+  const handleProductClick = React.useCallback((productSlug: string) => {
+    router.push(`/products/${productSlug}`);
     setSearchOpen(false);
     setSearchQuery("");
   }, [router]);
@@ -487,8 +487,8 @@ export const HeroHeader = () => {
                                       {productGroup.primaryProduct.description}
                                     </p>
                                   </div>
-                                      </div>
-                                
+                                </div>
+
                                 {/* Size Variants */}
                                 <div className="mt-3 pt-3 border-t border-border">
                                   <p className="text-xs font-medium text-muted-foreground mb-2">
@@ -498,7 +498,7 @@ export const HeroHeader = () => {
                                     {productGroup.variants.map((variant) => (
                                       <motion.button
                                         key={variant.id}
-                                        onClick={() => handleProductClick(variant.id)}
+                                        onClick={() => handleProductClick(variant.slug)}
                                         whileHover={{ scale: 1.05 }}
                                         whileTap={{ scale: 0.95 }}
                                         className="cursor-pointer text-xs px-3 py-1.5 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-all border border-primary/20 hover:border-primary"

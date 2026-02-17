@@ -101,7 +101,7 @@ export const ProductDropCard = memo(function ProductDropCard({
                 )}
                 fill="white"
               />
-              <Link href={`/products/${item.id}`} key={index}>
+              <Link href={`/products/${item.slug}`} key={index}>
                 <div className="space-y-3">
                   <div className="aspect-video w-full overflow-hidden rounded-md bg-muted">
                     <img

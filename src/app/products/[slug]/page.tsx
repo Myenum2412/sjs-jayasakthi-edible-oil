@@ -16,11 +16,11 @@ import {
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ id: string }> | { id: string };
+  params: Promise<{ slug: string }> | { slug: string };
 }) {
   const resolvedParams = params instanceof Promise ? await params : params;
   const productData = productsData.find(
-    (product) => product.id.toString() === resolvedParams.id
+    (product) => product.slug === resolvedParams.slug
   );
 
   if (!productData) {
@@ -36,19 +36,19 @@ export async function generateMetadata({
 // Generate static params for all products (for better SEO)
 export async function generateStaticParams() {
   return productsData.map((product) => ({
-    id: product.id.toString(),
+    slug: product.slug,
   }));
 }
 
 export default async function page({
   params,
 }: {
-  params: Promise<{ id: string }> | { id: string };
+  params: Promise<{ slug: string }> | { slug: string };
 }) {
   // Handle both sync and async params (Next.js 13-14 vs 15+)
   const resolvedParams = params instanceof Promise ? await params : params;
   const productData = productsData.find(
-    (product) => product.id.toString() === resolvedParams.id
+    (product) => product.slug === resolvedParams.slug
   );
 
   if (!productData) {
@@ -56,7 +56,7 @@ export default async function page({
   }
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sri-jayasakthi-oils.com";
-  const productUrl = `${siteUrl}/products/${productData.id}`;
+  const productUrl = `${siteUrl}/products/${productData.slug}`;
 
   // Extract currency symbol from price string
   const currency = productData.price.toString().replace(/[0-9.,]/g, "").trim() || "₹";

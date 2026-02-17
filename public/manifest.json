@@ -1,0 +1,21 @@
+{
+    "name": "Sri Jayasakthi Edible Oils",
+    "short_name": "SJS Oils",
+    "description": "Premium Edible Oils manufacturer in Salem, Tamil Nadu.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#059669",
+    "icons": [
+        {
+            "src": "/logo.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/logo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

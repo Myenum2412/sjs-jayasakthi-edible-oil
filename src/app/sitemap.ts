@@ -44,14 +44,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Using Map for better performance than array filtering
   const uniqueProducts = new Map<string, typeof productsData[0]>();
   productsData.forEach((product) => {
-    const key = product.name.toLowerCase().trim();
+    // Using slug as key ensures all products (even variants) are in the sitemap
+    const key = product.slug.toLowerCase().trim();
     if (!uniqueProducts.has(key)) {
       uniqueProducts.set(key, product);
     }
   });
 
   const productPages: MetadataRoute.Sitemap = Array.from(uniqueProducts.values()).map((product) => ({
-    url: `${baseUrl}/products/${product.id}`,
+    url: `${baseUrl}/products/${product.slug}`,
     lastModified: now,
     changeFrequency: "weekly" as const,
     priority: 0.9,

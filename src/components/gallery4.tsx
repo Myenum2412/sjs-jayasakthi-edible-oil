@@ -122,7 +122,7 @@ const ProductsCarousel = memo(function ProductsCarousel({
                 key={product.id.toString()}
                 className="max-w-[320px] pl-[20px] lg:max-w-[360px]"
               >
-                <a href={`/products/${product.id.toString()}`} className="group rounded-xl">
+                <a href={`/products/${product.slug}`} className="group rounded-xl">
                   <div className="group relative h-full min-h-108 max-w-full overflow-hidden rounded-xl md:aspect-5/4 lg:aspect-video">
                     {/* Spotlight Effect */}
                     <Spotlight

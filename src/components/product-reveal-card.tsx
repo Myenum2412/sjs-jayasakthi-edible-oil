@@ -20,7 +20,7 @@ interface ProductRevealCardProps extends Partial<Product> {
 }
 
 export const ProductRevealCard = memo(function ProductRevealCard({
-  id,
+  slug,
   description,
   name,
   price,
@@ -48,18 +48,18 @@ export const ProductRevealCard = memo(function ProductRevealCard({
   }, [onFavorite]);
 
   const handleCardClick = useCallback(() => {
-    if (id) {
-      router.push(`/products/${id}`);
+    if (slug) {
+      router.push(`/products/${slug}`);
     }
-  }, [id, router]);
+  }, [slug, router]);
 
   const handleButtonClick = useCallback((e: React.MouseEvent) => {
     e.stopPropagation();
-    if (id) {
-      router.push(`/products/${id}`);
+    if (slug) {
+      router.push(`/products/${slug}`);
     }
     onAdd?.();
-  }, [id, router, onAdd]);
+  }, [slug, router, onAdd]);
 
   const containerVariants = useMemo(() => ({
     rest: {

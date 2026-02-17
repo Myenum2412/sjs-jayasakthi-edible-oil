@@ -27,6 +27,8 @@ export interface Product {
   type?: string;
   category?: string;
   seoKeywords?: string;
+  seoTitle?: string;
+  seoDescription?: string;
   seller?: {
     name: string;
     avatarUrl: string;
@@ -62,6 +64,8 @@ const data: Product[] = [
       "Versatile Utility: Excellent for cooking and suitable for external applications like hair and skin care.",
     ],
     seoKeywords: "arun gold coconut oil, 5kg coconut oil, edible coconut oil, sri jayasakthi oils, pure coconut oil, Salem, Salem Tamil Nadu",
+    seoTitle: "Arun Gold Coconut Oil - Best Edible Oil in Salem",
+    seoDescription: "Experience the authentic taste of tradition with Arun Gold Coconut Oil, brought to you by Sri Jayasakthi Edible Oils Pvt. Ltd. Available in Salem, Tamil Nadu.",
   },
   {
     id: 2,
@@ -91,6 +95,8 @@ const data: Product[] = [
       "Bulk Economy Pack: The 15kg tin offers great economic value for high-volume usage.",
     ],
     seoKeywords: "nawin gold cotton seed oil, 15kg refined oil, fortified cooking oil, bulk cooking oil, Salem, Salem Tamil Nadu",
+    seoTitle: "Nawin Gold Refined Cotton Seed Oil - Best Edible Oil in Salem",
+    seoDescription: "Discover the secret to non-greasy, delicious cooking with Nawin Gold Refined Cotton Seed Oil. Available in Salem, Tamil Nadu.",
   },
   {
     id: 3,
@@ -120,6 +126,8 @@ const data: Product[] = [
       "Trusted Heritage: Produced by SJS, a brand with a legacy dating back to 1985.",
     ],
     seoKeywords: "three roses castor oil, pure castor oil, castor oil for hair, traditional castor oil, Salem, Salem Tamil Nadu",
+    seoTitle: "Three Roses Pure Castor Oil - Best Edible Oil in Salem",
+    seoDescription: "Rooted in tradition and extracted with care, Three Roses Pure Castor Oil is a premium offering from the house of SJS. Available in Salem, Tamil Nadu.",
   },
   {
     id: 4,
@@ -149,6 +157,8 @@ const data: Product[] = [
       "Fortified Quality: Manufactured by an ISO 9001:2008 Certified Company.",
     ],
     seoKeywords: "surya rice bran oil, healthy cooking oil, oryzanol rich oil, heart healthy oil, Salem, Salem Tamil Nadu",
+    seoTitle: "Surya Refined Rice Bran Oil - Best Edible Oil in Salem",
+    seoDescription: "Upgrade your kitchen with the goodness of Surya Refined Rice Bran Oil, a premium healthy cooking oil. Available in Salem, Tamil Nadu.",
   },
   {
     id: 5,
@@ -178,6 +188,8 @@ const data: Product[] = [
       "Convenient Bulk Pack: The 13.200 Kgs net weight is ideal for monthly household stocking.",
     ],
     seoKeywords: "suriya drops oil, vitamin fortified oil, light cooking oil, refined vegetable oil, Salem, Salem Tamil Nadu",
+    seoTitle: "Suriya Drops Refined Oil - Best Edible Oil in Salem",
+    seoDescription: "Bring lightness and vitality to your cooking with Suriya Drops Refined Oil. Available in Salem, Tamil Nadu.",
   },
   {
     id: 6,
@@ -207,6 +219,8 @@ const data: Product[] = [
       "Vegetarian Friendly: Marked with the Green Dot symbol, 100% suitable for vegetarian diets.",
     ],
     seoKeywords: "suriya vegetable oil, palmolein oil, bulk cooking oil, refined palm oil, Salem, Salem Tamil Nadu",
+    seoTitle: "Suriya Refined Vegetable Oil - Best Edible Oil in Salem",
+    seoDescription: "Unlock the true flavor of your ingredients with Suriya Brand Refined Vegetable Oil. Available in Salem, Tamil Nadu.",
   },
   {
     id: 7,
@@ -236,6 +250,8 @@ const data: Product[] = [
       "Trusted Compliance: Manufactured under strict FSSAI regulations.",
     ],
     seoKeywords: "sri jayasakthi gold sunflower oil, vitamin fortified sunflower oil, premium cooking oil, Salem, Salem Tamil Nadu",
+    seoTitle: "Sri Jayasakthi's Gold Refined Sunflower Oil - Best Edible Oil in Salem",
+    seoDescription: "Choose the gold standard of health with Sri Jayasakthi's Gold Refined Sunflower Oil. Available in Salem, Tamil Nadu.",
   },
   {
     id: 8,
@@ -265,6 +281,8 @@ const data: Product[] = [
       "Quality Assurance: Manufactured by SJS, an ISO-certified company.",
     ],
     seoKeywords: "gem groundnut oil, peanut oil, groundnut oil for cooking, traditional cooking oil, Salem, Salem Tamil Nadu",
+    seoTitle: "Gem Groundnut Oil - Best Edible Oil in Salem",
+    seoDescription: "Rediscover the aromatic richness of traditional Indian cooking with Sri Gem Brand Groundnut Oil. Available in Salem, Tamil Nadu.",
   },
   {
     id: 9,
@@ -294,6 +312,8 @@ const data: Product[] = [
       "Quality Certified: Manufactured under strict quality standards.",
     ],
     seoKeywords: "suriya sunflower oil, refined sunflower oil, bulk sunflower oil, healthy cooking oil, Salem, Salem Tamil Nadu",
+    seoTitle: "Suriya Refined Palm Oil 15kg - Best Edible Oil in Salem",
+    seoDescription: "Experience the light and healthy goodness of Suriya Refined Sunflower Oil. Available in Salem, Tamil Nadu.",
   },
   {
     id: 10,
@@ -322,6 +342,8 @@ const data: Product[] = [
       "Quality Assured: Manufactured to professional bakery standards.",
     ],
     seoKeywords: "bakers choice shortening, aerated bakery shortening, professional bakery fat, cake shortening, Salem, Salem Tamil Nadu",
+    seoTitle: "Baker's Choice Aerated Bakery Shortening - Best Edible Oil in Salem",
+    seoDescription: "Baker's Choice Aerated Bakery Shortening is specially formulated for professional bakers. Available in Salem, Tamil Nadu.",
   },
   {
     id: 11,
@@ -350,6 +372,8 @@ const data: Product[] = [
       "Trusted Brand: Used by professional bakers nationwide.",
     ],
     seoKeywords: "bakers choice vanaspati, biscuit vanaspati, cookie fat, bakery vanaspati, Salem, Salem Tamil Nadu",
+    seoTitle: "Baker's Choice Biscuit Vanaspati - Best Edible Oil in Salem",
+    seoDescription: "Baker's Choice Biscuit Vanaspati is the perfect choice for creating crisp, golden biscuits. Available in Salem, Tamil Nadu.",
   },
   {
     id: 12,
@@ -378,6 +402,8 @@ const data: Product[] = [
       "100% Vegetarian & Fortified: Made from permitted vegetable oils.",
     ],
     seoKeywords: "bakers days biscuit vanaspati, cookie vanaspati, biscuit fat, bakery vanaspati, Salem, Salem Tamil Nadu",
+    seoTitle: "Baker's Days Vanaspati Biscuit & Cookies - Best Edible Oil in Salem",
+    seoDescription: "Baker's Days Vanaspati for Biscuit & Cookies is a premium-grade bakery fat. Available in Salem, Tamil Nadu.",
   },
   {
     id: 13,
@@ -406,6 +432,8 @@ const data: Product[] = [
       "Value for Money: Bulk packaging offers excellent economic value.",
     ],
     seoKeywords: "bakers day vanaspati, all purpose bakery fat, versatile baking fat, commercial vanaspati, Salem, Salem Tamil Nadu",
+    seoTitle: "Baker's Day All Purpose Vanaspati - Best Edible Oil in Salem",
+    seoDescription: "Baker's Day All Purpose Vanaspati is a versatile bakery fat perfect for all your baking needs. Available in Salem, Tamil Nadu.",
   },
   {
     id: 14,
@@ -434,6 +462,8 @@ const data: Product[] = [
       "Quality Assured: Manufactured to highest bakery standards.",
     ],
     seoKeywords: "bakers day cream shortening, aerated shortening, cake shortening, bakery cream, Salem, Salem Tamil Nadu",
+    seoTitle: "Baker's Day Cream Aerated Bakery Shortening - Best Edible Oil in Salem",
+    seoDescription: "Baker's Day Cream Aerated Bakery Shortening is specially formulated for light, airy baked goods. Available in Salem, Tamil Nadu.",
   },
   {
     id: 15,
@@ -462,6 +492,8 @@ const data: Product[] = [
       "Long Shelf Life: Maintains freshness and stability.",
     ],
     seoKeywords: "bakers choice puff vanaspati, puff pastry fat, flaky pastry vanaspati, layered pastry fat, Salem, Salem Tamil Nadu",
+    seoTitle: "Baker's Choice Puff Vanaspati - Best Edible Oil in Salem",
+    seoDescription: "Baker's Choice Puff Vanaspati is crafted to deliver perfectly flaky, layered puffs. Available in Salem, Tamil Nadu.",
   },
   {
     id: 16,
@@ -490,6 +522,8 @@ const data: Product[] = [
       "Trusted Brand: Used by professional bakers nationwide.",
     ],
     seoKeywords: "bakers choice biscuit vanaspati, cookie vanaspati, biscuit fat, bakery vanaspati, Salem, Salem Tamil Nadu",
+    seoTitle: "Baker's Choice Vanaspati Biscuit & Cookies - Best Edible Oil in Salem",
+    seoDescription: "Baker's Choice Vanaspati for Biscuit & Cookies is specially formulated for crisp biscuits. Available in Salem, Tamil Nadu.",
   },
   {
     id: 17,
@@ -518,6 +552,8 @@ const data: Product[] = [
       "Legacy of Quality: From the trusted house of Sri Jayasakthi Edible Oils.",
     ],
     seoKeywords: "arun gold coconut oil 1l, coconut oil bottle, edible coconut oil, pure coconut oil, Salem, Salem Tamil Nadu",
+    seoTitle: "Arun Gold Coconut Oil 1L Bottle - Best Edible Oil in Salem",
+    seoDescription: "Experience the authentic taste of tradition with Arun Gold Coconut Oil in a convenient 1L bottle. Available in Salem, Tamil Nadu.",
   },
   {
     id: 18,
@@ -546,6 +582,8 @@ const data: Product[] = [
       "Convenient Pack: Easy to use 1 Liter bottle.",
     ],
     seoKeywords: "three roses castor oil 1l, pure castor oil bottle, castor oil for hair, traditional castor oil, Salem, Salem Tamil Nadu",
+    seoTitle: "Three Roses Pure Castor Oil 1L Bottle - Best Edible Oil in Salem",
+    seoDescription: "Rooted in tradition and extracted with care, Three Roses Pure Castor Oil 1L bottle. Available in Salem, Tamil Nadu.",
   },
   {
     id: 19,
@@ -575,6 +613,8 @@ const data: Product[] = [
       "Heart Friendly: Low in saturated fats, supporting a healthy lifestyle.",
     ],
     seoKeywords: "sir gold sunflower oil 1l, premium sunflower oil, refined oil bottle, healthy cooking oil, Salem, Salem Tamil Nadu",
+    seoTitle: "Sir Gold Deepam Oil 1 Liter - Best Edible Oil in Salem",
+    seoDescription: "Elevate your culinary experience with Sir Gold Refined Sunflower Oil in a handy 1L bottle. Available in Salem, Tamil Nadu.",
   },
   {
     id: 20,
@@ -601,6 +641,8 @@ const data: Product[] = [
       "Multi-purpose: Ideal for cooking, hair care, and skin care.",
     ],
     seoKeywords: "arun gold coconut oil pouch, 1l coconut oil pouch, pure coconut oil, sjs oils, Salem, Salem Tamil Nadu",
+    seoTitle: "Arun Gold Coconut Oil 1L Pouch - Best Edible Oil in Salem",
+    seoDescription: "Arun Gold Coconut Oil is now available in a 1 Liter pouch, offering same pure quality. Available in Salem, Tamil Nadu.",
   },
   {
     id: 21,
@@ -627,6 +669,8 @@ const data: Product[] = [
       "Natural Goodness: Contains essential fatty acids for health.",
     ],
     seoKeywords: "arun gold 500ml pouch, coconut oil 500ml, small pouch coconut oil, Salem, Salem Tamil Nadu",
+    seoTitle: "Arun Gold Coconut Oil 500ml Pouch - Best Edible Oil in Salem",
+    seoDescription: "Get the goodness of Arun Gold Coconut Oil in a compact 500ml pouch. Available in Salem, Tamil Nadu.",
   },
   {
     id: 22,
@@ -653,6 +697,8 @@ const data: Product[] = [
       "Convenient Pouch: Easy to pour and dispose.",
     ],
     seoKeywords: "gem groundnut oil pouch, 1l groundnut oil, peanut oil pouch, traditional cooking oil, Salem, Salem Tamil Nadu",
+    seoTitle: "Gem Groundnut Oil 1L Pouch - Best Edible Oil in Salem",
+    seoDescription: "Gem Groundnut Oil 1L Pouch brings traditional nutty flavor in a modern pouch. Available in Salem, Tamil Nadu.",
   },
   {
     id: 23,
@@ -679,6 +725,8 @@ const data: Product[] = [
       "Versatile Use: Great for sautéing and tempering.",
     ],
     seoKeywords: "gem 500ml peanut oil, groundnut oil pouch 500ml, small pack groundnut oil, Salem, Salem Tamil Nadu",
+    seoTitle: "Gem Groundnut Oil 500ml Pouch - Best Edible Oil in Salem",
+    seoDescription: "Enjoy the premium quality of Gem Groundnut Oil in a convenient 500ml pouch. Available in Salem, Tamil Nadu.",
   },
   {
     id: 24,
@@ -705,6 +753,8 @@ const data: Product[] = [
       "Safe Packaging: Easy to use and store.",
     ],
     seoKeywords: "three roses castor oil pouch, 500ml castor oil, medicinal castor oil, Salem, Salem Tamil Nadu",
+    seoTitle: "Three Roses Pure Castor Oil 500ml Pouch - Best Edible Oil in Salem",
+    seoDescription: "Three Roses Pure Castor Oil is now available in a 500ml pouch for wellness. Available in Salem, Tamil Nadu.",
   },
   {
     id: 25,
@@ -733,6 +783,8 @@ const data: Product[] = [
       "Long Shelf Life: Maintains freshness and stability.",
     ],
     seoKeywords: "bakers day puff vanaspati, puff pastry fat, flaky pastry vanaspati, layered pastry fat, Salem, Salem Tamil Nadu",
+    seoTitle: "Baker's Day Puff Vanaspati - Best Edible Oil in Salem",
+    seoDescription: "Baker's Day Puff Vanaspati is specially crafted to deliver perfectly flaky puffs. Available in Salem, Tamil Nadu.",
   },
 ];
 
