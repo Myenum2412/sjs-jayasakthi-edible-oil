@@ -317,7 +317,7 @@ const data: Product[] = [
   },
   {
     id: 10,
-    name: "Baker's Choice Aerated Bakery Shortening",
+    name: "Baker's Choice Cream Aerated Bakery Shortening",
     slug: "bakers-choice-aerated-bakery-shortening",
     price: "",
     originalPrice: "₹109.99",
@@ -327,7 +327,7 @@ const data: Product[] = [
       encodeImagePath("/products/Baker's-choice-aerated-bakery-shortening/Baker's-choice-aerated-bakery-shortening.png"),
     ],
     description:
-      "Baker's Choice Aerated Bakery Shortening is specially formulated for professional bakers who demand superior quality and consistent results. This premium shortening is perfect for creating light, fluffy baked goods with excellent texture and volume. Ideal for cakes, pastries, and other aerated bakery products.",
+      "Baker's Choice Cream Aerated Bakery Shortening is specially formulated for professional bakers who demand superior quality and consistent results. This premium shortening is perfect for creating light, fluffy baked goods with excellent texture and volume. Ideal for cakes, pastries, and other aerated bakery products.",
     rating: 4.8,
     reviewCount: 245,
     size: "15 Kg",
@@ -342,8 +342,8 @@ const data: Product[] = [
       "Quality Assured: Manufactured to professional bakery standards.",
     ],
     seoKeywords: "bakers choice shortening, aerated bakery shortening, professional bakery fat, cake shortening, Salem, Salem Tamil Nadu",
-    seoTitle: "Baker's Choice Aerated Bakery Shortening - Best Edible Oil in Salem",
-    seoDescription: "Baker's Choice Aerated Bakery Shortening is specially formulated for professional bakers. Available in Salem, Tamil Nadu.",
+    seoTitle: "Baker's Choice Cream Aerated Bakery Shortening - Best Edible Oil in Salem",
+    seoDescription: "Baker's Choice Cream Aerated Bakery Shortening is specially formulated for professional bakers. Available in Salem, Tamil Nadu.",
   },
   {
     id: 11,
