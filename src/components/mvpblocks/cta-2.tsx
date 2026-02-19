@@ -1,4 +1,5 @@
 import React from "react"
+import { Phone } from "lucide-react"
 
 export default function CTA2() {
   return (
@@ -38,7 +39,7 @@ export default function CTA2() {
             type="button"
           >
             <span className="font-medium">Talk to Sales Team</span>
-            <span className="h-5 w-5 shrink-0 rounded-full bg-primary" />
+            <Phone className="h-5 w-5 shrink-0" />
           </button>
         </div>
       </div>
