@@ -1,8 +1,15 @@
 'use client';
 
 import React, { useState } from "react"
-import { Phone, X } from "lucide-react"
+import { Phone } from "lucide-react"
 import HomeContactForm from "../HomeContactForm"
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "../ui/dialog"
 
 export default function CTA2() {
   const [showForm, setShowForm] = useState(false)
@@ -50,24 +57,19 @@ export default function CTA2() {
       </div>
 
       {/* Modal for Bulk Quote Form */}
-      {showForm && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 overflow-y-auto">
-          <div className="bg-white rounded-lg shadow-lg max-w-2xl w-full mx-4 my-8">
-            <div className="flex items-center justify-between p-6 border-b">
-              <h2 className="text-2xl font-bold text-foreground">Request Bulk Quote</h2>
-              <button
-                onClick={() => setShowForm(false)}
-                className="text-foreground/60 hover:text-foreground transition-colors"
-              >
-                <X className="h-6 w-6" />
-              </button>
-            </div>
-            <div className="p-6">
-              <HomeContactForm />
-            </div>
+      <Dialog open={showForm} onOpenChange={setShowForm}>
+        <DialogContent className="max-w-screen-xl w-full min-w-[95vw] max-h-[95vh] h-[90vh] p-0 flex flex-col overflow-hidden">
+          <DialogHeader className="px-6 pt-6 pb-4 shrink-0 w-full">
+            <DialogTitle>Request Bulk Quote</DialogTitle>
+            <DialogDescription>
+              Fill out the form below to request a customized bulk quote for your business needs.
+            </DialogDescription>
+          </DialogHeader>
+          <div className="flex-1 px-6 pb-6 min-h-0 overflow-y-auto">
+            <HomeContactForm />
           </div>
-        </div>
-      )}
+        </DialogContent>
+      </Dialog>
     </div>
   )
 }
