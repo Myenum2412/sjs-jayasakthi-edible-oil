@@ -1,7 +1,11 @@
-import React from "react"
-import { Phone } from "lucide-react"
+'use client';
+
+import React, { useState } from "react"
+import { Phone, X } from "lucide-react"
+import HomeContactForm from "../HomeContactForm"
 
 export default function CTA2() {
+  const [showForm, setShowForm] = useState(false)
   return (
     <div className="relative mx-auto w-full max-w-7xl overflow-hidden rounded-[40px] bg-primary p-4 text-primary-foreground sm:p-6 md:p-8">
       <div className="absolute inset-0 hidden h-full w-full overflow-hidden md:block">
@@ -29,6 +33,7 @@ export default function CTA2() {
           <button
             className="flex w-full items-center justify-between rounded-full bg-primary-foreground px-5 py-3 text-primary shadow-sm transition-colors hover:bg-primary-foreground/90 sm:w-[240px]"
             type="button"
+            onClick={() => setShowForm(true)}
           >
             <span className="font-medium">Request Bulk Quote</span>
             <span className="h-5 w-5 shrink-0 rounded-full bg-primary" />
@@ -43,6 +48,26 @@ export default function CTA2() {
           </button>
         </div>
       </div>
+
+      {/* Modal for Bulk Quote Form */}
+      {showForm && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 overflow-y-auto">
+          <div className="bg-white rounded-lg shadow-lg max-w-2xl w-full mx-4 my-8">
+            <div className="flex items-center justify-between p-6 border-b">
+              <h2 className="text-2xl font-bold text-foreground">Request Bulk Quote</h2>
+              <button
+                onClick={() => setShowForm(false)}
+                className="text-foreground/60 hover:text-foreground transition-colors"
+              >
+                <X className="h-6 w-6" />
+              </button>
+            </div>
+            <div className="p-6">
+              <HomeContactForm />
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
