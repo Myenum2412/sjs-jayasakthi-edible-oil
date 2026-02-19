@@ -786,6 +786,36 @@ const data: Product[] = [
     seoTitle: "Baker's Day Puff Vanaspati - Best Edible Oil in Salem",
     seoDescription: "Baker's Day Puff Vanaspati is specially crafted to deliver perfectly flaky puffs. Available in Salem, Tamil Nadu.",
   },
+  {
+    id: 26,
+    name: "Baker's Choice All Purpose Vanaspati",
+    slug: "bakers-choice-all-purpose-vanaspati",
+    price: "",
+    originalPrice: "₹109.99",
+    image: encodeImagePath("/products/all-purpose-vanaspathi/all-purpose-vanaspathi.png"),
+    imageSecondary: encodeImagePath("/products/all-purpose-vanaspathi/all-purpose-vanaspathi.png"),
+    imageGallery: [
+      encodeImagePath("/products/all-purpose-vanaspathi/all-purpose-vanaspathi.png"),
+    ],
+    description:
+      "Baker's Choice All Purpose Vanaspati is a versatile bakery fat perfect for all your baking needs. Whether you're making cakes, cookies, pastries, or bread, this premium vanaspati delivers consistent results with excellent texture and flavor. Trusted by professional bakers and commercial kitchens for superior performance across all baking applications.",
+    rating: 4.7,
+    reviewCount: 189,
+    size: "15 Kg",
+    type: "Baker's Choice",
+    category: "Bakery Vanaspati",
+    benefits: [
+      "Versatile Application: Perfect for cakes, cookies, pastries, and bread.",
+      "Consistent Results: Reliable performance across all baking applications.",
+      "Excellent Texture: Ensures soft, moist baked goods every time.",
+      "Professional Quality: Meets commercial bakery standards.",
+      "Long Shelf Life: Stays fresh and stable for extended periods.",
+      "Value for Money: Bulk packaging offers excellent economic value.",
+    ],
+    seoKeywords: "bakers choice all purpose vanaspati, all purpose bakery fat, versatile baking fat, commercial vanaspati, Salem, Salem Tamil Nadu",
+    seoTitle: "Baker's Choice All Purpose Vanaspati - Best Edible Oil in Salem",
+    seoDescription: "Baker's Choice All Purpose Vanaspati is a versatile bakery fat perfect for all your baking needs. Available in Salem, Tamil Nadu.",
+  },
 ];
 
 // Helper function to generate SEO-friendly slug
