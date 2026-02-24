@@ -4,7 +4,8 @@ import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { HeroSkeleton, FeaturesSkeleton, ProductsGridSkeleton } from '@/components/LoadingSkeleton';
 import { Skeleton } from '@/components/skeleton';
 import { generateMetadata as generateBaseMetadata } from '@/lib/meta';
-import Features from '@/components/features-1'; ""
+import Features from '@/components/features-1';import CTA2 from '@/components/mvpblocks/cta-2';
+ ""
 
 // Lazy load all heavy components with code splitting
 const HeroSection = dynamic(() => import('@/components/Home/hero-section'), {
@@ -46,7 +47,8 @@ const StatsSection = dynamic(() => import('@/components/stats'), {
 });
 
 // Heavy components that don't need SSR can be lazy loaded
-const CTA2 = lazy(() => import('@/components/mvpblocks/cta-2'));
+// CTA2 removed due to missing component
+// const CTA2 = lazy(() => import('@/components/mvpblocks/cta-2'));
 const Faq2 = lazy(() => import('@/components/mvpblocks/faq-2'));
 
 // Generate metadata for SEO
@@ -63,9 +65,7 @@ export default function HomePage() {
         <HeroSection />
         <ProductsSection />
         <FeaturesSection />
-        <Suspense fallback={<Skeleton className="h-64 w-full rounded-lg" />}>
-          <CTA2 />
-        </Suspense>
+        <CTA2 />
         <br />
       </MaxWidthWrapper>
     </>

@@ -220,13 +220,15 @@ export default function AboutContactForm() {
                                 </div>
                             </div>
 
-                            <div className="flex items-center space-x-4">
+                            <div className="flex items-start space-x-4">
                                 <div className="bg-white p-3 rounded-full text-green-600 shrink-0">
                                     <Phone className="h-6 w-6" />
                                 </div>
-                                <div>
+                                <div className="space-y-1">
                                     <h3 className="font-bold text-lg">Phone</h3>
-                                    <p className="text-muted-foreground">+91 94432 34992</p>
+                                    <p className="text-muted-foreground">(+91) 94432 34992</p>
+                                    <p className="text-muted-foreground">(+91) 94493 33991</p>
+                                    <p className="text-muted-foreground">(+91) 99446 34299</p>
                                 </div>
                             </div>
 

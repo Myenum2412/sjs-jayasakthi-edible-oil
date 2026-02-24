@@ -1,8 +1,11 @@
+"use client";
+
 import * as React from "react";
 import {
   ChevronRight,
   Share2,
 } from "lucide-react";
+import { toast } from "sonner";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -53,6 +56,25 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
   seller,
   breadcrumbs,
 }) => {
+  const handleShare = async () => {
+    try {
+      const shareData = {
+        title: product.name,
+        text: `Check out ${product.name} - ${product.description}`,
+        url: window.location.href,
+      };
+
+      if (navigator.share) {
+        await navigator.share(shareData);
+      } else {
+        await navigator.clipboard.writeText(window.location.href);
+        toast.success("Link copied to clipboard");
+      }
+    } catch (error) {
+      console.error("Error sharing:", error);
+    }
+  };
+
   return (
     <div className="w-full relative mx-auto p-4 md:p-8 bg-background text-foreground overflow-hidden">
       {/* Spotlight Effect */}
@@ -90,7 +112,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
       <div className="flex justify-between items-center -mt-5">
         <div /> {/* Spacer */}
         <div className="flex items-center gap-2">
-          <Button variant="ghost" size="icon">
+          <Button variant="ghost" size="icon" onClick={handleShare}>
             <Share2 className="h-5 w-5" />
             <span className="sr-only">Share</span>
           </Button>

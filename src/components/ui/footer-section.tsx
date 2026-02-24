@@ -209,28 +209,28 @@ function Footerdemo() {
                     D.no:383/9, post, near MoolaPillaiyar kovil, Pillayar Nagar, Kandhampatty, Tamil Nadu 636005
                   </span>
                 </a>
-                <div className="flex items-start gap-3">
-                  <Phone className="mt-1 h-4 w-4 shrink-0 text-primary" />
-                  <div className="flex flex-col gap-2">
-                    <a
-                      href="tel:+919443234992"
-                      className="transition-colors hover:text-primary whitespace-nowrap"
-                    >
-                      (+91) 94432 34992
-                    </a>
-                    <a
-                      href="tel:+919449333991"
-                      className="transition-colors hover:text-primary whitespace-nowrap"
-                    >
-                      (+91) 94493 33991
-                    </a>
-                    <a
-                      href="tel:+919944634299"
-                      className="transition-colors hover:text-primary whitespace-nowrap"
-                    >
-                      (+91) 99446 34299
-                    </a>
-                  </div>
+                <div className="flex flex-col gap-2">
+                  <a
+                    href="tel:+919443234992"
+                    className="group flex items-center gap-3 transition-colors hover:text-primary whitespace-nowrap"
+                  >
+                    <Phone className="mt-1 h-4 w-4 shrink-0 text-primary" />
+                    (+91) 94432 34992
+                  </a>
+                  <a
+                    href="tel:+919449333991"
+                    className="group flex items-center gap-3 transition-colors hover:text-primary whitespace-nowrap"
+                  >
+                    <Phone className="mt-1 h-4 w-4 shrink-0 text-primary" />
+                    (+91) 94493 33991
+                  </a>
+                  <a
+                    href="tel:+919944634299"
+                    className="group flex items-center gap-3 transition-colors hover:text-primary whitespace-nowrap"
+                  >
+                    <Phone className="mt-1 h-4 w-4 shrink-0 text-primary" />
+                    (+91) 99446 34299
+                  </a>
                 </div>
                 <a
                   href="mailto:info@srijayasaktiedibileoils"

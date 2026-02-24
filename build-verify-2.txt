@@ -1,0 +1,24 @@
+
+> sjs-project@0.1.0 build
+> next build
+
+▲ Next.js 16.1.6 (Turbopack)
+- Environments: .env.local
+- Experiments (use with caution):
+  · optimizePackageImports
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 7.7s
+  Running TypeScript ...
+  Collecting page data using 11 workers ...
+  Generating static pages using 11 workers (0/38) ...
+Error occurred prerendering page "/products/bakers-choice-biscuit-vanaspati". Read more: https://nextjs.org/docs/messages/prerender-error
+Error: Event handlers cannot be passed to Client Component props.
+  {data-slot: "button", className: ..., onClick: function p, children: ...}
+                                                 ^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at stringify (<anonymous>) {
+  digest: '4064619784'
+}
+Export encountered an error on /products/[slug]/page: /products/bakers-choice-biscuit-vanaspati, exiting the build.
+⨯ Next.js build worker exited with code: 1 and signal: null

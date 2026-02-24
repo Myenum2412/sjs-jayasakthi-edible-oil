@@ -11,6 +11,7 @@ import { generateMetadata as generateBaseMetadata } from "@/lib/meta";
 import { WebVitals } from "@/components/WebVitals";
 import { WebVitalsScript } from "@/components/WebVitalsScript";
 import Script from "next/script";
+import { LoadingProvider } from "@/components/providers/LoadingProvider";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -42,6 +43,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="theme-color" content="#000000" />
         <link rel="icon" href="/logo.png" />
 
         {/* Preconnect */}
@@ -144,12 +147,14 @@ export default function RootLayout({
             enableSystem={false}
           >
             <QueryProvider>
-              <ConditionalLayout>
-                {children}
-                <FloatingContactButton />
-              </ConditionalLayout>
-              <Toaster position="top-right" richColors />
-              <WebVitals />
+              <LoadingProvider>
+                <ConditionalLayout>
+                  {children}
+                  <FloatingContactButton />
+                </ConditionalLayout>
+                <Toaster position="top-right" richColors />
+                <WebVitals />
+              </LoadingProvider>
             </QueryProvider>
           </ThemeProvider>
         </ErrorBoundaryWrapper>

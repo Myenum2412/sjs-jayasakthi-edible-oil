@@ -6,6 +6,9 @@ import HomeContactForm from "../HomeContactForm"
 import {
   Dialog,
   DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
 } from "../ui/dialog"
 
 export default function CTA2() {
@@ -55,8 +58,14 @@ export default function CTA2() {
 
       {/* Modal for Bulk Quote Form */}
       <Dialog open={showForm} onOpenChange={setShowForm}>
-        <DialogContent className="w-full sm:w-[95vw] sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl h-auto sm:h-[90vh] p-0 flex flex-col overflow-hidden rounded-lg">
-          <div className="flex-1 px-4 sm:px-6 py-4 sm:py-6 min-h-0 overflow-y-auto">
+        <DialogContent className="max-w-screen-xl w-full min-w-[95vw] max-h-[95vh] h-[90vh] p-0 flex flex-col overflow-hidden">
+          <DialogHeader className="px-6 pt-6 pb-4 shrink-0 w-full">
+            <DialogTitle>Request Bulk Quote</DialogTitle>
+            <DialogDescription>
+              Fill out the form below to request a customized bulk quote for your business needs.
+            </DialogDescription>
+          </DialogHeader>
+          <div className="flex-1 px-6 pb-6 min-h-0 overflow-y-auto">
             <HomeContactForm />
           </div>
         </DialogContent>

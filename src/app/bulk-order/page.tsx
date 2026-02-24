@@ -3,16 +3,7 @@ import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { Skeleton } from '@/components/skeleton';
 import { generateMetadata as generateBaseMetadata } from '@/lib/meta';
 
-// Lazy load component for better code splitting
-const BulkOrderSection = dynamic(() => import('@/components/Bulk-order/BulkOrderSection'), {
-  loading: () => (
-    <div className="space-y-8 py-16">
-      <Skeleton className="h-12 w-64" />
-      <Skeleton className="h-96 w-full" />
-    </div>
-  ),
-  ssr: true,
-});
+import BulkOrderSection from '@/components/Bulk-order/BulkOrderSection';
 
 export const metadata = generateBaseMetadata({
   title: 'Wholesale Edible Oils in Salem | Bulk Order Sri Jayasakthi',

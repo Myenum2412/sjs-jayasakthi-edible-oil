@@ -98,7 +98,7 @@ export default function ContactPageSection() {
     <section className="py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-6">
         {/* Breadcrumb Navigation */}
-        <PageBreadcrumb 
+        <PageBreadcrumb
           items={[
             { label: "Home", href: "/" },
             { label: "Contact" }
@@ -169,19 +169,35 @@ export default function ContactPageSection() {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
-                className="flex items-start gap-4"
+                className="space-y-4"
               >
-                <div className="mt-1 p-2 rounded-full bg-primary/10">
-                  <PhoneCall className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold mb-1">Phone</h3>
-                  <a
-                    href="tel:+919443234992"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    +91 94432 34992
-                  </a>
+                <div className="flex items-start gap-4">
+                  <div className="mt-1 p-2 rounded-full bg-primary/10">
+                    <PhoneCall className="h-5 w-5 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-1">Phone</h3>
+                    <div className="flex flex-col gap-2">
+                      <a
+                        href="tel:+919443234992"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        (+91) 94432 34992
+                      </a>
+                      <a
+                        href="tel:+919449333991"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        (+91) 94493 33991
+                      </a>
+                      <a
+                        href="tel:+919944634299"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        (+91) 99446 34299
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </motion.div>
 
