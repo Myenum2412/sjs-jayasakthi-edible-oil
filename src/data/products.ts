@@ -730,7 +730,7 @@ const data: Product[] = [
   },
   {
     id: 24,
-    name: "Three Roses Pure Castor Oil 500ml Pouch",
+    name: "Three Roses Pure Castor Oil 500ml & 1000mlPouch",
     slug: "three-roses-pure-castor-oil-500ml-pouch",
     price: "₹110.00",
     originalPrice: "₹130.00",
@@ -753,7 +753,7 @@ const data: Product[] = [
       "Safe Packaging: Easy to use and store.",
     ],
     seoKeywords: "three roses castor oil pouch, 500ml castor oil, medicinal castor oil, Salem, Salem Tamil Nadu",
-    seoTitle: "Three Roses Pure Castor Oil 500ml Pouch - Best Edible Oil in Salem",
+    seoTitle: "Three Roses Pure Castor Oil 500ml & 1000 ml Pouch - Best Edible Oil in Salem",
     seoDescription: "Three Roses Pure Castor Oil is now available in a 500ml pouch for wellness. Available in Salem, Tamil Nadu.",
   },
   {
