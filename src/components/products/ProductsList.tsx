@@ -5,50 +5,192 @@ import { motion } from "framer-motion";
 import { ProductRevealCard } from "../product-reveal-card";
 import { Skeleton } from "../skeleton";
 import { Product } from "@/data/products";
+import { useRouter, useSearchParams } from "next/navigation";
 
-// Sample product data with category/size information
+// Helper function to convert price to number
+function getPriceAsNumber(price: string | number | undefined): number {
+  if (price === undefined || price === null) return 0;
+  if (typeof price === 'number') return price;
+  // Remove currency symbols and parse
+  const parsed = parseFloat(String(price).replace(/[^0-9.]/g, ''));
+  return isNaN(parsed) ? 0 : parsed;
+}
+
+// Debounce hook for search
+function useDebounce<T>(value: T, delay: number): T {
+  const [debouncedValue, setDebouncedValue] = useState<T>(value);
+
+  useEffect(() => {
+    const handler = setTimeout(() => {
+      setDebouncedValue(value);
+    }, delay);
+
+    return () => {
+      clearTimeout(handler);
+    };
+  }, [value, delay]);
+
+  return debouncedValue;
+}
 
 interface ProductsListProps {
   products: Product[];
 }
 
 const ProductsList = memo(function ProductsList({ products }: ProductsListProps) {
-  const [category, setCategory] = useState("All");
+  const router = useRouter();
+  const searchParams = useSearchParams();
 
-  // Filter products based on selected category
-  const filteredData = useMemo(
-    () => {
-      if (category === "All") {
-        return products;
-      } else if (category === "Oils") {
-        // Show both Refined Oil and Non-Refined Oil products
-        return products.filter((product) =>
-          product.type === "Refined Oil" || product.type === "Non-Refined Oil"
-        );
-      } else if (category === "Pouches") {
-        return products.filter((product) => product.type === "Pouches");
+  // State from URL params
+  const [category, setCategory] = useState(searchParams.get("category") || "All");
+  const [searchQuery, setSearchQuery] = useState(searchParams.get("search") || "");
+  const [sortBy, setSortBy] = useState(searchParams.get("sort") || "default");
+  const [priceRange, setPriceRange] = useState<[number, number]>([0, 5000]);
+  const [sizeFilter, setSizeFilter] = useState<string[]>([]);
+  const [showFilters, setShowFilters] = useState(false);
+
+  // Debounce search
+  const debouncedSearch = useDebounce(searchQuery, 300);
+
+  // Update URL when filters change
+  const updateURL = (params: Record<string, string | null>) => {
+    const newParams = new URLSearchParams(searchParams.toString());
+    Object.entries(params).forEach(([key, value]) => {
+      if (value === null || value === "" || value === "default") {
+        newParams.delete(key);
       } else {
-        return products.filter((product) => product.type === category);
+        newParams.set(key, value);
       }
-    },
-    [category, products]
-  );
+    });
+    router.push(`?${newParams.toString()}`, { scroll: false });
+  };
+
+  // Handle filter changes
+  const handleCategoryChange = (newCategory: string) => {
+    setCategory(newCategory);
+    updateURL({ category: newCategory });
+  };
+
+  const handleSearchChange = (query: string) => {
+    setSearchQuery(query);
+    updateURL({ search: query || null });
+  };
+
+  const handleSortChange = (sort: string) => {
+    setSortBy(sort);
+    updateURL({ sort: sort });
+  };
+
+  // Get unique sizes from products
+  const availableSizes = useMemo(() => {
+    const sizes = new Set<string>();
+    products.forEach((product) => {
+      if (product.size) {
+        sizes.add(product.size);
+      }
+    });
+    return Array.from(sizes).sort();
+  }, [products]);
+
+  // Filter and sort products
+  const filteredAndSortedData = useMemo(() => {
+    let result = [...products];
+
+    // Filter by category
+    if (category === "All") {
+      result = products;
+    } else if (category === "Oils") {
+      result = products.filter(
+        (product) => product.type === "Refined Oil" || product.type === "Non-Refined Oil"
+      );
+    } else if (category === "Pouches") {
+      result = products.filter((product) => product.type === "Pouches");
+    } else {
+      result = result.filter((product) => product.type === category);
+    }
+
+    // Filter by search query
+    if (debouncedSearch) {
+      const searchLower = debouncedSearch.toLowerCase();
+      result = result.filter(
+        (product) =>
+          product.name.toLowerCase().includes(searchLower) ||
+          product.description?.toLowerCase().includes(searchLower) ||
+          product.type?.toLowerCase().includes(searchLower)
+      );
+    }
+
+    // Filter by price range
+    result = result.filter((product) => {
+      const price = getPriceAsNumber(product.price);
+      return price >= priceRange[0] && price <= priceRange[1];
+    });
+
+    // Filter by size
+    if (sizeFilter.length > 0) {
+      result = result.filter((product) => {
+        if (!product.size) return false;
+        return sizeFilter.includes(product.size);
+      });
+    }
+
+    // Sort
+    switch (sortBy) {
+      case "price-asc":
+        result.sort((a, b) => getPriceAsNumber(a.price) - getPriceAsNumber(b.price));
+        break;
+      case "price-desc":
+        result.sort((a, b) => getPriceAsNumber(b.price) - getPriceAsNumber(a.price));
+        break;
+      case "newest":
+        result.sort((a, b) => (b.id || 0) - (a.id || 0));
+        break;
+      case "rating":
+        result.sort((a, b) => (b.rating || 0) - (a.rating || 0));
+        break;
+      default:
+        // Default order
+        break;
+    }
+
+    return result;
+  }, [products, category, debouncedSearch, priceRange, sizeFilter, sortBy]);
+
+  // Get min/max price for range filter
+  const priceBounds = useMemo(() => {
+    const prices = products.map((p) => getPriceAsNumber(p.price));
+    const validPrices = prices.filter(p => p > 0);
+    if (validPrices.length === 0) return { min: 0, max: 5000 };
+    return {
+      min: Math.min(...validPrices),
+      max: Math.max(...validPrices),
+    };
+  }, [products]);
 
   return (
     <div className="relative mx-auto max-w-6xl">
       <p className="md:text-3xl text-2xl mx-auto tracking-tighter max-w-xl font-regular text-center my-5">
         Our Best Sellers
       </p>
+
+      {/* Product Grid */}
+
       <div className="flex items-center justify-between">
-        <SlideTabs category={category} setCategory={setCategory} />
+        <SlideTabs category={category} setCategory={handleCategoryChange} />
       </div>
       <h2 className="text-3xl md:text-5xl tracking-tighter font-regular text-center my-5">
         {category === "All" ? "All Products" : `${category} Products`}
       </h2>
+
+      {/* Results Count */}
+      <p className="text-sm text-muted-foreground mb-4">
+        Showing {filteredAndSortedData.length} of {products.length} products
+      </p>
+
       <div className="flex items-center justify-center w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 my-10 mx-auto ">
-          {filteredData?.length > 0 ? (
-            filteredData.map((product, index) => (
+          {filteredAndSortedData?.length > 0 ? (
+            filteredAndSortedData.map((product, index) => (
               <ProductRevealCard
                 key={product.id}
                 {...product}
@@ -56,9 +198,20 @@ const ProductsList = memo(function ProductsList({ products }: ProductsListProps)
               />
             ))
           ) : (
-            Array.from({ length: 4 }).map((_, index) => (
-              <ProductCardSkeleton key={index} />
-            ))
+            <div className="col-span-full text-center py-10">
+              <p className="text-muted-foreground">No products found matching your criteria.</p>
+              <button
+                onClick={() => {
+                  setSearchQuery("");
+                  setPriceRange([priceBounds.min, priceBounds.max]);
+                  setSizeFilter([]);
+                  setCategory("All");
+                }}
+                className="mt-2 text-primary hover:underline"
+              >
+                Clear all filters
+              </button>
+            </div>
           )}
         </div>
       </div>
@@ -195,8 +348,9 @@ const Tab = forwardRef<HTMLLIElement, TabProps>(
             opacity: 1,
           });
         }}
-        className={`relative z-10 block cursor-pointer px-3 py-1.5 text-xs uppercase md:px-5 md:py-3 md:text-base transition-colors duration-200 ${isActive ? "text-white" : "text-primary"
-          }`}
+        className={`relative z-10 block cursor-pointer px-3 py-1.5 text-xs uppercase md:px-5 md:py-3 md:text-base transition-colors duration-200 ${
+          isActive ? "text-white" : "text-primary"
+        }`}
       >
         {children}
       </li>

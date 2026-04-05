@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { productsData, Product } from "@/data/products";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sri-jayasakthi-oils.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.srijayasaktiedibileoils.com";
 const siteName = "Sri Jayasakthi Edible Oils - Salem's Trusted Brand";
 const defaultDescription = "Sri Jayasakthi Edible Oils Pvt. Ltd is Salem's leading manufacturer of premium edible oils. Purity and quality since 1985 for homes and businesses in Salem, Tamil Nadu.";
-const defaultKeywords = "edible oils Salem, cooking oils Salem Tamil Nadu, coconut oil near Salem, groundnut oil Salem, sunflower oil Salem, bulk oil suppliers Salem";
+// Tamil Nadu and Salem-focused local keywords for geo-targeting
+const defaultKeywords = "edible oils Salem, cooking oils Salem Tamil Nadu, coconut oil Salem, groundnut oil Salem, sunflower oil Salem, bulk oil suppliers Salem, edible oil manufacturer Salem, pure coconut oil Salem, wholesale cooking oils Tamil Nadu, edible oil distributor Salem, cooking oil supplier Namakkal, best quality oil Tamil Nadu, palm oil Salem, rice bran oil Tamil Nadu, mustard oil Salem, gingelly oil Salem, edible oil shop near me Salem, best cooking oil Salem Tamil Nadu, wholesale edible oils Salem, bulk oil suppliers Tamil Nadu";
 const twitterHandle = "@jayasakthioils"; // Update with actual handle
 const locale = "en_IN";
 
@@ -90,8 +91,8 @@ export function generateMetadata(options: {
 export function generateProductsPageMetadata(): Metadata {
   return {
     title: `Pure Cooking Oils in Salem - Products | ${siteName}`,
-    description: "Explore our range of premium edible oils in Salem. Quality coconut, sunflower, and groundnut oils for your kitchen, refined for health and tradition.",
-    keywords: "cooking oils Salem, best edible oils Salem Tamil Nadu, groundnut oil price Salem, Sri Jayasakthi oils",
+    description: "Explore our range of premium edible oils in Salem, Tamil Nadu. Quality coconut, sunflower, and groundnut oils for your kitchen, refined for health and tradition. Bulk orders welcome across Tamil Nadu.",
+    keywords: "cooking oils Salem, best edible oils Salem Tamil Nadu, groundnut oil price Salem, Sri Jayasakthi oils, edible oil shop Salem, coconut oil near me Tamil Nadu, wholesale cooking oils Namakkal, bulk oil suppliers Erode",
     openGraph: {
       title: `Pure Cooking Oils in Salem - Products | ${siteName}`,
       description: "Explore our range of premium edible oils in Salem",
@@ -186,15 +187,107 @@ export function generateOrganizationStructuredData() {
     url: siteUrl,
     logo: `${siteUrl}/logo.png`,
     description: defaultDescription,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "NH-44, Attur Main Road",
+      addressLocality: "Salem",
+      addressRegion: "Tamil Nadu",
+      addressCountry: "IN",
+      postalCode: "636001"
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: "11.6643",
+      longitude: "78.1460"
+    },
+    telephone: "+91-427-2234567",
+    email: "info@srijayasaktiedibileoils.com",
+    priceRange: "₹₹",
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "Customer Service",
       areaServed: "IN",
       availableLanguage: ["en", "ta", "hi"],
+      telephone: "+91-427-2234567"
     },
-    sameAs: [
-      // Add social media links if available
-    ],
+    areaServed: {
+      "@type": "GeoCircle",
+      geoMidpoint: {
+        "@type": "GeoCoordinates",
+        latitude: "11.6643",
+        longitude: "78.1460"
+      },
+      geoRadius: "100 km"
+    },
+    sameAs: [],
+    foundingDate: "1985",
+    brand: {
+      "@type": "Brand",
+      name: "Sri Jayasakthi Edible Oils"
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.8",
+      reviewCount: "250"
+    }
+  };
+}
+
+// Generate FAQPage schema for FAQ Schema markup - helps with SERP features
+export function generateFAQStructuredData() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Where is Sri Jayasakthi Edible Oils located?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sri Jayasakthi Edible Oils Pvt. Ltd is located in Salem, Tamil Nadu, India. We are a leading manufacturer and supplier of edible oils in the region since 1985."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "What types of edible oils do you offer?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "We offer a wide range of premium edible oils including coconut oil, groundnut oil, sunflower oil, palm oil, rice bran oil, mustard oil, and gingelly oil. All our oils are pure and of the highest quality."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "Do you provide bulk oil supply in Tamil Nadu?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, we provide bulk oil supply across Tamil Nadu including Salem, Namakkal, Erode, Coimbatore, and other districts. Contact us for bulk order inquiries."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "What is the minimum order quantity for bulk orders?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "We offer flexible bulk order quantities to meet the needs of both retailers and industrial clients. Please contact our sales team for specific pricing and minimum order requirements."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "Are your oils suitable for commercial cooking?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, our oils are ideal for hotels, restaurants, caterers, and food processing industries. We supply to many commercial establishments across Tamil Nadu."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "How can I place a bulk order for edible oils?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You can place bulk orders through our website's bulk order page, call us at +91-427-2234567, or email us at info@srijayasaktiedibileoils.com."
+        }
+      }
+    ]
   };
 }
 

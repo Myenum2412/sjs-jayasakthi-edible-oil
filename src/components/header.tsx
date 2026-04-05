@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { Menu, X, Search, User, LogOut, Settings, ShoppingCart } from "lucide-react";
+import { Menu, X, Search, User, LogOut, Settings, ShoppingCart, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
 import {

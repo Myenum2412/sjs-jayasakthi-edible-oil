@@ -2,8 +2,8 @@ import { MetadataRoute } from "next";
 import { productsData } from "@/data/products";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.srijayasaktiedibileoils.com/";
-  const baseUrl = siteUrl;
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.srijayasaktiedibileoils.com";
+  const baseUrl = siteUrl.endsWith("/") ? siteUrl.slice(0, -1) : siteUrl;
   const now = new Date();
 
   // Static pages with optimized priorities and frequencies
@@ -19,6 +19,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "daily",
       priority: 0.9,
+    },
+    // Salem Local SEO Pages
+    {
+      url: `${baseUrl}/salem`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/products/salem`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/about-us`,
@@ -37,6 +50,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/wishlist`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.6,
     },
   ];
 
@@ -62,4 +81,3 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const allPages = [...staticPages, ...productPages].slice(0, 50000); // Google limit is 50k
   return allPages;
 }
-

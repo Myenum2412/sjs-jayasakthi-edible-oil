@@ -60,13 +60,20 @@ function Feature() {
                             </div>
                         </div>
 
-                        <div className="bg-muted rounded-md aspect-square p-6 flex justify-between flex-col">
+                        <div className="rounded-md aspect-square p-6 flex justify-between flex-col relative overflow-hidden group">
+                            <Image
+                                src="/images/lab.png"
+                                alt="Premium Quality Assurance"
+                                width={100}
+                                height={100}
+                                className="absolute top-0 left-0 w-full h-full object-cover rounded-md z-[-10] opacity-50 blur-[1px] transition-transform duration-300 group-hover:scale-105"
+                            />
                             <User className="w-8 h-8 stroke-1" />
                             <div className="flex flex-col">
-                                <h3 className="text-xl tracking-tight">
+                                <h3 className="text-xl tracking-tight font-semibold">
                                     Premium Quality Assurance
                                 </h3>
-                                <p className="text-muted-foreground max-w-xs text-base">
+                                <p className="text-foreground/80 max-w-xs text-base">
                                     Every drop is tested for purity, ensuring you get only the best
                                     for your family.
                                 </p>

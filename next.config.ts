@@ -121,6 +121,9 @@ const nextConfig: NextConfig = {
   compress: true,
   poweredByHeader: false,
 
+  /* Enable React strict mode for better development performance */
+  reactStrictMode: true,
+
   /* Image optimization */
   images: {
     remotePatterns: [
@@ -135,6 +138,12 @@ const nextConfig: NextConfig = {
     minimumCacheTTL: 60,
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+  },
+
+  /* Compiler optimizations */
+  compiler: {
+    /* Remove console.log in production for better performance */
+    removeConsole: process.env.NODE_ENV === "production",
   },
 
   /* Experimental features for performance */
@@ -193,6 +202,42 @@ const nextConfig: NextConfig = {
           {
             key: 'Cache-Control',
             value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        source: '/:path*\\.(js|css|woff|woff2)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        source: '/:path*',
+        headers: [
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff',
+          },
+        ],
+      },
+      {
+        source: '/_next/static/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        source: '/:path*.html',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=0, must-revalidate',
           },
         ],
       },

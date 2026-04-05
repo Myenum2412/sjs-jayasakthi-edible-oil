@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, lazy, Suspense } from "react";
 import { z } from "zod";
 import { toast } from "sonner";
 import {
@@ -27,7 +27,10 @@ import {
     SelectValue,
 } from "@/components/ui/select";
 import { Label } from "@/components/ui/label";
-import WorldMap from "./ui/world-map";
+import { Skeleton } from "@/components/skeleton";
+
+// Lazy load the heavy WorldMap component
+const WorldMap = lazy(() => import("./ui/world-map"));
 
 // Zod schema for form validation
 const contactSchema = z.object({
@@ -152,10 +155,11 @@ export default function AboutContactForm() {
             <p className="text-center text-lg md:text-3xl tracking-tighter max-w-xl font-regular mx-auto my-10 text-foreground">
                 We deliver your order worldwide.
             </p>
-            <WorldMap
-                lineColor="hsl(var(--primary))"
+            <Suspense fallback={<Skeleton className="h-[300px] w-full" />}>
+                <WorldMap
+                    lineColor="hsl(var(--primary))"
 
-                dots={[
+                    dots={[
                     {
                         start: {
                             lat: 64.2008,
@@ -190,6 +194,7 @@ export default function AboutContactForm() {
                     },
                 ]}
             />
+            </Suspense>
             <div className="mx-auto max-w-6xl px-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                     {/* Left Side - Contact Info */}
@@ -239,7 +244,7 @@ export default function AboutContactForm() {
                                 <div>
                                     <h3 className="font-bold text-lg">Email</h3>
                                     <p className="text-muted-foreground">
-                                        info@srijayasakthi.com
+                                        info@srijayasaktiedibileoils.com
                                     </p>
                                 </div>
                             </div>

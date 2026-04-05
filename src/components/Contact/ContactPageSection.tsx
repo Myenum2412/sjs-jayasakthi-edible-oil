@@ -184,18 +184,6 @@ export default function ContactPageSection() {
                       >
                         (+91) 94432 34992
                       </a>
-                      <a
-                        href="tel:+919449333991"
-                        className="text-muted-foreground hover:text-primary transition-colors"
-                      >
-                        (+91) 94493 33991
-                      </a>
-                      <a
-                        href="tel:+919944634299"
-                        className="text-muted-foreground hover:text-primary transition-colors"
-                      >
-                        (+91) 99446 34299
-                      </a>
                     </div>
                   </div>
                 </div>
@@ -214,10 +202,10 @@ export default function ContactPageSection() {
                 <div>
                   <h3 className="font-semibold mb-1">Email</h3>
                   <a
-                    href="mailto:info@srijayasakthi.com"
+                    href="mailto:info@srijayasaktiedibileoils.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    info@srijayasakthi.com
+                    info@srijayasaktiedibileoils.com
                   </a>
                 </div>
               </motion.div>

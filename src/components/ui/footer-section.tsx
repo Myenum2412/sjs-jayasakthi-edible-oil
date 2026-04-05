@@ -233,11 +233,11 @@ function Footerdemo() {
                   </a>
                 </div>
                 <a
-                  href="mailto:info@srijayasaktiedibileoils"
+                  href="mailto:info@srijayasaktiedibileoils.com"
                   className="group flex items-center gap-3 transition-colors hover:text-primary break-all"
                 >
                   <Mail className="h-4 w-4 shrink-0 text-primary" />
-                  <span>info@srijayasaktiedibileoils</span>
+                  <span>info@srijayasaktiedibileoils.com</span>
                 </a>
               </address>
             </motion.div>
@@ -355,9 +355,15 @@ function Footerdemo() {
             className="mt-12 flex flex-col items-center justify-between gap-6 border-t pt-8 text-center md:flex-row"
             variants={itemVariants}
           >
-            <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Sri Jayasakthi Edible Oils Pvt. Ltd. All rights reserved.
-            </p>
+            <div className="flex flex-col gap-2">
+              <p className="text-sm text-muted-foreground">
+                © {new Date().getFullYear()} Sri Jayasakthi Edible Oils Pvt. Ltd. All rights reserved.
+              </p>
+              <p className="text-xs text-muted-foreground flex items-center justify-center gap-1">
+                <MapPin className="h-3 w-3" />
+                Serving Salem, Tamil Nadu and nearby areas
+              </p>
+            </div>
             <Link
               href="https://myenum.in"
               target="_blank"

@@ -4,8 +4,28 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
-import { motion } from "framer-motion";
-import AboutContactForm from "@/components/AboutContactForm";
+import { motion, useReducedMotion } from "framer-motion";
+import dynamic from "next/dynamic";
+import { Skeleton } from "@/components/skeleton";
+import { useMemo } from "react";
+
+// Lazy load the heavy contact form component
+const AboutContactForm = dynamic(
+  () => import("@/components/AboutContactForm"),
+  {
+    loading: () => (
+      <div className="space-y-8 py-10 animate-pulse">
+        <div className="h-px bg-primary/20 max-w-xl mx-auto" />
+        <Skeleton className="h-10 w-64 mx-auto" />
+        <Skeleton className="h-64 w-full" />
+        <div className="grid md:grid-cols-2 gap-12">
+          <Skeleton className="h-96" />
+          <Skeleton className="h-96" />
+        </div>
+      </div>
+    ),
+  }
+);
 
 interface AboutPageProps {
   achievements?: Array<{ label: string; value: string }>;
@@ -21,17 +41,26 @@ const defaultAchievements = [
 export default function AboutPage({
   achievements = defaultAchievements,
 }: AboutPageProps) {
+  const shouldReduceMotion = useReducedMotion();
+
+  // Optimized animation variants for better performance
+  const imageVariants = useMemo(() => ({
+    initial: shouldReduceMotion ? {} : { opacity: 0, y: 100 },
+    animate: shouldReduceMotion ? {} : { opacity: 1, y: 0 },
+  }), [shouldReduceMotion]);
+
   return (
     <div className="flex flex-col">
       {/* ---------------- HERO SECTION ---------------- */}
       <section className="py-10  bg-background">
         <div className="mx-auto max-w-6xl space-y-2 px-6">
           <motion.div
-            whileHover={{ scale: 1.03 }}
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            whileHover={shouldReduceMotion ? {} : { scale: 1.03 }}
+            initial={shouldReduceMotion ? {} : { opacity: 0, y: 100 }}
+            animate={shouldReduceMotion ? {} : { opacity: 1, y: 0 }}
+            transition={shouldReduceMotion ? {} : { duration: 0.5 }}
+            whileInView={shouldReduceMotion ? {} : { opacity: 1, y: 0 }}
+            viewport={{ once: true }}
           >
             <Image
               className="rounded-xl object-cover w-full h-[240px] md:h-[460px]"
