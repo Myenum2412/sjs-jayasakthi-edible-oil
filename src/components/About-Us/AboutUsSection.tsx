@@ -46,7 +46,7 @@ const projects = [
     title: "Our Vision",
     description:
       "To be recognized as India’s most trusted and sustainable edible oil manufacturer, setting new benchmarks in quality, purity, and excellence. We envision expanding our footprint across global markets while upholding the heritage of Indian oil craftsmanship and ensuring a healthier, more natural future for every household.",
-    link: "/Home/ourvision.png",
+    link: "/ourvision.png",
     color: "#13006c",
   },
   {
