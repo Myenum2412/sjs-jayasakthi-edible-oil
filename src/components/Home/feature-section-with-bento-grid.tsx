@@ -62,7 +62,7 @@ function Feature() {
 
                         <div className="rounded-md aspect-square p-6 flex justify-between flex-col relative overflow-hidden group">
                             <Image
-                                src="/images/lab.png"
+                                src="/Home/premium.png"
                                 alt="Premium Quality Assurance"
                                 width={100}
                                 height={100}
