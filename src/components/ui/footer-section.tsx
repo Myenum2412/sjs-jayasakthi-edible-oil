@@ -117,7 +117,7 @@ function Footerdemo() {
   };
 
   return (
-    <footer className="relative border-t bg-background text-foreground transition-colors duration-300">
+    <footer className="relative border-t bg-white text-foreground transition-colors duration-300">
       <MaxWidthWrapper>
         <div className="container mx-auto px-4 py-16 md:px-6 lg:px-8">
           <motion.div
