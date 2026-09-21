@@ -150,7 +150,7 @@ export default function AboutContactForm() {
     };
 
     return (
-        <section className="py-10 bg-background">
+        <section className="py-10 bg-white">
             <div className="my-5 border-t border-primary/20 max-w-xl mx-auto" />
             <p className="text-center text-lg md:text-3xl tracking-tighter max-w-xl font-regular mx-auto my-10 text-foreground">
                 We deliver your order worldwide.
