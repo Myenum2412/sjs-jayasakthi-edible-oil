@@ -178,6 +178,9 @@ export default function ContactPageSection() {
                   <div>
                     <h3 className="font-semibold mb-1">Phone</h3>
                     <div className="flex flex-col gap-2">
+                      <a href="tel:+919443234992" className="text-muted-foreground hover:text-primary transition-colors">
+                        +91 94432 34992
+                      </a>
                       <a href="tel:+919944933991" className="text-muted-foreground hover:text-primary transition-colors">
                         +91 99449 33991 (Sri Ramulu)
                       </a>
